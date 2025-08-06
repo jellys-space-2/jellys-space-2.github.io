@@ -1,8 +1,47 @@
 const navBar = document.querySelector('.top-nav');
 const primaryContainer = document.querySelector('#content');
 
-function trimURL(a) {
-    return a.replace("/", "");
+
+const params = new URLSearchParams(window.location.search);
+
+function setParams(params) {
+    const url = new URL(window.location);
+
+    // Clear all existing query parameters
+    url.search = '';
+
+    // Set the new query parameters from the provided object
+    Object.entries(params).forEach(([key, value]) => {
+        url.searchParams.set(key, value);
+    });
+
+    // Update the address bar without reloading the page
+    history.replaceState(null, '', url);
+}
+
+function addParams(params) {
+    const url = new URL(window.location);
+
+    Object.entries(params).forEach(([key, value]) => {
+        url.searchParams.set(key, value);
+    });
+
+    history.replaceState(null, '', url);
+}
+
+function removeParams(params) {
+    const url = new URL(window.location);
+
+    // Convert params to an array if a single key is passed as a string
+    if (!Array.isArray(params)) {
+        params = [params];
+    }
+
+    // Remove each specified key from the URL parameters
+    params.forEach(key => url.searchParams.delete(key));
+
+    // Update the URL without reloading the page
+    history.replaceState(null, '', url);
 }
 
 const notFoundHTMLContent = `
@@ -37,7 +76,7 @@ const marketing = [
 // content: The html the content container gets set to when the button is clicked
 const pages = [
     {
-        url: "/home",
+        url: "home",
         name: "Home",
         hidden: false,
         content: `
@@ -51,7 +90,7 @@ const pages = [
         `
     },
     {
-        url: "/decors",
+        url: "decors",
         name: "Decors",
         hidden: false,
         content: `
@@ -59,7 +98,7 @@ const pages = [
         `
     },
     {
-        url: "/guide",
+        url: "guide",
         name: "Guide",
         hidden: false,
         content: `
@@ -71,7 +110,7 @@ const pages = [
         `
     },
     {
-        url: "/artists",
+        url: "artists",
         name: "Artists",
         hidden: false,
         content: `
@@ -84,7 +123,7 @@ const pages = [
         `
     },
     {
-        url: "/faq",
+        url: "faq",
         name: "Faq",
         hidden: false,
         content: `
@@ -96,7 +135,7 @@ const pages = [
         `
     },
     {
-        url: "/donate",
+        url: "donate",
         name: "Donate",
         hidden: false,
         content: `
@@ -108,7 +147,7 @@ const pages = [
         `
     },
     {
-        url: "/test",
+        url: "test",
         name: "404 (test)",
         hidden: false,
         content: notFoundHTMLContent
@@ -116,12 +155,12 @@ const pages = [
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
-    const currentPath = window.location.pathname;
+    const currentPath = params.get("page");
     const match = pages.find(page => page.url === currentPath);
-    if (match) {
-        setPage(match.url);
-    } else if (!match || match === "" || match === "/") {
-        setPage('/home');
+    if (params.get("page")) {
+        setPage(params.get("page"));
+    } else if (!match) {
+        setPage('home');
     } else {
         primaryContainer.innerHTML = notFoundHTMLContent;
     }
@@ -131,7 +170,7 @@ window.addEventListener("DOMContentLoaded", () => {
 pages.forEach(page => {
     const tab = document.createElement('p');
     tab.textContent = page.name;
-    tab.id = `${trimURL(page.url)}-tab`;
+    tab.id = `${page.url}-tab`;
     navBar.appendChild(tab);
     tab.addEventListener("click", () => {
         setPage(page.url);
@@ -149,36 +188,36 @@ function setPage(url) {
     });
 
     const match = pages.find(page => page.url === url);
-    if (!match || match === "" || match === "/") {
-        history.pushState(null, '', url);
+    if (!match) {
+        setParams({page: url})
         return primaryContainer.innerHTML = notFoundHTMLContent;
     }
 
     try {
-        navBar.querySelector('#'+trimURL(page.url)+'-tab').classList.add("selected");
-        history.pushState(null, '', page.url);
-        primaryContainer.classList.add(trimURL(page.url));
+        navBar.querySelector('#'+page.url+'-tab').classList.add("selected");
+        setParams({page: page.url})
+        primaryContainer.classList.add(page.url);
         primaryContainer.innerHTML = page.content;
 
         // Code that's run after the set page loads
-        if (trimURL(page.url) === "home") {
+        if (page.url === "home") {
             const randomIndex = Math.floor(Math.random() * marketing.length);
             const homenavGrid = primaryContainer.querySelector('.homenav-grid');
             homenavGrid.innerHTML = `
-                <div class="var1" onclick="setPage('/decors')">
+                <div class="var1" onclick="setPage('decors')">
                     <div class="decoration-container">
                         <img class="avatar" src="https://beta.jellys-space.vip/images/default-avatar.png" oncontextmenu="return false;" loading="lazy">
                         <img class="deco" src="${marketing[randomIndex]}" oncontextmenu="return false;" loading="lazy">
                     </div>
                     <h1>Decors</h1>
                 </div>
-                <div class="var2" onclick="setPage('/guide')">
+                <div class="var2" onclick="setPage('guide')">
                     <div>
                         <img src="https://cdn.discordapp.com/emojis/1369748654629327060.webp?size=4096" oncontextmenu="return false;" loading="lazy">
                     </div>
                     <h1>How-To</h1>
                 </div>
-                <div class="var3" onclick="setPage('/rehash')">
+                <div class="var3" onclick="setPage('rehash')">
                     <div>
                         <img src="https://beta.jellys-space.vip/images/jellyhome.png" oncontextmenu="return false;" loading="lazy">
                     </div>

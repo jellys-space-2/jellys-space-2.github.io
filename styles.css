@@ -7,6 +7,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    overflow: hidden;
 }
 
 @font-face {
@@ -26,6 +27,7 @@
 img {
     width: fit-content;
     height: fit-content;
+    object-fit: contain;
 }
 
 body {
@@ -35,6 +37,8 @@ body {
     color: #fff;
     background: linear-gradient(to bottom, #282f51 0%, #315793 50%, #151c30 100%);
     background-attachment: fixed;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 header {
@@ -79,6 +83,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: unset;
+    padding: 20px;
 }
 
 .text-block {
@@ -92,8 +98,13 @@ header h1 {
 
 .homenav-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: visible;
 }
 .homenav-grid > div {
     width: 270px;
@@ -132,20 +143,20 @@ header h1 {
 }
 @keyframes homenavHover {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(20px); }
+    50% { transform: translateY(10px); }
     100% { transform: translateY(0px); }
 }
 
 .homenav-grid > div > div {
-    height: 100%;
-    width: 100%;
-    flex: 1 1 auto;
-    min-height: 0;
+    height: 180px;
+    width: 214px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
-.homenav-grid > div > div img {
+.homenav-grid > div > div > img {
+    width: 100%;
     height: 100%;
 }
 .homenav-grid > div h1 {
@@ -168,6 +179,29 @@ header h1 {
     scale: 0.83;
 }
 
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6947b3;
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7b53d1;
+}
 
 .hidden {
     display: none;
