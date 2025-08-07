@@ -1,7 +1,10 @@
 :root {
+    --header-bg: #2b2b2b;
     --nav-bar-color: rgba(88, 146, 159, 0.8);
     --nav-p-color: rgb(211, 211, 211);
     --nav-p-color-selected: rgb(255, 255, 255);
+    --deco-card-bg: rgb(43, 43, 43);
+    --deco-card-border: rgb(68, 68, 68);
 }
 
 * {
@@ -44,7 +47,7 @@ body {
 header {
     text-align: center;
     padding: 1rem;
-    background-color: #2b2b2b;
+    background-color: var(--header-bg);
 }
 
 header h1 {
@@ -54,15 +57,19 @@ header h1 {
     font-weight: normal;
 }
 
+.main-nav {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
 .top-nav {
+    position: relative;
     display: flex;
     gap: 10px;
     justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 999;
     background: var(--nav-bar-color);
     backdrop-filter: blur(5px);
+    z-index: 2;
 }
 
 .top-nav p {
@@ -79,12 +86,29 @@ header h1 {
     color: var(--nav-p-color-selected);
 }
 
+.search-bar {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: var(--header-bg);
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    transform: translateY(-100px);
+    transition: transform 0.3s ease-in-out;
+}
+
 #content {
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: unset;
     padding: 20px;
+}
+body:has(#content.decors) .search-bar {
+    transform: translateY(0px);
 }
 
 .text-block {
@@ -105,6 +129,11 @@ header h1 {
     margin: 0 auto;
     padding: 20px;
     overflow: visible;
+}
+@media only screen and (max-width: 1000px) {
+    .homenav-grid {
+        width: 300px;
+    }
 }
 .homenav-grid > div {
     width: 270px;
@@ -129,22 +158,12 @@ header h1 {
 
 .homenav-grid > div.var1 {
     background: linear-gradient(to bottom, #A185F0, #634C95);
-    animation: homenavHover 7s ease-in-out infinite;
 }
 .homenav-grid > div.var2 {
     background: linear-gradient(to bottom, #6DBFBC, #206281);
-    animation: homenavHover 7s ease-in-out infinite;
-    animation-delay: 1s;
 }
 .homenav-grid > div.var3 {
     background: linear-gradient(to bottom, #A7DD66, #11965F);
-    animation: homenavHover 7s ease-in-out infinite;
-    animation-delay: 2s;
-}
-@keyframes homenavHover {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(10px); }
-    100% { transform: translateY(0px); }
 }
 
 .homenav-grid > div > div {
@@ -180,7 +199,140 @@ header h1 {
 }
 
 
+.categories-container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.categories-container .category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.categories-container .category .banner {
+    position: relative;
+    min-width: 500px;
+    max-width: 1200px;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.categories-container .category .decorations {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+.categories-container .category .decorations .deco-card {
+    width: 100%;
+    height: 200px;
+    background-color: var(--deco-card-bg);
+    border-radius: 5px;
+    border: 2px solid var(--deco-card-border);
+}
 
+
+
+
+.artists-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: visible;
+}
+@media only screen and (max-width: 1000px) {
+    .artists-list {
+        max-width: 800px;
+    }
+}
+.artists-list > div {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.artists-list > div:hover {
+    transform: scale(1.02);
+}
+.artists-list > div:active {
+    transform: scale(0.98);
+}
+.artists-list > div img, .artists-list > div video {
+    width: 100%;
+    max-height: 100px;
+}
+
+
+
+
+
+.modal {
+    position: relative;
+    background-color: rgba(130, 157, 189, 0.336);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    overflow: visible;
+    padding: 20px;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 301;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-container.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-back {
+    z-index: 300;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    margin-top: -100px;
+    margin-left: -100px;
+    background-color: #00000063;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-back.show {
+    opacity: 1;
+}
+
+
+
+
+
+
+a {
+    color: #40baf3;
+}
 
 /* width */
 ::-webkit-scrollbar {
