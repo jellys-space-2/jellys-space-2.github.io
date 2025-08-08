@@ -44,6 +44,12 @@ const commission_types = {
     NEGOTIABLE: "Payment is negotiable.",
 };
 
+const modal_types = {
+    DECOR: 0,
+    CATEGORY: 1,
+    USER: 3
+}
+
 const urls = {
     CDN: "https://jellys-space-2.github.io/cdn" // The cdn link that assets will use (makes it esier to change if you wanted to use cdn.jellys-space.vip)
 };
@@ -88,15 +94,10 @@ const artists = [
                 animated: true
             }
         },
-        sumarry: `
-            Founder of this website.
-            I created the Pokéball Decors, the Abstract category
-            and a few uncategorized Decors.
-            Let it be known that coding this site
-            destroyed my one and only braincell.
-            It was a labor of love!
-            Mwah~
-        `,
+        sumarry: `Founder of this website.\nI created the Pokéball Decors, the Abstract category and a few uncategorized Decors.\nLet it be known that coding this site destroyed my one and only braincell.\nIt was a labor of love!\nMwah~`,
+        colors: {
+            primary: "#4fe9e1"
+        },
         commissions: []
     },
     {
@@ -112,10 +113,10 @@ const artists = [
                 animated: true
             }
         },
-        sumarry: `
-            I like to draw woman
-            and animate them in After Effects Afterwards.
-        `,
+        sumarry: `I like to draw woman\nand animate them in After Effects Afterwards.`,
+        colors: {
+            primary: "#515151"
+        },
         commissions: [
             {
                 "type": "MONEY",
@@ -140,12 +141,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Heyo all! The name's Cawthon.
-            I am the creator of the Flavor Foley set
-            and hopefully more to come.
-            I go by they/them and I'm quite the introvert.
-        `,
+        sumarry: `Heyo all! The name's Cawthon.\nI am the creator of the Flavor Foley set and hopefully more to come.\nI go by they/them and I'm quite the introvert.`,
+        colors: {
+            primary: "#f52f6a"
+        },
         commissions: [
             {
                 "type": "DISCORD_NITRO",
@@ -166,11 +165,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hi !! ♡ I'm Nuki, i go by she/they !!
-            i'm a person with half a braincell
-            xavvi a valorant player
-        `,
+        sumarry: `Hi !! ♡ I'm Nuki, i go by she/they !!\ni'm a person with half a braincell\nxavvi a valorant player`,
+        colors: {
+            primary: "#893f79"
+        },
         commissions: [
             {
                 "type": "DISCORD_NITRO",
@@ -195,12 +193,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            haii !!! my name's serene and i also go by mist ^_^
-            i am the creator of a few sets such as
-            Sky Dreams, Kitsune Appearings, Petting Zoo, Horns and the TBHK set!
-            https://serenemist.carrd.co/
-        `,
+        sumarry: `haii !!! my name's serene and i also go by mist ^_^\ni am the creator of a few sets such as\nSky Dreams, Kitsune Appearings, Petting Zoo, Horns and the TBHK set!\nhttps://serenemist.carrd.co/`,
+        colors: {
+            primary: "#cdffeb"
+        },
         commissions: []
     },
     {
@@ -216,10 +212,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hai!!! My name is alide and i go by she/her, im a big fan of the colour pink 🩷
-            https://alidewashere.straw.page/
-        `,
+        sumarry: `Hai!!! My name is alide and i go by she/her, im a big fan of the colour pink 🩷\nhttps://alidewashere.straw.page/`,
+        colors: {
+            primary: "#ffdcb4"
+        },
         commissions: [
             {
                 "type": "DISCORD_NITRO",
@@ -244,11 +240,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            hi, i'm cal! i'm just a weird lil' guy and i make things sometimes :3
-            https://ibtvtuo.carrd.co/
-            https://ko-fi.com/callievd
-        `,
+        sumarry: `hi, i'm cal! i'm just a weird lil' guy and i make things sometimes :3\nhttps://ibtvtuo.carrd.co/\nhttps://ko-fi.com/callievd`,
+        colors: {
+            primary: "#89ffbe"
+        },
         commissions: [
             {
                 "type": "KOFI",
@@ -269,12 +264,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hello I'm RandomPhineaszem
-            Polish Decor Creator And Dubbinger, I Love Books Over Scott Pilgrim, I Am DVD Collector, The Most Dangerous Person In Society, I Like Doing Videos.
-            I Have A Specific Sense Of Humor Like Haha Gore, And My Fav Games Are Undertale-Deltarune Cookie Run Kingdom And FNF
-            https://www.youtube.com/@Random_Phineaszem
-        `,
+        sumarry: `Hello I'm RandomPhineaszem\nPolish Decor Creator And Dubbinger, I Love Books Over Scott Pilgrim, I Am DVD Collector, The Most Dangerous Person In Society, I Like Doing Videos.\nI Have A Specific Sense Of Humor Like Haha Gore, And My Fav Games Are Undertale-Deltarune Cookie Run Kingdom And FNF\nhttps://www.youtube.com/@Random_Phineaszem`,
+        colors: {
+            primary: "#c8e1ff"
+        },
         commissions: [
             {
                 "type": "KOFI",
@@ -295,10 +288,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hi, I'm Shadow, a guy who make games and arts.
-            And kinda obsessed with the Sonic franchise.
-        `,
+        sumarry: `Hi, I'm Shadow, a guy who make games and arts.\nAnd kinda obsessed with the Sonic franchise.`,
+        colors: {
+            primary: "#969696"
+        },
         commissions: []
     },
     {
@@ -314,11 +307,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            haiiiii i draw pizza tower art!!!
-            i work on alot of pizza tower projects!!
-            baii!!
-        `,
+        sumarry: `haiiiii i draw pizza tower art!!!\ni work on alot of pizza tower projects!!\nbaii!!`,
+        colors: {
+            primary: "#ffca84"
+        },
         commissions: []
     },
     {
@@ -334,13 +326,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Helloo im Foxy!!
-            i love vocaloid and pjsk and im a both tradi and digi artist
-            (〃＾▽＾〃)o
-            my pronouns are she/her and im ambivert ehe..
-            https://foooooxy.straw.page/
-        `,
+        sumarry: `Helloo im Foxy!!\ni love vocaloid and pjsk and im a both tradi and digi artist\n(〃＾▽＾〃)o\nmy pronouns are she/her and im ambivert ehe..\nhttps://foooooxy.straw.page/`,
+        colors: {
+            primary: "#ffc0cb"
+        },
         commissions: []
     },
     {
@@ -356,10 +345,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hi, I'm T8dyi and I like video editing and other things revolving around graphical design etc,
-            also like photography, cars and Star Wars 😊
-        `,
+        sumarry: `Hi, I'm T8dyi and I like video editing and other things revolving around graphical design etc,\nalso like photography, cars and Star Wars 😊`,
+        colors: {
+            primary: "#474747"
+        },
         commissions: [
             {
                 "type": "STEAM_GIFT",
@@ -384,11 +373,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hi, I'm Sharr!
-            I'm a huge fan of the Bloons game series and absolutely love Vocaloid~
-            ♡ (＾▽＾)
-        `,
+        sumarry: `Hi, I'm Sharr!\nI'm a huge fan of the Bloons game series and absolutely love Vocaloid~\n♡ (＾▽＾)`,
+        colors: {
+            primary: "#96f8ff"
+        },
         commissions: [
             {
                 "type": "DISCORD_NITRO",
@@ -413,12 +401,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hihi Im Zin or Z for short, the creator of the Genshin Impact decors and most of the Jelly images you see on the website.
-            I plan on 2 batches in the near future so look out for those !!
-            I do commission work for decors I feel comfortable doing, like genshin characters i havent put onto the website like Columbina or Varesa.
-            Zenless Zone Zero, Honkai Star Rail, Wuthering Waves, and Neverness To Everness are in my future todo lists, but im willing to do commission for those games as well, depending on difficulty ^^
-        `,
+        sumarry: `Hihi Im Zin or Z for short, the creator of the Genshin Impact decors and most of the Jelly images you see on the website.\nI plan on 2 batches in the near future so look out for those !!\nI do commission work for decors I feel comfortable doing, like genshin characters i havent put onto the website like Columbina or Varesa.\nZenless Zone Zero, Honkai Star Rail, Wuthering Waves, and Neverness To Everness are in my future todo lists, but im willing to do commission for those games as well, depending on difficulty ^^`,
+        colors: {
+            primary: "#72ff77"
+        },
         commissions: [
             {
                 "type": "NEGOTIABLE",
@@ -439,11 +425,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hello! im Doger.
-            Currently a big vr addict and someone who enjoys to draw alot with their computer mouse for some reason, if you dont know i dont too.
-            https://www.roblox.com/users/1790186904/profile
-        `,
+        sumarry: `Hello! im Doger.\nCurrently a big vr addict and someone who enjoys to draw alot with their computer mouse for some reason, if you dont know i dont too.\nhttps://www.roblox.com/users/1790186904/profile`,
+        colors: {
+            primary: "#ffc896"
+        },
         commissions: []
     },
     {
@@ -459,13 +444,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hey hey, I'm Prince!
-            I'm a self-taught hyper-realistic artist skilled in traditional and digital mediums.
-            While I enjoy working on various other skills,
-            art always takes the top spot ^ ^
-            ..well i like to help others, u jus have to dm me XD
-        `,
+        sumarry: `Hey hey, I'm Prince!\nI'm a self-taught hyper-realistic artist skilled in traditional and digital mediums.\nWhile I enjoy working on various other skills,\nart always takes the top spot ^ ^\n..well i like to help others, u jus have to dm me XD`,
+        colors: {
+            primary: "#b6b6b6"
+        },
         commissions: []
     },
     {
@@ -481,13 +463,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            hi im xavi (^^)/
-            i do art but not crazy into it
-            im into persona 3, doom, scott pilgrim and omori (also any fps shooter game tbh)
-            https://www.roblox.com/users/470642084/profile
-            https://x.com/notxavvi
-        `,
+        sumarry: `hi im xavi (^^)/\ni do art but not crazy into it\nim into persona 3, doom, scott pilgrim and omori (also any fps shooter game tbh)\nhttps://www.roblox.com/users/470642084/profile\nhttps://x.com/notxavvi`,
+        colors: {
+            primary: "#78ff88"
+        },
         commissions: []
     },
     {
@@ -503,11 +482,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hi, I'm Nexell! :3
-            I use Blender to make the Neon set.
-            https://linktr.ee/nebvlamusic
-        `,
+        sumarry: `Hi, I'm Nexell! :3\nI use Blender to make the Neon set.\nhttps://linktr.ee/nebvlamusic`,
+        colors: {
+            primary: "#831b5f"
+        },
         commissions: []
     },
     {
@@ -523,12 +501,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            HALLO!! im sharsame
-            i like producing music, making art and animating!!!! :P
-            https://www.tiktok.com/@sharsamee
-            https://youtube.com/@exdeedeedee
-        `,
+        sumarry: `HALLO!! im sharsame\ni like producing music, making art and animating!!!! :P\nhttps://www.tiktok.com/@sharsamee\nhttps://youtube.com/@exdeedeedee`,
+        colors: {
+            primary: "#7edbfd"
+        },
         commissions: []
     },
     {
@@ -544,16 +520,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            hiiiii im jenku
-            i do uh, a lot of different stuff; art, web&bot development, vtube rigging, 3d modelling etcetera etcetera and am planning on studying physics, computer science and design engineering!
-            Oh also I collect nintendo consoles.
-            i also have a couple of presets here and in the actual plugin!
-            my interests are all over the place: mainly nintendo, ultrakill and portal
-            currently playing through deltarune!!
-            my site is https://jenku.xyz/, more info about me there !!
-            https://decor.jenku.xyz/ (decor faq) and https://theme.jenku.xyz/ (mobile discord theme maker)
-        `,
+        sumarry: `hiiiii im jenku\ni do uh, a lot of different stuff; art, web&bot development, vtube rigging, 3d modelling etcetera etcetera and am planning on studying physics, computer science and design engineering!\nOh also I collect nintendo consoles.\ni also have a couple of presets here and in the actual plugin!\nmy interests are all over the place: mainly nintendo, ultrakill and portal\ncurrently playing through deltarune!!\nmy site is https://jenku.xyz/, more info about me there !!\nhttps://decor.jenku.xyz/ (decor faq) and https://theme.jenku.xyz/ (mobile discord theme maker)`,
+        colors: {
+            primary: "#ff6ee6"
+        },
         commissions: []
     },
     {
@@ -569,15 +539,10 @@ const artists = [
                 animated: false
             }
         },
-        sumarry: `
-            Hi, I'm Glass.
-            I draw mostly fan-art for stickers or commissions, but am also currently working on animating my own show.
-            I made the Oxygen not included, Starcraft II, and Axolotl decors on the website,
-            as well as the Hotline Miami pack available through the presets in vencord.
-            https://www.redbubble.com/people/LetsEatGlass69/shop
-            https://glassconsumer69.newgrounds.com/
-            https://www.tumblr.com/blog/glasseeater
-        `,
+        sumarry: `Hi, I'm Glass.\nI draw mostly fan-art for stickers or commissions, but am also currently working on animating my own show.\nI made the Oxygen not included, Starcraft II, and Axolotl decors on the website,\nas well as the Hotline Miami pack available through the presets in vencord.\nhttps://www.redbubble.com/people/LetsEatGlass69/shop\nhttps://glassconsumer69.newgrounds.com/\nhttps://www.tumblr.com/blog/glasseeater`,
+        colors: {
+            primary: "#3aa9f8"
+        },
         commissions: []
     }
 ];
@@ -657,6 +622,7 @@ function findUser(id) {
         return {
             id: user.id,
             name: user.name,
+            sumarry: user.sumarry,
             commissions: commissions(user.commissions)
         };
     } else return null
@@ -876,7 +842,18 @@ function setPage(url) {
                     `;
                 }
                 banner.addEventListener("click", () => {
-                    openModal();
+                    let config = {
+                        type: modal_types.USER,
+                        data: findUser(artist.id)
+                    };
+                    if (artist.colors?.primary) {
+                        config = {
+                            type: modal_types.USER,
+                            accentColor: artist.colors?.primary,
+                            data: findUser(artist.id)
+                        };
+                    }
+                    openModal(config);
                 });
                 artistsList.appendChild(banner);
             });
@@ -886,35 +863,10 @@ function setPage(url) {
     }
 };
 
-function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-};
-function processSummary(text) {
-    const lines = text
-        .replace(/\r?\n/g, '\\n')
-        .split(/\\n/g);
-
-    const processedLines = lines.map(line => {
-        const trimmed = line.trim();
-        const escaped = escapeHtml(trimmed);
-        const linked = escaped.replace(
-            /(https?:\/\/[^\s<>"']*[^.,!?()\[\]{}\s<>"'])/g,
-            url => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
-        );
-        return linked;
-    });
-
-    return processedLines.join('<br>');
-};
-
-
 function paginate(items, page = 1, perPage = 5) {
     const start = (page - 1) * perPage;
     return items.slice(start, start + perPage);
 };
-
 function createPaginationControls(container, totalPages, currentPage, onPageChange) {
     if (container) {
         container.innerHTML = '';
@@ -953,7 +905,6 @@ function createPaginationControls(container, totalPages, currentPage, onPageChan
         container.appendChild(btn('Next >', currentPage + 1, currentPage === totalPages, false, true));
     }
 };
-
 function filterCategories(data, search) {
     if (!search.trim()) return data;
     const term = search.toLowerCase();
@@ -971,7 +922,6 @@ function filterCategories(data, search) {
         return null;
     }).filter(Boolean);
 };
-
 async function renderDecorsData(data, output) {
     const paginationContainers = [];
     
@@ -1067,14 +1017,16 @@ async function renderDecorsData(data, output) {
 
 // height is in pixels (px), can be set to null for auto size
 // width is in pixels (px), can be set to null for auto size
-// itemsCenter: if the content is centered in the modal, set to false and the content will be on the left
-function openModal(config =
-    {
-        height: null,
-        width: 600,
-        itemsCenter: true
-    }
-) {
+// itemsCenter: if the content is centered in the modal, set to false and the content will be on the left\
+// accentColor: the background color of the modal, can be set to null
+function openModal({
+    type = null,
+    height = null,
+    width = null,
+    itemsCenter = true,
+    accentColor = "#4fe9e1",
+    data = null
+} = {}) {
     openModalsCache += 1;
 
     // Code to hide the not top most modal
@@ -1097,14 +1049,34 @@ function openModal(config =
     modal_back.id = 'modal-back';
     modal_back.style.zIndex = 300 + openModalsCache;
 
-    const styles = `height: ${config.height ? config.height+'px' : 'auto'}; width: ${config.width ? config.width+'px' : 'auto'}; justify-content: ${config.itemsCenter ? 'center' : 'unset'};`;
-
-
     modal.innerHTML = `
-        <div class="modal" style="${styles}">
-            <p>this is a modal (click outside or Esc key to close)</p>
-        </div>
+        <div class="modal"></div>
     `;
+    const modalContent = modal.querySelector('.modal');
+    Object.assign(modalContent.style, {
+        height: height ? height+'px' : 'auto',
+        width: width ? width+'px' : 'auto',
+        justifyContent: itemsCenter ? 'center' : 'unset',
+        textAlign: itemsCenter ? 'center' : 'unset',
+        backgroundColor: accentColor ? hexWithOpacity(accentColor, 0.2) : 'unset'
+    });
+
+    if (type === modal_types.USER) {
+        const user = data;
+
+        modalContent.innerHTML = `
+            <p>${processSummary(user.sumarry)}</p>
+        `;
+    } else {
+        modalContent.innerHTML = `
+            <p>this is a test modal, you didn't set a modal type</p>
+            <p>this is a test modal, you didn't set a modal type</p>
+            <p>this is a test modal, you didn't set a modal type</p>
+            <p>this is a test modal, you didn't set a modal type</p>
+            <p>this is a test modal, you didn't set a modal type</p>
+        `;
+    }
+
 
     document.body.appendChild(modal);
     document.body.appendChild(modal_back);
@@ -1151,3 +1123,55 @@ document.addEventListener("keydown", function (event) {
         closeModal()
     }
 });
+
+
+
+
+// Other crap
+
+function hexWithOpacity(hex, alpha) {
+    if (/^#?[0-9a-fA-F]{3}$/.test(hex)) {
+        hex = hex.replace(/^#?([0-9a-fA-F])([0-9a-fA-F])([0-9a-fA-F])$/, 
+            (_, r, g, b) => `#${r}${r}${g}${g}${b}${b}`);
+    }
+
+    hex = hex.replace(/^#/, '');
+
+    if (/^[0-9a-fA-F]{8}$/.test(hex)) {
+        hex = hex.slice(0, 6);
+    }
+
+    if (!/^([0-9a-fA-F]{6})$/.test(hex)) {
+        throw new Error('Invalid hex color format');
+    }
+
+    const clampedAlpha = Math.round(Math.min(Math.max(alpha, 0), 1) * 255);
+    const alphaHex = clampedAlpha.toString(16).padStart(2, '0');
+
+    return `#${hex}${alphaHex}`;
+};
+
+
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+};
+function processSummary(text) {
+    const lines = text
+        .replace(/\r?\n/g, '\\n')
+        .split(/\\n/g);
+
+    const processedLines = lines.map(line => {
+        const trimmed = line.trim();
+        const escaped = escapeHtml(trimmed);
+        const linked = escaped.replace(
+            /(https?:\/\/[^\s<>"']*[^.,!?()\[\]{}\s<>"'])/g,
+            url => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
+        );
+        return linked;
+    });
+
+    return processedLines.join('<br>');
+};
