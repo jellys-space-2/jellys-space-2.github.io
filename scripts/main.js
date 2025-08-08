@@ -611,6 +611,56 @@ const categories = [
                 "asset": "gs ball.png"
             }
         ]
+    },
+    {
+        "name": "Flavor Foley",
+        "banner": "flavorfoley-banner.png",
+        "artist_info": null,
+        "artists": [
+            findUser('995651435519815772')
+        ],
+        "decorations": [
+            {
+                "name": "Cardiac Contrepoint",
+                "asset": "Cardiac Contrepoint.png"
+            },
+            {
+                "name": "Electric Weekend Zone",
+                "asset": "Electric Weekend Zone.png"
+            },
+            {
+                "name": "Flavor Foley",
+                "asset": "Flavor Foley.png"
+            },
+            {
+                "name": "Meatgirl",
+                "asset": "meatgirl.png"
+            },
+            {
+                "name": "Queen of Venus",
+                "asset": "Queen of Venus.png"
+            },
+            {
+                "name": "Rawdog",
+                "asset": "rawdog.png"
+            },
+            {
+                "name": "Water the roses",
+                "asset": "watertheroses.png"
+            },
+            {
+                "name": "Weathergirl",
+                "asset": "weathergirl.png"
+            },
+            {
+                "name": "Wei Ward Romance",
+                "asset": "WeiWardRomance.png"
+            },
+            {
+                "name": "Static's Miku",
+                "asset": "Static's Miku.png"
+            }
+        ]
     }
 ];
 
@@ -985,6 +1035,10 @@ async function renderDecorsData(data, output) {
                         <img class="deco" src="${urls.CDN}/decors/${deco.asset}" oncontextmenu="return false;" loading="lazy">
                     </div>
                 `;
+
+                decoCard.addEventListener("click", () => {
+                    openModal();
+                });
 
                 category.querySelector('.decorations').appendChild(decoCard);
             });

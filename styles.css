@@ -131,7 +131,9 @@ body:has(#content.decors) .search-bar {
 }
 @media only screen and (max-width: 1000px) {
     .homenav-grid {
-        width: 300px;
+        width: 350px;
+        grid-template-columns: repeat(auto-fit, 270px);;
+        justify-content: center;
     }
 }
 .homenav-grid > div {
@@ -244,6 +246,10 @@ body:has(#content.decors) .search-bar {
     justify-content: center;
     padding: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.categories-container .category .decorations .deco-card:hover {
+    background-color: #363636;
 }
 
 
