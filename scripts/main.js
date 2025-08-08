@@ -922,6 +922,7 @@ function filterCategories(data, search) {
         return null;
     }).filter(Boolean);
 };
+
 async function renderDecorsData(data, output) {
     const paginationContainers = [];
     
@@ -977,6 +978,13 @@ async function renderDecorsData(data, output) {
             categoryData.decorations.forEach((deco) => {
                 const decoCard = document.createElement("div");
                 decoCard.classList.add('deco-card');
+
+                decoCard.innerHTML = `
+                    <div class="decoration-container">
+                        <img class="avatar" src="${urls.CDN}/assets/default-avatar.png" oncontextmenu="return false;" loading="lazy">
+                        <img class="deco" src="${urls.CDN}/decors/${deco.asset}" oncontextmenu="return false;" loading="lazy">
+                    </div>
+                `;
 
                 category.querySelector('.decorations').appendChild(decoCard);
             });
