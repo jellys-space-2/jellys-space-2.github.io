@@ -285,7 +285,7 @@ const categories =
 [
     {
         "name": "Fate Trigger",
-        "banner": "images/fatetrigger-banner.png",
+        "banner": "fatetrigger-banner.png",
         "artist_info": `Join the Fate Trigger Discord at <strong><a href="https://discord.gg/fatetrigger" target="_blank" rel="noopener" class="commission-link">this link</a></strong>.`,
         "artists": [
             findUser('334062444718587905')
@@ -293,21 +293,21 @@ const categories =
         "decorations": [
             {
                 "name": "Xiva",
-                "asset": "images/Xiva.png"
+                "asset": "Xiva.png"
             },
             {
                 "name": "Camille Healing",
-                "asset": "images/camille healing.png"
+                "asset": "camille healing.png"
             },
             {
                 "name": "Huxleys Myst",
-                "asset": "images/Huxleys Myst.png"
+                "asset": "Huxleys Myst.png"
             }
         ]
     },
     {
         "name": "Library of Ruina",
-        "banner": "images/ruina-banner.png",
+        "banner": "ruina-banner.png",
         "artist_info": null,
         "artists": [
             findUser('9')
@@ -315,37 +315,37 @@ const categories =
         "decorations": [
             {
                 "name": "Animated Apocalypse Bird",
-                "asset": "images/Animated Apocalypse Bird.png"
+                "asset": "Animated Apocalypse Bird.png"
             },
             {
                 "name": "Apocalypse Bird",
-                "asset": "images/Apocalypse Bird.png"
+                "asset": "Apocalypse Bird.png"
             },
             {
                 "name": "Blue Star",
-                "asset": "images/Blue Star.png"
+                "asset": "Blue Star.png"
             },
             {
                 "name": "Burrowing Heaven",
-                "asset": "images/Burrowing Heaven.png"
+                "asset": "Burrowing Heaven.png"
             },
             {
                 "name": "The Happy Teddy Bear Decor",
-                "asset": "images/The Happy Teddy Bear Decor.png"
+                "asset": "The Happy Teddy Bear Decor.png"
             },
             {
                 "name": "The Price of Silence Decor",
-                "asset": "images/The Price of Silence Decor.png"
+                "asset": "The Price of Silence Decor.png"
             },
             {
                 "name": "The Funeral of the Dead Butterflies",
-                "asset": "images/The Funeral of the Dead Butterflies.png"
+                "asset": "The Funeral of the Dead Butterflies.png"
             }
         ]
     },
     {
         "name": "Pokemart",
-        "banner": "images/pokemart-banner.png",
+        "banner": "pokemart-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1147940825330876538')
@@ -353,41 +353,41 @@ const categories =
         "decorations": [
             {
                 "name": "Poké Ball",
-                "asset": "images/poke ball.png"
+                "asset": "poke ball.png"
             },
             {
                 "name": "Great Ball",
-                "asset": "images/great ball.png"
+                "asset": "great ball.png"
             },
             {
                 "name": "Ultra Ball",
-                "asset": "images/ultra ball.png"
+                "asset": "ultra ball.png"
             },
             {
                 "name": "Master Ball",
-                "asset": "images/master ball.png"
+                "asset": "master ball.png"
             },
             {
                 "name": "Premier Ball",
-                "asset": "images/premier ball.png"
+                "asset": "premier ball.png"
             },
             {
                 "name": "Strange Ball",
-                "asset": "images/strange ball.png"
+                "asset": "strange ball.png"
             },
             {
                 "name": "Team Rocket Ball",
-                "asset": "images/rocket ball.png"
+                "asset": "rocket ball.png"
             },
             {
                 "name": "GS Ball",
-                "asset": "images/gs ball.png"
+                "asset": "gs ball.png"
             }
         ]
     },
     {
         "name": "Flavor Foley",
-        "banner": "images/flavorfoley-banner.png",
+        "banner": "flavorfoley-banner.png",
         "artist_info": null,
         "artists": [
             findUser('995651435519815772')
@@ -395,49 +395,49 @@ const categories =
         "decorations": [
             {
                 "name": "Cardiac Contrepoint",
-                "asset": "images/Cardiac Contrepoint.png"
+                "asset": "Cardiac Contrepoint.png"
             },
             {
                 "name": "Electric Weekend Zone",
-                "asset": "images/Electric Weekend Zone.png"
+                "asset": "Electric Weekend Zone.png"
             },
             {
                 "name": "Flavor Foley",
-                "asset": "images/Flavor Foley.png"
+                "asset": "Flavor Foley.png"
             },
             {
                 "name": "Meatgirl",
-                "asset": "images/meatgirl.png"
+                "asset": "meatgirl.png"
             },
             {
                 "name": "Queen of Venus",
-                "asset": "images/Queen of Venus.png"
+                "asset": "Queen of Venus.png"
             },
             {
                 "name": "Rawdog",
-                "asset": "images/rawdog.png"
+                "asset": "rawdog.png"
             },
             {
                 "name": "Water the roses",
-                "asset": "images/watertheroses.png"
+                "asset": "watertheroses.png"
             },
             {
                 "name": "Weathergirl",
-                "asset": "images/weathergirl.png"
+                "asset": "weathergirl.png"
             },
             {
                 "name": "Wei Ward Romance",
-                "asset": "images/WeiWardRomance.png"
+                "asset": "WeiWardRomance.png"
             },
             {
                 "name": "Static's Miku",
-                "asset": "images/Static's Miku.png"
+                "asset": "Static's Miku.png"
             }
         ]
     },
     {
         "name": "Star Wars",
-        "banner": "images/starwars-banner.png",
+        "banner": "starwars-banner.png",
         "artist_info": null,
         "artists": [
             findUser('808325271949934652')
@@ -445,77 +445,77 @@ const categories =
         "decorations": [
             {
                 "name": "Kylo Ren First Order",
-                "asset": "images/krfo.png"
+                "asset": "krfo.png"
             },
             {
                 "name": "Kylo Ren Unignited Lightsaber",
-                "asset": "images/krunignited.png"
+                "asset": "krunignited.png"
             },
             {
                 "name": "Kylo Ren Ignited Lightsaber",
-                "asset": "images/krignited.png"
+                "asset": "krignited.png"
             },
             {
                 "name": "Kylo Ren Animated",
-                "asset": "images/kr_anim.png"
+                "asset": "kr_anim.png"
             },
             {
                 "name": "Darth Vader",
-                "asset": "images/vader.png"
+                "asset": "vader.png"
             },
             {
                 "name": "Obi-Wan Kenobi",
-                "asset": "images/obk.png"
+                "asset": "obk.png"
             },
             {
                 "name": "Kylo Ren Dark Side",
-                "asset": "images/kr_illsytds.png"
+                "asset": "kr_illsytds.png"
             },
             {
                 "name": "Yoda May the Force be With You",
-                "asset": "images/yoda_mtfbwy.png"
+                "asset": "yoda_mtfbwy.png"
             },
             {
                 "name": "Peeking Grogu",
-                "asset": "images/Grogu.png"
+                "asset": "Grogu.png"
             },
             {
                 "name": "The Armorer",
-                "asset": "images/ta.png"
+                "asset": "ta.png"
             },
             {
                 "name": "Mythosaur",
-                "asset": "images/mys.png"
+                "asset": "mys.png"
             },
             {
                 "name": "Clan Mudhorn",
-                "asset": "images/CM.png"
+                "asset": "CM.png"
             },
             {
                 "name": "Bo-Katan Kryze",
-                "asset": "images/bkk.png"
+                "asset": "bkk.png"
             },
             {
                 "name": "Dark Side",
-                "asset": "images/ds_logo.png"
+                "asset": "ds_logo.png"
             },
             {
                 "name": "Luke Skywalker",
-                "asset": "images/LS.png"
+                "asset": "LS.png"
             },
             {
                 "name": "Luke Skywalker (no retraction)",
-                "asset": "images/LSnr.png"
+                "asset": "LSnr.png"
             },
             {
                 "name": "Ahsoka Tano Lightsabers",
-                "asset": "images/ATsaber.png"
+                "asset": "ATsaber.png"
             }
         ]
     },
     {
         "name": "Bugs",
-        "banner": "images/1bugs-banner.png",
+        "banner": "1bugs-banner.png",
         "artist_info": null,
         "artists": [
             findUser('811114235966521364')
@@ -523,33 +523,33 @@ const categories =
         "decorations": [
             {
                 "name": "Bee",
-                "asset": "images/bee.png"
+                "asset": "bee.png"
             },
             {
                 "name": "Butterfly",
-                "asset": "images/butterfly.png"
+                "asset": "butterfly.png"
             },
             {
                 "name": "Butterfly Blue Variant",
-                "asset": "images/butterfly var.png"
+                "asset": "butterfly var.png"
             },
             {
                 "name": "Fly",
-                "asset": "images/fly.png"
+                "asset": "fly.png"
             },
             {
                 "name": "Moth",
-                "asset": "images/moth.png"
+                "asset": "moth.png"
             },
             {
                 "name": "Roly Poly",
-                "asset": "images/roly poly.png"
+                "asset": "roly poly.png"
             }
         ]
     },
     {
         "name": "Monochrome",
-        "banner": "images/monochrome-banner.png",
+        "banner": "monochrome-banner.png",
         "artist_info": null,
         "artists": [
             findUser('2')
@@ -557,61 +557,61 @@ const categories =
         "decorations": [
             {
                 "name": "All Black",
-                "asset": "images/All Black.png"
+                "asset": "All Black.png"
             },
             {
                 "name": "All White",
-                "asset": "images/All White.png"
+                "asset": "All White.png"
             },
             {
                 "name": "Monokuma",
-                "asset": "images/Monokuma.png"
+                "asset": "Monokuma.png"
             },
             {
                 "name": "Monodam",
-                "asset": "images/Monodam.png"
+                "asset": "Monodam.png"
             },
             {
                 "name": "Monokid",
-                "asset": "images/Monokid.png"
+                "asset": "Monokid.png"
             },
             {
                 "name": "Monomi",
-                "asset": "images/Monomi.png"
+                "asset": "Monomi.png"
             },
             {
                 "name": "Monophanie",
-                "asset": "images/Monophanie.png"
+                "asset": "Monophanie.png"
             },
             {
                 "name": "Monosuke",
-                "asset": "images/Monosuke.png"
+                "asset": "Monosuke.png"
             },
             {
                 "name": "Monotaro",
-                "asset": "images/Monotaro.png"
+                "asset": "Monotaro.png"
             },
             {
                 "name": "Usami",
-                "asset": "images/Usami.png"
+                "asset": "Usami.png"
             },
             {
                 "name": "Shuichis cap",
-                "asset": "images/Shuichis cap.png"
+                "asset": "Shuichis cap.png"
             },
             {
                 "name": "Kirigiri Ramen",
-                "asset": "images/kirigiri ramen.png"
+                "asset": "kirigiri ramen.png"
             },
             {
                 "name": "Junkos Hair Pins",
-                "asset": "images/Junkos hair pins.png"
+                "asset": "Junkos hair pins.png"
             }
         ]
     },
     {
         "name": "Doodleys",
-        "banner": "images/doodleys-banner.png",
+        "banner": "doodleys-banner.png",
         "artist_info": null,
         "artists": [
             findUser('3')
@@ -619,29 +619,29 @@ const categories =
         "decorations": [
             {
                 "name": "Appel",
-                "asset": "images/Appel.png"
+                "asset": "Appel.png"
             },
             {
                 "name": "Burnin'",
-                "asset": "images/Burnin'.png"
+                "asset": "Burnin'.png"
             },
             {
                 "name": "Fedora",
-                "asset": "images/Fedora.png"
+                "asset": "Fedora.png"
             },
             {
                 "name": "Sleepy",
-                "asset": "images/Sleepy.png"
+                "asset": "Sleepy.png"
             },
             {
                 "name": "Yummers",
-                "asset": "images/Yummers.png"
+                "asset": "Yummers.png"
             }
         ]
     },
     {
         "name": "Angel X Devil",
-        "banner": "images/angelxdevil-banner.png",
+        "banner": "angelxdevil-banner.png",
         "artist_info": null,
         "artists": [
             findUser('4')
@@ -649,33 +649,33 @@ const categories =
         "decorations": [
             {
                 "name": "Angel Halo",
-                "asset": "images/angel halo.png"
+                "asset": "angel halo.png"
             },
             {
                 "name": "Angel Label",
-                "asset": "images/angel label.png"
+                "asset": "angel label.png"
             },
             {
                 "name": "Angel Wings",
-                "asset": "images/angel wings.png"
+                "asset": "angel wings.png"
             },
             {
                 "name": "Devil Horn",
-                "asset": "images/devil horn.png"
+                "asset": "devil horn.png"
             },
             {
                 "name": "Devil Label",
-                "asset": "images/devil label.png"
+                "asset": "devil label.png"
             },
             {
                 "name": "Devil Wings",
-                "asset": "images/devil wings.png"
+                "asset": "devil wings.png"
             }
         ]
     },
     {
         "name": "SkyDreams",
-        "banner": "images/skydreams-banner.png",
+        "banner": "skydreams-banner.png",
         "artist_info": null,
         "artists": [
             findUser('5')
@@ -683,33 +683,33 @@ const categories =
         "decorations": [
             {
                 "name": "Cloud Platform",
-                "asset": "images/CloudPlatform.png"
+                "asset": "CloudPlatform.png"
             },
             {
                 "name": "Cloud Platform (Alt)",
-                "asset": "images/CloudPlatform(Alt).png"
+                "asset": "CloudPlatform(Alt).png"
             },
             {
                 "name": "Side Clouds",
-                "asset": "images/SideClouds.png"
+                "asset": "SideClouds.png"
             },
             {
                 "name": "Starry Night",
-                "asset": "images/StarryNight.png"
+                "asset": "StarryNight.png"
             },
             {
                 "name": "Starry Night (Alt)",
-                "asset": "images/StarryNight(Alt).png"
+                "asset": "StarryNight(Alt).png"
             },
             {
                 "name": "Sunny Day",
-                "asset": "images/SunnyDay.png"
+                "asset": "SunnyDay.png"
             }
         ]
     },
     {
         "name": "Color Mass",
-        "banner": "images/colormass-banner.png",
+        "banner": "colormass-banner.png",
         "artist_info": null,
         "artists": [
             findUser('845613407818088498')
@@ -718,745 +718,745 @@ const categories =
         "decorations": [
             {
                 "name": "Black Spike Crimson",
-                "asset": "images/Black Spike  Crimson 2.png"
+                "asset": "Black Spike  Crimson 2.png"
             },
             {
                 "name": "Black Spike Cherise",
-                "asset": "images/Black Spike Cherise 2.png"
+                "asset": "Black Spike Cherise 2.png"
             },
             {
                 "name": "Black Spike Barbie Pink",
-                "asset": "images/Black Spike Barbie Pink 2.png"
+                "asset": "Black Spike Barbie Pink 2.png"
             },
             {
                 "name": "Black Spike Phlox",
-                "asset": "images/Black Spike Phlox 2.png"
+                "asset": "Black Spike Phlox 2.png"
             },
             {
                 "name": "Black Spike Veronica",
-                "asset": "images/Black Spike Veronica 2.png"
+                "asset": "Black Spike Veronica 2.png"
             },
             {
                 "name": "Black Spike Bluebonnet",
-                "asset": "images/Black Spike Bluebonnet 2.png"
+                "asset": "Black Spike Bluebonnet 2.png"
             },
             {
                 "name": "Black Spike Azure",
-                "asset": "images/Black Spike Azure 2.png"
+                "asset": "Black Spike Azure 2.png"
             },
             {
                 "name": "Black Spike Capri",
-                "asset": "images/Black Spike Capri 2.png"
+                "asset": "Black Spike Capri 2.png"
             },
             {
                 "name": "Black Spike Fluorescent Blue",
-                "asset": "images/Black Spike Fluorescent Blue 2.png"
+                "asset": "Black Spike Fluorescent Blue 2.png"
             },
             {
                 "name": "Black Spike Munsell 5G",
-                "asset": "images/Black Spike Munsell 5G 2.png"
+                "asset": "Black Spike Munsell 5G 2.png"
             },
             {
                 "name": "Black Spike Erin",
-                "asset": "images/Black Spike Erin 2.png"
+                "asset": "Black Spike Erin 2.png"
             },
             {
                 "name": "Black Spike Harlequin",
-                "asset": "images/Black Spike Harlequin 2.png"
+                "asset": "Black Spike Harlequin 2.png"
             },
             {
                 "name": "Black Spike Acid Green",
-                "asset": "images/Black Spike Acid Green 2.png"
+                "asset": "Black Spike Acid Green 2.png"
             },
             {
                 "name": "Black Spike Chartreuse",
-                "asset": "images/Black Spike Chartreuse 2.png"
+                "asset": "Black Spike Chartreuse 2.png"
             },
             {
                 "name": "Black Spike Lemon",
-                "asset": "images/Black Spike Lemon 2.png"
+                "asset": "Black Spike Lemon 2.png"
             },
             {
                 "name": "Black Spike Saffron",
-                "asset": "images/Black Spike Saffron 2.png"
+                "asset": "Black Spike Saffron 2.png"
             },
             {
                 "name": "Black Spike Butterscotch",
-                "asset": "images/Black Spike Butterscotch 2.png"
+                "asset": "Black Spike Butterscotch 2.png"
             },
             {
                 "name": "Black Spike Safety Orange",
-                "asset": "images/Black Spike Safety Orange 2.png"
+                "asset": "Black Spike Safety Orange 2.png"
             },
             {
                 "name": "Black Spike Tangelo",
-                "asset": "images/Black Spike Tangelo 2.png"
+                "asset": "Black Spike Tangelo 2.png"
             },
             {
                 "name": "Black Spike Vermillion",
-                "asset": "images/Black Spike Vermillion 2.png"
+                "asset": "Black Spike Vermillion 2.png"
             },
             {
                 "name": "Black Wave Crimson",
-                "asset": "images/Black Wave Crimson 2.png"
+                "asset": "Black Wave Crimson 2.png"
             },
             {
                 "name": "Black Wave Cherise",
-                "asset": "images/Black Wave Cherise 2.png"
+                "asset": "Black Wave Cherise 2.png"
             },
             {
                 "name": "Black Wave Barbie Pink",
-                "asset": "images/Black Wave Barbie Pink 2.png"
+                "asset": "Black Wave Barbie Pink 2.png"
             },
             {
                 "name": "Black Wave Phlox",
-                "asset": "images/Black Wave Phlox 2.png"
+                "asset": "Black Wave Phlox 2.png"
             },
             {
                 "name": "Black Wave Veronica",
-                "asset": "images/Black Wave Veronica 2.png"
+                "asset": "Black Wave Veronica 2.png"
             },
             {
                 "name": "Black Wave Bluebonnet",
-                "asset": "images/Black Wave Bluebonnet 2.png"
+                "asset": "Black Wave Bluebonnet 2.png"
             },
             {
                 "name": "Black Wave Azure",
-                "asset": "images/Black Wave Azure 2.png"
+                "asset": "Black Wave Azure 2.png"
             },
             {
                 "name": "Black Wave Capri",
-                "asset": "images/Black Wave Capri 2.png"
+                "asset": "Black Wave Capri 2.png"
             },
             {
                 "name": "Black Wave Fluorescent Blue",
-                "asset": "images/Black Wave Fluorescent Blue 2.png"
+                "asset": "Black Wave Fluorescent Blue 2.png"
             },
             {
                 "name": "Black Wave Munsell 5G",
-                "asset": "images/Black Wave Munsell 5G 2.png"
+                "asset": "Black Wave Munsell 5G 2.png"
             },
             {
                 "name": "Black Wave Erin",
-                "asset": "images/Black Wave Erin 2.png"
+                "asset": "Black Wave Erin 2.png"
             },
             {
                 "name": "Black Wave Harlequin",
-                "asset": "images/Black Wave Harlequin 2.png"
+                "asset": "Black Wave Harlequin 2.png"
             },
             {
                 "name": "Black Wave Acid Green",
-                "asset": "images/Black Wave Acid Green 2.png"
+                "asset": "Black Wave Acid Green 2.png"
             },
             {
                 "name": "Black Wave Chartreuse",
-                "asset": "images/Black Wave Chartreuse 2.png"
+                "asset": "Black Wave Chartreuse 2.png"
             },
             {
                 "name": "Black Wave Lemon",
-                "asset": "images/Black Wave Lemon 2.png"
+                "asset": "Black Wave Lemon 2.png"
             },
             {
                 "name": "Black Wave Saffron",
-                "asset": "images/Black Wave Saffron 2.png"
+                "asset": "Black Wave Saffron 2.png"
             },
             {
                 "name": "Black Wave Butterscotch",
-                "asset": "images/Black Wave Butterscotch 2.png"
+                "asset": "Black Wave Butterscotch 2.png"
             },
             {
                 "name": "Black Wave Safety Orange",
-                "asset": "images/Black Wave Safety Orange 2.png"
+                "asset": "Black Wave Safety Orange 2.png"
             },
             {
                 "name": "Black Wave Tangelo",
-                "asset": "images/Black Wave Tangelo 2.png"
+                "asset": "Black Wave Tangelo 2.png"
             },
             {
                 "name": "Black Wave Vermillion",
-                "asset": "images/Black Wave Vermillion 2.png"
+                "asset": "Black Wave Vermillion 2.png"
             },
             {
                 "name": "White Spike Bubblegum",
-                "asset": "images/White Spike Bubblegum 2.png"
+                "asset": "White Spike Bubblegum 2.png"
             },
             {
                 "name": "White Spike Rose Pompadour",
-                "asset": "images/White Spike Rose Pompadour 2.png"
+                "asset": "White Spike Rose Pompadour 2.png"
             },
             {
                 "name": "White Spike Rose Pink",
-                "asset": "images/White Spike Rose Pink 2.png"
+                "asset": "White Spike Rose Pink 2.png"
             },
             {
                 "name": "White Spike Ultra Pink",
-                "asset": "images/White Spike Ultra Pink 2.png"
+                "asset": "White Spike Ultra Pink 2.png"
             },
             {
                 "name": "White Spike Lavender",
-                "asset": "images/White Spike Lavender 2.png"
+                "asset": "White Spike Lavender 2.png"
             },
             {
                 "name": "White Spike Cornflower",
-                "asset": "images/White Spike Cornflower 2.png"
+                "asset": "White Spike Cornflower 2.png"
             },
             {
                 "name": "White Spike Maya Blue",
-                "asset": "images/White Spike Maya Blue 2.png"
+                "asset": "White Spike Maya Blue 2.png"
             },
             {
                 "name": "White Spike Sky Blue",
-                "asset": "images/White Spike Sky Blue 2.png"
+                "asset": "White Spike Sky Blue 2.png"
             },
             {
                 "name": "White Spike Celeste",
-                "asset": "images/White Spike Celeste 2.png"
+                "asset": "White Spike Celeste 2.png"
             },
             {
                 "name": "White Spike Celadon",
-                "asset": "images/White Spike Celadon 2.png"
+                "asset": "White Spike Celadon 2.png"
             },
             {
                 "name": "White Spike Pale Green",
-                "asset": "images/White Spike Pale Green 2.png"
+                "asset": "White Spike Pale Green 2.png"
             },
             {
                 "name": "White Spike Mantis",
-                "asset": "images/White Spike Mantis 2.png"
+                "asset": "White Spike Mantis 2.png"
             },
             {
                 "name": "White Spike Green Tea",
-                "asset": "images/White Spike Green Tea 2.png"
+                "asset": "White Spike Green Tea 2.png"
             },
             {
                 "name": "White Spike Calamansi",
-                "asset": "images/White Spike Calamansi 2.png"
+                "asset": "White Spike Calamansi 2.png"
             },
             {
                 "name": "White Spike Mellow Yellow 2",
-                "asset": "images/White Spike Mellow Yellow 2.png"
+                "asset": "White Spike Mellow Yellow 2.png"
             },
             {
                 "name": "White Spike Moccasin",
-                "asset": "images/White Spike Moccasin 2.png"
+                "asset": "White Spike Moccasin 2.png"
             },
             {
                 "name": "White Spike Apricot",
-                "asset": "images/White Spike Apricot 2.png"
+                "asset": "White Spike Apricot 2.png"
             },
             {
                 "name": "White Spike Coral",
-                "asset": "images/White Spike Coral 2.png"
+                "asset": "White Spike Coral 2.png"
             },
             {
                 "name": "White Spike Atomic Tangerine",
-                "asset": "images/White Spike Atomic Tangerine 2.png"
+                "asset": "White Spike Atomic Tangerine 2.png"
             },
             {
                 "name": "White Spike Tango",
-                "asset": "images/White Spike Tango 2.png"
+                "asset": "White Spike Tango 2.png"
             },
             {
                 "name": "White Wave Bubblegum",
-                "asset": "images/White Wave Bubblegum 2.png"
+                "asset": "White Wave Bubblegum 2.png"
             },
             {
                 "name": "White Wave Rose Pompadour",
-                "asset": "images/White Wave Rose Pompadour 2.png"
+                "asset": "White Wave Rose Pompadour 2.png"
             },
             {
                 "name": "White Wave Rose Pink",
-                "asset": "images/White Wave Rose Pink 2.png"
+                "asset": "White Wave Rose Pink 2.png"
             },
             {
                 "name": "White Wave Ultra Pink",
-                "asset": "images/White Wave Ultra Pink 2.png"
+                "asset": "White Wave Ultra Pink 2.png"
             },
             {
                 "name": "White Wave Lavender",
-                "asset": "images/White Wave Lavender 2.png"
+                "asset": "White Wave Lavender 2.png"
             },
             {
                 "name": "White Wave Cornflower",
-                "asset": "images/White Wave Cornflower 2.png"
+                "asset": "White Wave Cornflower 2.png"
             },
             {
                 "name": "White Wave Maya Blue",
-                "asset": "images/White Wave Maya Blue 2.png"
+                "asset": "White Wave Maya Blue 2.png"
             },
             {
                 "name": "White Wave Sky Blue",
-                "asset": "images/White Wave Sky Blue 2.png"
+                "asset": "White Wave Sky Blue 2.png"
             },
             {
                 "name": "White Wave Celeste",
-                "asset": "images/White Wave Celeste 2.png"
+                "asset": "White Wave Celeste 2.png"
             },
             {
                 "name": "White Wave Celadon",
-                "asset": "images/White Wave Celadon 2.png"
+                "asset": "White Wave Celadon 2.png"
             },
             {
                 "name": "White Wave Pale Green",
-                "asset": "images/White Wave Pale Green 2.png"
+                "asset": "White Wave Pale Green 2.png"
             },
             {
                 "name": "White Wave Mantis",
-                "asset": "images/White Wave Mantis 2.png"
+                "asset": "White Wave Mantis 2.png"
             },
             {
                 "name": "White Wave Green Tea",
-                "asset": "images/White Wave Green Tea 2.png"
+                "asset": "White Wave Green Tea 2.png"
             },
             {
                 "name": "White Wave Calamansi",
-                "asset": "images/White Wave Calamansi 2.png"
+                "asset": "White Wave Calamansi 2.png"
             },
             {
                 "name": "White Wave Mellow Yellow",
-                "asset": "images/White Wave Mellow Yellow 2.png"
+                "asset": "White Wave Mellow Yellow 2.png"
             },
             {
                 "name": "White Wave Moccasin",
-                "asset": "images/White Wave Moccasin 2.png"
+                "asset": "White Wave Moccasin 2.png"
             },
             {
                 "name": "White Wave Apricot",
-                "asset": "images/White Wave Apricot 2.png"
+                "asset": "White Wave Apricot 2.png"
             },
             {
                 "name": "White Wave Coral",
-                "asset": "images/White Wave Coral 2.png"
+                "asset": "White Wave Coral 2.png"
             },
             {
                 "name": "White Wave Atomic Tangerine",
-                "asset": "images/White Wave Atomic Tangerine 2.png"
+                "asset": "White Wave Atomic Tangerine 2.png"
             },
             {
                 "name": "White Wave Tango",
-                "asset": "images/White Wave Tango 2.png"
+                "asset": "White Wave Tango 2.png"
             },
             {
                 "name": "Black Wave Crimson (No Status)",
-                "asset": "images/Black Wave Crimson.png"
+                "asset": "Black Wave Crimson.png"
             },
             {
                 "name": "Black Wave Cherise (No Status)",
-                "asset": "images/Black Wave Cherise.png"
+                "asset": "Black Wave Cherise.png"
             },
             {
                 "name": "Black Wave Barbie Pink (No Status)",
-                "asset": "images/Black Wave Barbie Pink.png"
+                "asset": "Black Wave Barbie Pink.png"
             },
             {
                 "name": "Black Wave Phlox (No Status)",
-                "asset": "images/Black Wave Phlox.png"
+                "asset": "Black Wave Phlox.png"
             },
             {
                 "name": "Black Wave Veronica (No Status)",
-                "asset": "images/Black Wave Veronica.png"
+                "asset": "Black Wave Veronica.png"
             },
             {
                 "name": "Black Wave Bluebonnet (No Status)",
-                "asset": "images/Black Wave Bluebonnet.png"
+                "asset": "Black Wave Bluebonnet.png"
             },
             {
                 "name": "Black Wave Azure (No Status)",
-                "asset": "images/Black Wave Azure.png"
+                "asset": "Black Wave Azure.png"
             },
             {
                 "name": "Black Wave Capri (No Status)",
-                "asset": "images/Black Wave Capri.png"
+                "asset": "Black Wave Capri.png"
             },
             {
                 "name": "Black Wave Fluerescent Blue (No Status)",
-                "asset": "images/Black Wave Fluerescent Blue.png"
+                "asset": "Black Wave Fluerescent Blue.png"
             },
             {
                 "name": "Black Wave Munsell 5G (No Status)",
-                "asset": "images/Black Wave Munsell 5G.png"
+                "asset": "Black Wave Munsell 5G.png"
             },
             {
                 "name": "Black Wave Erin (No Status)",
-                "asset": "images/Black Wave Erin.png"
+                "asset": "Black Wave Erin.png"
             },
             {
                 "name": "Black Wave Harlequin (No Status)",
-                "asset": "images/Black Wave Harlequin.png"
+                "asset": "Black Wave Harlequin.png"
             },
             {
                 "name": "Black Wave Acid Green (No Status)",
-                "asset": "images/Black Wave Acid Green.png"
+                "asset": "Black Wave Acid Green.png"
             },
             {
                 "name": "Black Wave Chartreuse (No Status)",
-                "asset": "images/Black Wave Chartreuse.png"
+                "asset": "Black Wave Chartreuse.png"
             },
             {
                 "name": "Black Wave Lemon (No Status)",
-                "asset": "images/Black Wave Lemon.png"
+                "asset": "Black Wave Lemon.png"
             },
             {
                 "name": "Black Wave Saffron (No Status)",
-                "asset": "images/Black Wave Saffron.png"
+                "asset": "Black Wave Saffron.png"
             },
             {
                 "name": "Black Wave Butterscotch (No Status)",
-                "asset": "images/Black Wave Butterscotch.png"
+                "asset": "Black Wave Butterscotch.png"
             },
             {
                 "name": "Black Wave Safety Orange (No Status)",
-                "asset": "images/Black Wave Safety Orange.png"
+                "asset": "Black Wave Safety Orange.png"
             },
             {
                 "name": "Black Wave Tangelo (No Status)",
-                "asset": "images/Black Wave Tangelo.png"
+                "asset": "Black Wave Tangelo.png"
             },
             {
                 "name": "Black Wave Vermillion (No Status)",
-                "asset": "images/Black Wave Vermillion.png"
+                "asset": "Black Wave Vermillion.png"
             },
             {
                 "name": "Black Spike Crimson (No Status)",
-                "asset": "images/Black Spike Crimson.png"
+                "asset": "Black Spike Crimson.png"
             },
             {
                 "name": "Black Spike Cherise (No Status)",
-                "asset": "images/Black Spike Cherise.png"
+                "asset": "Black Spike Cherise.png"
             },
             {
                 "name": "Black Spike Barbie Pink (No Status)",
-                "asset": "images/Black Spike Barbie Pink.png"
+                "asset": "Black Spike Barbie Pink.png"
             },
             {
                 "name": "Black Spike Phlox (No Status)",
-                "asset": "images/Black Spike Phlox.png"
+                "asset": "Black Spike Phlox.png"
             },
             {
                 "name": "Black Spike Veronica (No Status)",
-                "asset": "images/Black Spike Veronica.png"
+                "asset": "Black Spike Veronica.png"
             },
             {
                 "name": "Black Spike Bluebonnet (No Status)",
-                "asset": "images/Black Spike Bluebonnet.png"
+                "asset": "Black Spike Bluebonnet.png"
             },
             {
                 "name": "Black Spike Azure (No Status)",
-                "asset": "images/Black Spike Azure.png"
+                "asset": "Black Spike Azure.png"
             },
             {
                 "name": "Black Spike Capri (No Status)",
-                "asset": "images/Black Spike Capri.png"
+                "asset": "Black Spike Capri.png"
             },
             {
                 "name": "Black Spike Fluorescent Blue (No Status)",
-                "asset": "images/Black Spike Fluorescent Blue.png"
+                "asset": "Black Spike Fluorescent Blue.png"
             },
             {
                 "name": "Black Spike Munsell 5G (No Status)",
-                "asset": "images/Black Spike Munsell 5G.png"
+                "asset": "Black Spike Munsell 5G.png"
             },
             {
                 "name": "Black Spike Erin (No Status)",
-                "asset": "images/Black Spike Erin.png"
+                "asset": "Black Spike Erin.png"
             },
             {
                 "name": "Black Spike Harlequin (No Status)",
-                "asset": "images/Black Spike Harlequin.png"
+                "asset": "Black Spike Harlequin.png"
             },
             {
                 "name": "Black Spike Acid Green (No Status)",
-                "asset": "images/Black Spike Acid Green.png"
+                "asset": "Black Spike Acid Green.png"
             },
             {
                 "name": "Black Spike Chartreuse (No Status)",
-                "asset": "images/Black Spike Chartreuse.png"
+                "asset": "Black Spike Chartreuse.png"
             },
             {
                 "name": "Black Spike Lemon (No Status)",
-                "asset": "images/Black Spike Lemon.png"
+                "asset": "Black Spike Lemon.png"
             },
             {
                 "name": "Black Spike Saffron (No Status)",
-                "asset": "images/Black Spike Saffron.png"
+                "asset": "Black Spike Saffron.png"
             },
             {
                 "name": "Black Spike Butterscotch (No Status)",
-                "asset": "images/Black Spike Butterscotch.png"
+                "asset": "Black Spike Butterscotch.png"
             },
             {
                 "name": "Black Spike Safety Orange (No Status)",
-                "asset": "images/Black Spike Safety Orange.png"
+                "asset": "Black Spike Safety Orange.png"
             },
             {
                 "name": "Black Spike Tangelo (No Status)",
-                "asset": "images/Black Spike Tangelo.png"
+                "asset": "Black Spike Tangelo.png"
             },
             {
                 "name": "Black Spike Vermillion (No Status)",
-                "asset": "images/Black Spike Vermillion.png"
+                "asset": "Black Spike Vermillion.png"
             },
             {
                 "name": "White Wave Bubblegum (No Status)",
-                "asset": "images/White Wave Bubblegum.png"
+                "asset": "White Wave Bubblegum.png"
             },
             {
                 "name": "White Wave Rose Pompadour (No Status)",
-                "asset": "images/White Wave Rose Pompadour.png"
+                "asset": "White Wave Rose Pompadour.png"
             },
             {
                 "name": "White Wave Rose Pink (No Status)",
-                "asset": "images/White Wave Rose Pink.png"
+                "asset": "White Wave Rose Pink.png"
             },
             {
                 "name": "White Wave Ultra Pink (No Status)",
-                "asset": "images/White Wave Ultra Pink.png"
+                "asset": "White Wave Ultra Pink.png"
             },
             {
                 "name": "White Wave Lavender (No Status)",
-                "asset": "images/White Wave Lavender.png"
+                "asset": "White Wave Lavender.png"
             },
             {
                 "name": "White Wave Cornflower (No Status)",
-                "asset": "images/White Wave Cornflower.png"
+                "asset": "White Wave Cornflower.png"
             },
             {
                 "name": "White Wave Maya Blue (No Status)",
-                "asset": "images/White Wave Maya Blue.png"
+                "asset": "White Wave Maya Blue.png"
             },
             {
                 "name": "White Wave Sky Blue (No Status)",
-                "asset": "images/White Wave Sky Blue.png"
+                "asset": "White Wave Sky Blue.png"
             },
             {
                 "name": "White Wave Celeste (No Status)",
-                "asset": "images/White Wave Celeste.png"
+                "asset": "White Wave Celeste.png"
             },
             {
                 "name": "White Wave Celadon (No Status)",
-                "asset": "images/White Wave Celadon.png"
+                "asset": "White Wave Celadon.png"
             },
             {
                 "name": "White Wave Pale Green (No Status)",
-                "asset": "images/White Wave Pale Green.png"
+                "asset": "White Wave Pale Green.png"
             },
             {
                 "name": "White Wave Mantis (No Status)",
-                "asset": "images/White Wave Mantis.png"
+                "asset": "White Wave Mantis.png"
             },
             {
                 "name": "White Wave Green Tea (No Status)",
-                "asset": "images/White Wave Green Tea.png"
+                "asset": "White Wave Green Tea.png"
             },
             {
                 "name": "White Wave Calamansi (No Status)",
-                "asset": "images/White Wave Calamansi.png"
+                "asset": "White Wave Calamansi.png"
             },
             {
                 "name": "White Wave Mellow Yellow (No Status)",
-                "asset": "images/White Wave Mellow Yellow.png"
+                "asset": "White Wave Mellow Yellow.png"
             },
             {
                 "name": "White Wave Moccasin (No Status)",
-                "asset": "images/White Wave Moccasin.png"
+                "asset": "White Wave Moccasin.png"
             },
             {
                 "name": "White Wave Apricot (No Status)",
-                "asset": "images/White Wave Apricot.png"
+                "asset": "White Wave Apricot.png"
             },
             {
                 "name": "White Wave Coral (No Status)",
-                "asset": "images/White Wave Coral.png"
+                "asset": "White Wave Coral.png"
             },
             {
                 "name": "White Wave Atomic Tangerine (No Status)",
-                "asset": "images/White Wave Atomic Tangerine.png"
+                "asset": "White Wave Atomic Tangerine.png"
             },
             {
                 "name": "White Wave Tango (No Status)",
-                "asset": "images/White Wave Tango.png"
+                "asset": "White Wave Tango.png"
             },
             {
                 "name": "White Spike Bubblegum (No Status)",
-                "asset": "images/White Spike Bubblegum.png"
+                "asset": "White Spike Bubblegum.png"
             },
             {
                 "name": "White Spike Rose Pompadour (No Status)",
-                "asset": "images/White Spike Rose Pompadour.png"
+                "asset": "White Spike Rose Pompadour.png"
             },
             {
                 "name": "White Spike Rose Pink (No Status)",
-                "asset": "images/White Spike Rose Pink.png"
+                "asset": "White Spike Rose Pink.png"
             },
             {
                 "name": "White Spike Ultra Pink (No Status)",
-                "asset": "images/White Spike Ultra Pink.png"
+                "asset": "White Spike Ultra Pink.png"
             },
             {
                 "name": "White Spike Lavender (No Status)",
-                "asset": "images/White Spike Lavender.png"
+                "asset": "White Spike Lavender.png"
             },
             {
                 "name": "White Spike Cornflower (No Status)",
-                "asset": "images/White Spike Cornflower.png"
+                "asset": "White Spike Cornflower.png"
             },
             {
                 "name": "White Spike Maya Blue (No Status)",
-                "asset": "images/White Spike Maya Blue.png"
+                "asset": "White Spike Maya Blue.png"
             },
             {
                 "name": "White Spike Sky Blue (No Status)",
-                "asset": "images/White Spike Sky Blue.png"
+                "asset": "White Spike Sky Blue.png"
             },
             {
                 "name": "White Spike Celeste (No Status)",
-                "asset": "images/White Spike Celeste.png"
+                "asset": "White Spike Celeste.png"
             },
             {
                 "name": "White Spike Celadon (No Status)",
-                "asset": "images/White Spike Celadon.png"
+                "asset": "White Spike Celadon.png"
             },
             {
                 "name": "White Spike Pale Green (No Status)",
-                "asset": "images/White Spike Pale Green.png"
+                "asset": "White Spike Pale Green.png"
             },
             {
                 "name": "White Spike Mantis (No Status)",
-                "asset": "images/White Spike Mantis.png"
+                "asset": "White Spike Mantis.png"
             },
             {
                 "name": "White Spike Green Tea (No Status)",
-                "asset": "images/White Spike Green Tea.png"
+                "asset": "White Spike Green Tea.png"
             },
             {
                 "name": "White Spike Calamansi (No Status)",
-                "asset": "images/White Spike Calamansi.png"
+                "asset": "White Spike Calamansi.png"
             },
             {
                 "name": "White Spike Mellow Yellow (No Status)",
-                "asset": "images/White Spike Mellow Yellow.png"
+                "asset": "White Spike Mellow Yellow.png"
             },
             {
                 "name": "White Spike Moccasin (Status)",
-                "asset": "images/White Spike Moccasin.png"
+                "asset": "White Spike Moccasin.png"
             },
             {
                 "name": "White Spike Apricot (No Status)",
-                "asset": "images/White Spike Apricot.png"
+                "asset": "White Spike Apricot.png"
             },
             {
                 "name": "White Spike Atomic Tangerine (No Status)",
-                "asset": "images/White Spike Atomic Tangerine.png"
+                "asset": "White Spike Atomic Tangerine.png"
             },
             {
                 "name": "White Spike Coral (No Status)",
-                "asset": "images/White Spike Coral.png"
+                "asset": "White Spike Coral.png"
             },
             {
                 "name": "White Spike Tango (No Status)",
-                "asset": "images/White Spike Tango.png"
+                "asset": "White Spike Tango.png"
             },
             {
                 "name": "Black Spike (No Status)",
-                "asset": "images/Black Spike.png"
+                "asset": "Black Spike.png"
             },
             {
                 "name": "Black Wave (No Status)",
-                "asset": "images/Black Wave.png"
+                "asset": "Black Wave.png"
             },
             {
                 "name": "White Spike (No Status)",
-                "asset": "images/White Spike.png"
+                "asset": "White Spike.png"
             },
             {
                 "name": "White Wave (No Status)",
-                "asset": "images/White Wave.png"
+                "asset": "White Wave.png"
             },
             {
                 "name": "Black Spike",
-                "asset": "images/Black Spike 2.png"
+                "asset": "Black Spike 2.png"
             },
             {
                 "name": "Black Wave",
-                "asset": "images/Black Wave 2.png"
+                "asset": "Black Wave 2.png"
             },
             {
                 "name": "White Spike",
-                "asset": "images/White Spike 2.png"
+                "asset": "White Spike 2.png"
             },
             {
                 "name": "White Wave",
-                "asset": "images/White Wave 2.png"
+                "asset": "White Wave 2.png"
             },
             {
                 "name": "Black Spike On White (No Status)",
-                "asset": "images/Black Spike On White.png"
+                "asset": "Black Spike On White.png"
             },
             {
                 "name": "Black Wave On White (No Status)",
-                "asset": "images/Black Wave On White.png"
+                "asset": "Black Wave On White.png"
             },
             {
                 "name": "White Spike On Black (No Status)",
-                "asset": "images/White Spike On Black.png"
+                "asset": "White Spike On Black.png"
             },
             {
                 "name": "White Wave On Black (No Status)",
-                "asset": "images/White Wave On Black.png"
+                "asset": "White Wave On Black.png"
             },
             {
                 "name": "Black Spike On White",
-                "asset": "images/Black Spike On White 2.png"
+                "asset": "Black Spike On White 2.png"
             },
             {
                 "name": "Black Wave On White",
-                "asset": "images/Black Wave On White 2.png"
+                "asset": "Black Wave On White 2.png"
             },
             {
                 "name": "White Spike On Black",
-                "asset": "images/White Spike On Black 2.png"
+                "asset": "White Spike On Black 2.png"
             },
             {
                 "name": "White Wave On Black",
-                "asset": "images/White Wave On Black 2.png"
+                "asset": "White Wave On Black 2.png"
             },
             {
                 "name": "Black Spike Rainbow (No Status)",
-                "asset": "images/Black Spike Rainbow.png"
+                "asset": "Black Spike Rainbow.png"
             },
             {
                 "name": "Black Wave Rainbow (No Status)",
-                "asset": "images/Black Wave Rainbow.png"
+                "asset": "Black Wave Rainbow.png"
             },
             {
                 "name": "White Spike Rainbow (No Status)",
-                "asset": "images/White Spike Rainbow.png"
+                "asset": "White Spike Rainbow.png"
             },
             {
                 "name": "White Wave Rainbow (No Status)",
-                "asset": "images/White Wave Rainbow.png"
+                "asset": "White Wave Rainbow.png"
             },
             {
                 "name": "Black Spike Rainbow",
-                "asset": "images/Black Spike Rainbow 2.png"
+                "asset": "Black Spike Rainbow 2.png"
             },
             {
                 "name": "Black Wave Rainbow",
-                "asset": "images/Black Wave Rainbow 2.png"
+                "asset": "Black Wave Rainbow 2.png"
             },
             {
                 "name": "White Spike Rainbow",
-                "asset": "images/White Spike Rainbow 2.png"
+                "asset": "White Spike Rainbow 2.png"
             },
             {
                 "name": "White Wave Rainbow",
-                "asset": "images/White Wave Rainbow 2.png"
+                "asset": "White Wave Rainbow 2.png"
             }
         ]
     },
     {
         "name": "Formula 1",
-        "banner": "images/1formula1-banner.png",
+        "banner": "1formula1-banner.png",
         "artist_info": null,
         "artists": [
             findUser('811114235966521364')
@@ -1464,173 +1464,173 @@ const categories =
         "decorations": [
             {
                 "name": "Tsunoda",
-                "asset": "images/tsunoda.png"
+                "asset": "tsunoda.png"
             },
             {
                 "name": "Verstappen",
-                "asset": "images/verstappen.png"
+                "asset": "verstappen.png"
             },
             {
                 "name": "Hadjar",
-                "asset": "images/hadjar.png"
+                "asset": "hadjar.png"
             },
             {
                 "name": "Lawson",
-                "asset": "images/lawson.png"
+                "asset": "lawson.png"
             },
             {
                 "name": "Bearman",
-                "asset": "images/bearman.png"
+                "asset": "bearman.png"
             },
             {
                 "name": "Ocon",
-                "asset": "images/ocon.png"
+                "asset": "ocon.png"
             },
             {
                 "name": "Bortoleto",
-                "asset": "images/bortoleto.png"
+                "asset": "bortoleto.png"
             },
             {
                 "name": "Hulkenberg",
-                "asset": "images/hulkenberg.png"
+                "asset": "hulkenberg.png"
             },
             {
                 "name": "Alonso",
-                "asset": "images/alonso.png"
+                "asset": "alonso.png"
             },
             {
                 "name": "Stroll",
-                "asset": "images/stroll.png"
+                "asset": "stroll.png"
             },
             {
                 "name": "Piastri",
-                "asset": "images/piastri.png"
+                "asset": "piastri.png"
             },
             {
                 "name": "Norris",
-                "asset": "images/norris.png"
+                "asset": "norris.png"
             },
             {
                 "name": "Hamilton",
-                "asset": "images/hamilton.png"
+                "asset": "hamilton.png"
             },
             {
                 "name": "Leclerc",
-                "asset": "images/leclerc.png"
+                "asset": "leclerc.png"
             },
             {
                 "name": "Albon",
-                "asset": "images/albon.png"
+                "asset": "albon.png"
             },
             {
                 "name": "Sainz",
-                "asset": "images/sainz.png"
+                "asset": "sainz.png"
             },
             {
                 "name": "Antonelli",
-                "asset": "images/antonelli.png"
+                "asset": "antonelli.png"
             },
             {
                 "name": "Russell",
-                "asset": "images/russel.png"
+                "asset": "russel.png"
             },
             {
                 "name": "Colapinto",
-                "asset": "images/colapinto.png"
+                "asset": "colapinto.png"
             },
             {
                 "name": "Doohan",
-                "asset": "images/doohan.png"
+                "asset": "doohan.png"
             },
             {
                 "name": "Gasly",
-                "asset": "images/gasly.png"
+                "asset": "gasly.png"
             },
             {
                 "name": "Bianchi",
-                "asset": "images/bianchi.png"
+                "asset": "bianchi.png"
             },
             {
                 "name": "Perez",
-                "asset": "images/perez.png"
+                "asset": "perez.png"
             },
             {
                 "name": "Raikkonen",
-                "asset": "images/raikkonen.png"
+                "asset": "raikkonen.png"
             },
             {
                 "name": "Ricciardo",
-                "asset": "images/ricciardo.png"
+                "asset": "ricciardo.png"
             },
             {
                 "name": "Rosberg",
-                "asset": "images/rosberg.png"
+                "asset": "rosberg.png"
             },
             {
                 "name": "Sargeant",
-                "asset": "images/sargeant.png"
+                "asset": "sargeant.png"
             },
             {
                 "name": "Schumacher",
-                "asset": "images/schumacher.png"
+                "asset": "schumacher.png"
             },
             {
                 "name": "Senna",
-                "asset": "images/senna.png"
+                "asset": "senna.png"
             },
             {
                 "name": "Vettel",
-                "asset": "images/vettel.png"
+                "asset": "vettel.png"
             },
             {
                 "name": "Webber",
-                "asset": "images/webber.png"
+                "asset": "webber.png"
             },
             {
                 "name": "Red Bull",
-                "asset": "images/red bull.png"
+                "asset": "red bull.png"
             },
             {
                 "name": "Vcarb",
-                "asset": "images/vcarb.png"
+                "asset": "vcarb.png"
             },
             {
                 "name": "Haas",
-                "asset": "images/haas.png"
+                "asset": "haas.png"
             },
             {
                 "name": "Sauber",
-                "asset": "images/sauber.png"
+                "asset": "sauber.png"
             },
             {
                 "name": "Aston Martin",
-                "asset": "images/aston martin.png"
+                "asset": "aston martin.png"
             },
             {
                 "name": "McLaren",
-                "asset": "images/mclaren.png"
+                "asset": "mclaren.png"
             },
             {
                 "name": "Ferrari",
-                "asset": "images/ferrari.png"
+                "asset": "ferrari.png"
             },
             {
                 "name": "Williams",
-                "asset": "images/williams.png"
+                "asset": "williams.png"
             },
             {
                 "name": "Mercedes",
-                "asset": "images/mercedes.png"
+                "asset": "mercedes.png"
             },
             {
                 "name": "Alpine",
-                "asset": "images/alpine.png"
+                "asset": "alpine.png"
             }
         ]
     },
     {
         "name": "Beat Saber",
-        "banner": "images/beatsaber-banner.png",
+        "banner": "beatsaber-banner.png",
         "artist_info": null,
         "artists": [
             findUser('6')
@@ -1638,37 +1638,37 @@ const categories =
         "decorations": [
             {
                 "name": "Beat Sabers",
-                "asset": "images/Beat Sabers.png"
+                "asset": "Beat Sabers.png"
             },
             {
                 "name": "Big Slash (Blue)",
-                "asset": "images/Big Slash (Blue).png"
+                "asset": "Big Slash (Blue).png"
             },
             {
                 "name": "Big Slash (Red)",
-                "asset": "images/Big Slash (Red).png"
+                "asset": "Big Slash (Red).png"
             },
             {
                 "name": "Bombs",
-                "asset": "images/Bombs.png"
+                "asset": "Bombs.png"
             },
             {
                 "name": "The Bloq (Blue)",
-                "asset": "images/The Bloq (Blue).png"
+                "asset": "The Bloq (Blue).png"
             },
             {
                 "name": "The Bloq (Red)",
-                "asset": "images/The Bloq (Red).png"
+                "asset": "The Bloq (Red).png"
             },
             {
                 "name": "The Walls",
-                "asset": "images/The Walls.png"
+                "asset": "The Walls.png"
             }
         ]
     },
     {
         "name": "ANGRY BIRDS",
-        "banner": "images/angrybirds-banner.png",
+        "banner": "angrybirds-banner.png",
         "artist_info": null,
         "artists": [
             findUser('7')
@@ -1676,85 +1676,85 @@ const categories =
         "decorations": [
             {
                 "name": "AB Wood Block",
-                "asset": "images/AB Wood Block Decor.png"
+                "asset": "AB Wood Block Decor.png"
             },
             {
                 "name": "AB Glass Block",
-                "asset": "images/AB Glass Block Decor.png"
+                "asset": "AB Glass Block Decor.png"
             },
             {
                 "name": "AB Stone Block",
-                "asset": "images/AB Stone Block Decor.png"
+                "asset": "AB Stone Block Decor.png"
             },
             {
                 "name": "AB Cheetos Logo",
-                "asset": "images/AB Cheetos Logo Decor.png"
+                "asset": "AB Cheetos Logo Decor.png"
             },
             {
                 "name": "AB Coca Cola Logo",
-                "asset": "images/AB Coca Cola Logo Decor.png"
+                "asset": "AB Coca Cola Logo Decor.png"
             },
             {
                 "name": "AB Seasons Easter Egg Logo",
-                "asset": "images/AB Seasons Easter Egg Logo Decor.png"
+                "asset": "AB Seasons Easter Egg Logo Decor.png"
             },
             {
                 "name": "AB Logo",
-                "asset": "images/AB Logo Decor.png"
+                "asset": "AB Logo Decor.png"
             },
             {
                 "name": "AB Space Logo",
-                "asset": "images/AB Space Logo Decor.png"
+                "asset": "AB Space Logo Decor.png"
             },
             {
                 "name": "AB Space Vuela Tazos Logo",
-                "asset": "images/AB Space Vuela Tazos Logo Decor.png"
+                "asset": "AB Space Vuela Tazos Logo Decor.png"
             },
             {
                 "name": "Attack Of Darth Maul",
-                "asset": "images/Attack Of Darth Maul Decor.png"
+                "asset": "Attack Of Darth Maul Decor.png"
             },
             {
                 "name": "Darth Vader",
-                "asset": "images/Darth Vader Decor.png"
+                "asset": "Darth Vader Decor.png"
             },
             {
                 "name": "Solar System",
-                "asset": "images/Solar System Decor.png"
+                "asset": "Solar System Decor.png"
             },
             {
                 "name": "Pork Federation",
-                "asset": "images/Pork Federation Decor.png"
+                "asset": "Pork Federation Decor.png"
             },
             {
                 "name": "Bomb Space",
-                "asset": "images/Bomb Space Decor.png"
+                "asset": "Bomb Space Decor.png"
             },
             {
                 "name": "Mynock Pigs",
-                "asset": "images/Mynock Pigs Decor.png"
+                "asset": "Mynock Pigs Decor.png"
             },
             {
                 "name": "Electric Bomb",
-                "asset": "images/Electric Bomb Decor.png"
+                "asset": "Electric Bomb Decor.png"
             },
             {
                 "name": "Red Space",
-                "asset": "images/Red Space Decor.png"
+                "asset": "Red Space Decor.png"
             },
             {
                 "name": "King Pig",
-                "asset": "images/King Pig Decor.png"
+                "asset": "King Pig Decor.png"
             },
             {
                 "name": "Stars",
-                "asset": "images/Stars Decor.png"
+                "asset": "Stars Decor.png"
             }
         ]
     },
     {
         "name": "RDR2",
-        "banner": "images/rdr2-banner.png",
+        "banner": "rdr2-banner.png",
         "artist_info": null,
         "artists": [
             findUser('8')
@@ -1762,33 +1762,33 @@ const categories =
         "decorations": [
             {
                 "name": "Arthur",
-                "asset": "images/Arthur.png"
+                "asset": "Arthur.png"
             },
             {
                 "name": "Dutch",
-                "asset": "images/Dutch.png"
+                "asset": "Dutch.png"
             },
             {
                 "name": "Hosea",
-                "asset": "images/Hosea.png"
+                "asset": "Hosea.png"
             },
             {
                 "name": "John",
-                "asset": "images/John.png"
+                "asset": "John.png"
             },
             {
                 "name": "Sadie",
-                "asset": "images/Sadie.png"
+                "asset": "Sadie.png"
             },
             {
                 "name": "RDR II",
-                "asset": "images/RDR_II.png"
+                "asset": "RDR_II.png"
             }
         ]
     },
     {
         "name": "EASTER",
-        "banner": "images/easter-banner.png",
+        "banner": "easter-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1143994313034960967'),
@@ -1801,103 +1801,103 @@ const categories =
             {
                 "name": "Bunnie",
                 "artist": findUser('1143994313034960967'),
-                "asset": "images/bunnie by pixie.png"
+                "asset": "bunnie by pixie.png"
             },
             {
                 "name": "Choco Bunny",
                 "artist": findUser('1143994313034960967'),
-                "asset": "images/choco bunny by pixie.png"
+                "asset": "choco bunny by pixie.png"
             },
             {
                 "name": "Egg Basket",
                 "artist": findUser('1143994313034960967'),
-                "asset": "images/egg basket by pixie.png"
+                "asset": "egg basket by pixie.png"
             },
             {
                 "name": "Community Eggs",
                 "artist": findUser('452679089929846784'),
-                "asset": "images/fixed community eggs by zin.png"
+                "asset": "fixed community eggs by zin.png"
             },
             {
                 "name": "Easter Bunny",
                 "artist": findUser('811114235966521364'),
-                "asset": "images/easter bunny by cal.png"
+                "asset": "easter bunny by cal.png"
             },
             {
                 "name": "Easter Egg",
                 "artist": findUser('811114235966521364'),
-                "asset": "images/easter egg by cal.png"
+                "asset": "easter egg by cal.png"
             },
             {
                 "name": "Egg Basket",
                 "artist": findUser('811114235966521364'),
-                "asset": "images/egg basket by cal.png"
+                "asset": "egg basket by cal.png"
             },
             {
                 "name": "Egg Bowl",
                 "artist": findUser('811114235966521364'),
-                "asset": "images/egg bowl by cal.png"
+                "asset": "egg bowl by cal.png"
             },
             {
                 "name": "Eggs in Grass",
                 "artist": findUser('811114235966521364'),
-                "asset": "images/eggs in grass by cal.png"
+                "asset": "eggs in grass by cal.png"
             },
             {
                 "name": "Grass Egg",
                 "artist": findUser('1088105926030000178'),
-                "asset": "images/grass egg by sharr.png"
+                "asset": "grass egg by sharr.png"
             },
             {
                 "name": "Pastel Blue Easter Decor",
                 "artist": findUser('10'),
-                "asset": "images/pastel blue easter decor by teto.png"
+                "asset": "pastel blue easter decor by teto.png"
             },
             {
                 "name": "Pastel Cyan Easter Decor",
                 "artist": findUser('10'),
-                "asset": "images/pastel cyan easter decor by teto.png"
+                "asset": "pastel cyan easter decor by teto.png"
             },
             {
                 "name": "Pastel Green Easter Decor",
                 "artist": findUser('10'),
-                "asset": "images/pastel green easter decor by teto.png"
+                "asset": "pastel green easter decor by teto.png"
             },
             {
                 "name": "Pastel Mint Easter Decor",
                 "artist": findUser('10'),
-                "asset": "images/pastel mint easter decor by teto.png"
+                "asset": "pastel mint easter decor by teto.png"
             },
             {
                 "name": "Pastel Orange Easter Decor",
                 "artist": findUser('10'),
-                "asset": "images/pastel orange easter decor by teto.png"
+                "asset": "pastel orange easter decor by teto.png"
             },
             {
                 "name": "Pastel Pink Easter Decor",
                 "artist": findUser('10'),
-                "asset": "images/pastel pink easter decor by teto.png"
+                "asset": "pastel pink easter decor by teto.png"
             },
             {
                 "name": "Pastel Red Easter Decor",
                 "artist": findUser('10'),
-                "asset": "images/pastel red easter decor by teto.png"
+                "asset": "pastel red easter decor by teto.png"
             },
             {
                 "name": "Pastel Teal Easter Decor",
                 "artist": findUser('10'),
-                "asset": "images/pastel teal easter decor by teto.png"
+                "asset": "pastel teal easter decor by teto.png"
             },
             {
                 "name": "Pastel Yellow Easter Decor",
                 "artist": findUser('10'),
-                "asset": "images/pastel yellow easter decor by teto.png"
+                "asset": "pastel yellow easter decor by teto.png"
             }
         ]
     },
     {
         "name": "BLOONS",
-        "banner": "images/bloons-banner.png",
+        "banner": "bloons-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1088105926030000178')
@@ -1905,117 +1905,117 @@ const categories =
         "decorations": [
             {
                 "name": "Adora",
-                "asset": "images/adora.png"
+                "asset": "adora.png"
             },
             {
                 "name": "Benjamin",
-                "asset": "images/benjamin.png"
+                "asset": "benjamin.png"
             },
             {
                 "name": "Brickell",
-                "asset": "images/brickell.png"
+                "asset": "brickell.png"
             },
             {
                 "name": "Churchill",
-                "asset": "images/churchill.png"
+                "asset": "churchill.png"
             },
             {
                 "name": "Corvus",
-                "asset": "images/corvus.png"
+                "asset": "corvus.png"
             },
             {
                 "name": "Etienne",
-                "asset": "images/etienne.png"
+                "asset": "etienne.png"
             },
             {
                 "name": "Ezili",
-                "asset": "images/ezili.png"
+                "asset": "ezili.png"
             },
             {
                 "name": "Gwendolin",
-                "asset": "images/gwendolin.png"
+                "asset": "gwendolin.png"
             },
             {
                 "name": "Jones",
-                "asset": "images/jones.png"
+                "asset": "jones.png"
             },
             {
                 "name": "Obyn",
-                "asset": "images/obyn.png"
+                "asset": "obyn.png"
             },
             {
                 "name": "Pat",
-                "asset": "images/pat.png"
+                "asset": "pat.png"
             },
             {
                 "name": "Psi",
-                "asset": "images/psi.png"
+                "asset": "psi.png"
             },
             {
                 "name": "Quincy",
-                "asset": "images/quincy.png"
+                "asset": "quincy.png"
             },
             {
                 "name": "Alchemist",
-                "asset": "images/004-Alchemistdecorx.png"
+                "asset": "004-Alchemistdecorx.png"
             },
             {
                 "name": "Boomerang Monkey",
-                "asset": "images/500-BoomerangMonkeyDecorx.png"
+                "asset": "500-BoomerangMonkeyDecorx.png"
             },
             {
                 "name": "Sniper Monkey",
-                "asset": "images/500-SniperMonkeydecorx.png"
+                "asset": "500-SniperMonkeydecorx.png"
             },
             {
                 "name": "Geraldox",
-                "asset": "images/geraldox.png"
+                "asset": "geraldox.png"
             },
             {
                 "name": "Outclassed by icicle",
-                "asset": "images/out-classed-by-icicle-impalex.png"
+                "asset": "out-classed-by-icicle-impalex.png"
             },
             {
                 "name": "Rosaliax",
-                "asset": "images/rosaliax.png"
+                "asset": "rosaliax.png"
             },
             {
                 "name": "True Sun Godx",
-                "asset": "images/truesungodx.png"
+                "asset": "truesungodx.png"
             },
             {
                 "name": "005-Super Monkey",
-                "asset": "images/005-SuperMonkeydecor.png"
+                "asset": "005-SuperMonkeydecor.png"
             },
             {
                 "name": "005-Wizard Monkey",
-                "asset": "images/005-WizardMokeydecor.png"
+                "asset": "005-WizardMokeydecor.png"
             },
             {
                 "name": "050-Druid Monkey",
-                "asset": "images/050-DruidMonkeydecor.png"
+                "asset": "050-DruidMonkeydecor.png"
             },
             {
                 "name": "050-Engineer Monkey",
-                "asset": "images/050-EngineerMonkeydecor.png"
+                "asset": "050-EngineerMonkeydecor.png"
             },
             {
                 "name": "050-Ice Monkey",
-                "asset": "images/050-IceMonkeydecor.png"
+                "asset": "050-IceMonkeydecor.png"
             },
             {
                 "name": "500-Monkey Submarine",
-                "asset": "images/500-MonkeySubmarinedecor.png"
+                "asset": "500-MonkeySubmarinedecor.png"
             },
             {
                 "name": "500-Ninja Monkey",
-                "asset": "images/500-NinjaMonkeydecor.png"
+                "asset": "500-NinjaMonkeydecor.png"
             }
         ]
     },
     {
         "name": "BAKERS",
-        "banner": "images/nuki-bakery-banner.png",
+        "banner": "nuki-bakery-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1143994313034960967')
@@ -2023,61 +2023,61 @@ const categories =
         "decorations": [
             {
                 "name": "Pink Boba",
-                "asset": "images/pinkboba.png"
+                "asset": "pinkboba.png"
             },
             {
                 "name": "Cherry On Top",
-                "asset": "images/cherryontop.png"
+                "asset": "cherryontop.png"
             },
             {
                 "name": "Chocolate Roll",
-                "asset": "images/choco_roll.png"
+                "asset": "choco_roll.png"
             },
             {
                 "name": "Strawberry Roll",
-                "asset": "images/strawberry_roll.png"
+                "asset": "strawberry_roll.png"
             },
             {
                 "name": "Cookie",
-                "asset": "images/cookie.png"
+                "asset": "cookie.png"
             },
             {
                 "name": "Croissant",
-                "asset": "images/croissant.png"
+                "asset": "croissant.png"
             },
             {
                 "name": "Crumb",
-                "asset": "images/crumb.png"
+                "asset": "crumb.png"
             },
             {
                 "name": "Pink Cupcake Circle",
-                "asset": "images/pinkcupcake.png"
+                "asset": "pinkcupcake.png"
             },
             {
                 "name": "Cupcake Tray",
-                "asset": "images/cupcaketray.png"
+                "asset": "cupcaketray.png"
             },
             {
                 "name": "Mixing Bowl",
-                "asset": "images/mixingbowl.png"
+                "asset": "mixingbowl.png"
             },
             {
                 "name": "Pie Slice",
-                "asset": "images/pieslice.png"
+                "asset": "pieslice.png"
             },
             {
                 "name": "Strawberries",
-                "asset": "images/strawberries.png"
+                "asset": "strawberries.png"
             },
             {
                 "name": "Sundae Bowl",
-                "asset": "images/sundaebowl.png"
+                "asset": "sundaebowl.png"
             }
         ]
     },
     {
         "name": "STARCRAFT",
-        "banner": "images/starcraft-banner.png",
+        "banner": "starcraft-banner.png",
         "artist_info": null,
         "artists": [
             findUser('11')
@@ -2085,49 +2085,49 @@ const categories =
         "decorations": [
             {
                 "name": "Protoss",
-                "asset": "images/protoss.png"
+                "asset": "protoss.png"
             },
             {
                 "name": "Protoss Green",
-                "asset": "images/Protoss_green.png"
+                "asset": "Protoss_green.png"
             },
             {
                 "name": "Protoss Purple",
-                "asset": "images/Protoss_purp.png"
+                "asset": "Protoss_purp.png"
             },
             {
                 "name": "Terran",
-                "asset": "images/terran.png"
+                "asset": "terran.png"
             },
             {
                 "name": "Terran Green",
-                "asset": "images/terran_green.png"
+                "asset": "terran_green.png"
             },
             {
                 "name": "Terran Red",
-                "asset": "images/terran_red.png"
+                "asset": "terran_red.png"
             },
             {
                 "name": "Zerg",
-                "asset": "images/zerg.png"
+                "asset": "zerg.png"
             },
             {
                 "name": "Zerg Green",
-                "asset": "images/Zerg_green.png"
+                "asset": "Zerg_green.png"
             },
             {
                 "name": "Zerg Pink",
-                "asset": "images/Zerg_pink.png"
+                "asset": "Zerg_pink.png"
             },
             {
                 "name": "Zerg Purple",
-                "asset": "images/Zerg_purp.png"
+                "asset": "Zerg_purp.png"
             }
         ]
     },
     {
         "name": "limbus",
-        "banner": "images/limbus-banner.png",
+        "banner": "limbus-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1096831760089763860')
@@ -2135,37 +2135,37 @@ const categories =
         "decorations": [
             {
                 "name": "don_quixote",
-                "asset": "images/don_quixote.png"
+                "asset": "don_quixote.png"
             },
             {
                 "name": "Heathcliff",
-                "asset": "images/heathcliff.png"
+                "asset": "heathcliff.png"
             },
             {
                 "name": "Hong Lu",
-                "asset": "images/hong_lu.png"
+                "asset": "hong_lu.png"
             },
             {
                 "name": "Ishmael",
-                "asset": "images/ishmael.png"
+                "asset": "ishmael.png"
             },
             {
                 "name": "Meursault",
-                "asset": "images/meursault.png"
+                "asset": "meursault.png"
             },
             {
                 "name": "Middle Brother",
-                "asset": "images/middle_brother.png"
+                "asset": "middle_brother.png"
             },
             {
                 "name": "Ryoshu",
-                "asset": "images/ryoshu.png"
+                "asset": "ryoshu.png"
             }
         ]
     },
     {
         "name": "JOJO",
-        "banner": "images/jojo-banner.png",
+        "banner": "jojo-banner.png",
         "artist_info": null,
         "artists": [
             findUser('12')
@@ -2173,37 +2173,37 @@ const categories =
         "decorations": [
             {
                 "name": "Aerosmith",
-                "asset": "images/Aerosmith.png"
+                "asset": "Aerosmith.png"
             },
             {
                 "name": "bitesthedustunderrr",
-                "asset": "images/bitesthedustunderrr.png"
+                "asset": "bitesthedustunderrr.png"
             },
             {
                 "name": "Echoes Act 1",
-                "asset": "images/echoes_act_1.png"
+                "asset": "echoes_act_1.png"
             },
             {
                 "name": "Echoes Act 2",
-                "asset": "images/echoes_act_2.png"
+                "asset": "echoes_act_2.png"
             },
             {
                 "name": "Hermit",
-                "asset": "images/hermit.png"
+                "asset": "hermit.png"
             },
             {
                 "name": "Killer Queen",
-                "asset": "images/killer_queen.png"
+                "asset": "killer_queen.png"
             },
             {
                 "name": "Six Pistols",
-                "asset": "images/SixPistols.png"
+                "asset": "SixPistols.png"
             }
         ]
     },
     {
         "name": "DORITOS",
-        "banner": "images/doritos-banner.png",
+        "banner": "doritos-banner.png",
         "artist_info": null,
         "artists": [
             findUser('7')
@@ -2211,61 +2211,61 @@ const categories =
         "decorations": [
             {
                 "name": "American Doritos",
-                "asset": "images/Ameican_Doritos_Decor.png"
+                "asset": "Ameican_Doritos_Decor.png"
             },
             {
                 "name": "Cheese Doritos",
-                "asset": "images/Cheese_Doritos_Decor.png"
+                "asset": "Cheese_Doritos_Decor.png"
             },
             {
                 "name": "Flaming Hot Doritos",
-                "asset": "images/Flaming_Hot_Doritos_Decor.png"
+                "asset": "Flaming_Hot_Doritos_Decor.png"
             },
             {
                 "name": "Mountain Dew Doritos",
-                "asset": "images/Mountain_Dew_Doritos_Decor.png"
+                "asset": "Mountain_Dew_Doritos_Decor.png"
             },
             {
                 "name": "Rainbow Doritos",
-                "asset": "images/Raimbow_Doritos_Decor.png"
+                "asset": "Raimbow_Doritos_Decor.png"
             },
             {
                 "name": "Sweet Chilli Pepper Doritos",
-                "asset": "images/Sweet_Chilli_Pepper_Doritos_Decor.png"
+                "asset": "Sweet_Chilli_Pepper_Doritos_Decor.png"
             },
             {
                 "name": "Whopper Doritos",
-                "asset": "images/Whopper_Doritos_Decor.png"
+                "asset": "Whopper_Doritos_Decor.png"
             },
             {
                 "name": "Sweet Paprika Doritos Bits",
-                "asset": "images/Sweet_Paprika_Doritos_Bits_Decor.png"
+                "asset": "Sweet_Paprika_Doritos_Bits_Decor.png"
             },
             {
                 "name": "Honey BBQ Doritos Bits",
-                "asset": "images/Honey_BBQ_Doritos_Bts_Decor.png"
+                "asset": "Honey_BBQ_Doritos_Bts_Decor.png"
             },
             {
                 "name": "Mountain Dew Drink Doritos",
-                "asset": "images/Montain_Dew_Drink_Doritos_Decor.png"
+                "asset": "Montain_Dew_Drink_Doritos_Decor.png"
             },
             {
                 "name": "Flaming Hot Chicken Fries",
-                "asset": "images/Flaming_Hot_Chicken_Fries_Doritos.png"
+                "asset": "Flaming_Hot_Chicken_Fries_Doritos.png"
             },
             {
                 "name": "Chilli Heatwave Chicken Fries",
-                "asset": "images/Chilli_Heatwave_Chicken_Fries_Doritos.png"
+                "asset": "Chilli_Heatwave_Chicken_Fries_Doritos.png"
             },
             {
                 "name": "Cheese Chicken Fries",
-                "asset": "images/Cheese_Chicken_Fries_Doritos.png"
+                "asset": "Cheese_Chicken_Fries_Doritos.png"
             }
         ]
     },
     {
         "name": "OM NOMS",
-        "banner": "images/omnom-banner.png",
+        "banner": "omnom-banner.png",
         "artist_info": null,
         "artists": [
             findUser('10')
@@ -2273,161 +2273,161 @@ const categories =
         "decorations": [
             {
                 "name": "Granny Smith Apple",
-                "asset": "images/apple (granny smith).png"
+                "asset": "apple (granny smith).png"
             },
             {
                 "name": "Apple",
-                "asset": "images/apple.png"
+                "asset": "apple.png"
             },
             {
                 "name": "Banana",
-                "asset": "images/banana.png"
+                "asset": "banana.png"
             },
             {
                 "name": "Beans",
-                "asset": "images/beans.png"
+                "asset": "beans.png"
             },
             {
                 "name": "Broccoli",
-                "asset": "images/broccoli.png"
+                "asset": "broccoli.png"
             },
             {
                 "name": "Burger",
-                "asset": "images/burger.png"
+                "asset": "burger.png"
             },
             {
                 "name": "Burrito",
-                "asset": "images/burito.png"
+                "asset": "burito.png"
             },
             {
                 "name": "Cabbage",
-                "asset": "images/cabbage.png"
+                "asset": "cabbage.png"
             },
             {
                 "name": "Carrot",
-                "asset": "images/carrot.png"
+                "asset": "carrot.png"
             },
             {
                 "name": "Cheese",
-                "asset": "images/cheese.png"
+                "asset": "cheese.png"
             },
             {
                 "name": "Chips",
-                "asset": "images/chips.png"
+                "asset": "chips.png"
             },
             {
                 "name": "Chocolate",
-                "asset": "images/chocolate.png"
+                "asset": "chocolate.png"
             },
             {
                 "name": "Real Cookie",
-                "asset": "images/realcookie.png"
+                "asset": "realcookie.png"
             },
             {
                 "name": "Corns",
-                "asset": "images/corns.png"
+                "asset": "corns.png"
             },
             {
                 "name": "Cotton Candy",
-                "asset": "images/cotton candy.png"
+                "asset": "cotton candy.png"
             },
             {
                 "name": "Real Cupcake",
-                "asset": "images/realcupcake.png"
+                "asset": "realcupcake.png"
             },
             {
                 "name": "Dragon Fruit",
-                "asset": "images/dragon fruit.png"
+                "asset": "dragon fruit.png"
             },
             {
                 "name": "Fries",
-                "asset": "images/fries.png"
+                "asset": "fries.png"
             },
             {
                 "name": "Grape",
-                "asset": "images/grape.png"
+                "asset": "grape.png"
             },
             {
                 "name": "Hot Dog",
-                "asset": "images/hot dog.png"
+                "asset": "hot dog.png"
             },
             {
                 "name": "Strawberry Ice Cream",
-                "asset": "images/ice cream (strawberry).png"
+                "asset": "ice cream (strawberry).png"
             },
             {
                 "name": "Jelly Beans",
-                "asset": "images/jelly beans.png"
+                "asset": "jelly beans.png"
             },
             {
                 "name": "Mandarin",
-                "asset": "images/mandarin.png"
+                "asset": "mandarin.png"
             },
             {
                 "name": "Mango",
-                "asset": "images/mango.png"
+                "asset": "mango.png"
             },
             {
                 "name": "Pancake",
-                "asset": "images/pancake.png"
+                "asset": "pancake.png"
             },
             {
                 "name": "Pie",
-                "asset": "images/pie.png"
+                "asset": "pie.png"
             },
             {
                 "name": "Pizza",
-                "asset": "images/pizza.png"
+                "asset": "pizza.png"
             },
             {
                 "name": "Popcorn",
-                "asset": "images/popcorns.png"
+                "asset": "popcorns.png"
             },
             {
                 "name": "Pudding",
-                "asset": "images/pudding.png"
+                "asset": "pudding.png"
             },
             {
                 "name": "Red Mushroom",
-                "asset": "images/red mushroom (srry i only make 1 mushroom decor cuz i have mycophobia).png"
+                "asset": "red mushroom (srry i only make 1 mushroom decor cuz i have mycophobia).png"
             },
             {
                 "name": "Rice",
-                "asset": "images/rice.png"
+                "asset": "rice.png"
             },
             {
                 "name": "Salad",
-                "asset": "images/salad.png"
+                "asset": "salad.png"
             },
             {
                 "name": "Salmon",
-                "asset": "images/salmon.png"
+                "asset": "salmon.png"
             },
             {
                 "name": "Strawberry",
-                "asset": "images/strawberry.png"
+                "asset": "strawberry.png"
             },
             {
                 "name": "Taco",
-                "asset": "images/taco.png"
+                "asset": "taco.png"
             },
             {
                 "name": "Watermelon",
-                "asset": "images/watermelon.png"
+                "asset": "watermelon.png"
             },
             {
                 "name": "The Forbidden Cheese",
-                "asset": "images/the forbidden cheese (sulfur).png"
+                "asset": "the forbidden cheese (sulfur).png"
             },
             {
                 "name": "Uranium",
-                "asset": "images/Uranium (special).png"
+                "asset": "Uranium (special).png"
             }
         ]
     },
     {
         "name": "cat person",
-        "banner": "images/cat-banner.png",
+        "banner": "cat-banner.png",
         "artist_info": null,
         "artists": [
             findUser('10')
@@ -2436,385 +2436,385 @@ const categories =
         "decorations": [
             {
                 "name": "Black Collar Black Cat Ears",
-                "asset": "images/black collar black cat ears.png"
+                "asset": "black collar black cat ears.png"
             },
             {
                 "name": "Black Collar Blue Cat Ears",
-                "asset": "images/black collar blue cat ears.png"
+                "asset": "black collar blue cat ears.png"
             },
             {
                 "name": "Black Collar Calico Cat Ears",
-                "asset": "images/black collar calico cat ears.png"
+                "asset": "black collar calico cat ears.png"
             },
             {
                 "name": "Black Collar Dark Orange Cat Ears",
-                "asset": "images/black collar dark orange cat ears.png"
+                "asset": "black collar dark orange cat ears.png"
             },
             {
                 "name": "Black Collar Green Cat Ears",
-                "asset": "images/black collar green cat ears.png"
+                "asset": "black collar green cat ears.png"
             },
             {
                 "name": "Black Collar Light Gray Cat Ears",
-                "asset": "images/black collar light gray cat ears.png"
+                "asset": "black collar light gray cat ears.png"
             },
             {
                 "name": "Black Collar Light Orange Cat Ears",
-                "asset": "images/black collar light orange cat ears.png"
+                "asset": "black collar light orange cat ears.png"
             },
             {
                 "name": "Black Collar Light Yellow Cat Ears",
-                "asset": "images/black collar light yellow cat ears.png"
+                "asset": "black collar light yellow cat ears.png"
             },
             {
                 "name": "Black Collar Purple Cat Ears",
-                "asset": "images/black collar purple cat ears.png"
+                "asset": "black collar purple cat ears.png"
             },
             {
                 "name": "Black Collar Red Cat Ears",
-                "asset": "images/black collar red cat ears.png"
+                "asset": "black collar red cat ears.png"
             },
             {
                 "name": "Black Collar White Cat Ears",
-                "asset": "images/black collar white cat ears.png"
+                "asset": "black collar white cat ears.png"
             },
             {
                 "name": "Blue Collar Black Cat Ears",
-                "asset": "images/blue collar black cat ears.png"
+                "asset": "blue collar black cat ears.png"
             },
             {
                 "name": "Blue Collar Blue Cat Ears",
-                "asset": "images/blue collar blue cat ears.png"
+                "asset": "blue collar blue cat ears.png"
             },
             {
                 "name": "Blue Collar Calico Cat Ears",
-                "asset": "images/blue collar calico cat ears.png"
+                "asset": "blue collar calico cat ears.png"
             },
             {
                 "name": "Blue Collar Dark Orange Cat Ears",
-                "asset": "images/blue collar dark orange cat ears.png"
+                "asset": "blue collar dark orange cat ears.png"
             },
             {
                 "name": "Blue Collar Gray Cat Ears",
-                "asset": "images/blue collar gray cat ears.png"
+                "asset": "blue collar gray cat ears.png"
             },
             {
                 "name": "Blue Collar Green Cat Ears",
-                "asset": "images/blue collar green cat ears.png"
+                "asset": "blue collar green cat ears.png"
             },
             {
                 "name": "Blue Collar Light Orange Cat Ears",
-                "asset": "images/blue collar light orange cat ears.png"
+                "asset": "blue collar light orange cat ears.png"
             },
             {
                 "name": "Blue Collar Purple Cat Ears",
-                "asset": "images/blue collar purple cat ears.png"
+                "asset": "blue collar purple cat ears.png"
             },
             {
                 "name": "Blue Collar Red Cat Ears",
-                "asset": "images/blue collar red cat ears.png"
+                "asset": "blue collar red cat ears.png"
             },
             {
                 "name": "Blue Collar White Cat Ears",
-                "asset": "images/blue collar white cat ears.png"
+                "asset": "blue collar white cat ears.png"
             },
             {
                 "name": "Cyan Collar Black Cat Ears",
-                "asset": "images/cyan collar black cat ears.png"
+                "asset": "cyan collar black cat ears.png"
             },
             {
                 "name": "Cyan Collar Blue Cat Ears",
-                "asset": "images/cyan collar blue cat ears.png"
+                "asset": "cyan collar blue cat ears.png"
             },
             {
                 "name": "Cyan Collar Calico Cat Ears",
-                "asset": "images/cyan collar calico cat ears.png"
+                "asset": "cyan collar calico cat ears.png"
             },
             {
                 "name": "Cyan Collar Dark Orange Cat Ears",
-                "asset": "images/cyan collar dark orange cat ears.png"
+                "asset": "cyan collar dark orange cat ears.png"
             },
             {
                 "name": "Cyan Collar Green Cat Ears",
-                "asset": "images/cyan collar green cat ears.png"
+                "asset": "cyan collar green cat ears.png"
             },
             {
                 "name": "Cyan Collar Light Gray Cat Ears",
-                "asset": "images/cyan collar light gray cat ears.png"
+                "asset": "cyan collar light gray cat ears.png"
             },
             {
                 "name": "Cyan Collar Light Orange Cat Ears",
-                "asset": "images/cyan collar light orange cat ears.png"
+                "asset": "cyan collar light orange cat ears.png"
             },
             {
                 "name": "Cyan Collar Light Yellow Cat Ears",
-                "asset": "images/cyan collar light yellow cat ears.png"
+                "asset": "cyan collar light yellow cat ears.png"
             },
             {
                 "name": "Cyan Collar Red Cat Ears",
-                "asset": "images/cyan collar red cat ears.png"
+                "asset": "cyan collar red cat ears.png"
             },
             {
                 "name": "Cyan Collar White Cat Ears",
-                "asset": "images/cyan collar white cat ears.png"
+                "asset": "cyan collar white cat ears.png"
             },
             {
                 "name": "Green Collar Black Cat Ears",
-                "asset": "images/green collar black cat ears.png"
+                "asset": "green collar black cat ears.png"
             },
             {
                 "name": "Green Collar Blue Cat Ears",
-                "asset": "images/green collar blue cat ears.png"
+                "asset": "green collar blue cat ears.png"
             },
             {
                 "name": "Green Collar Calico Cat Ears",
-                "asset": "images/green collar calico cat ears.png"
+                "asset": "green collar calico cat ears.png"
             },
             {
                 "name": "Green Collar Dark Orange Cat Ears",
-                "asset": "images/green collar dark orange cat ears.png"
+                "asset": "green collar dark orange cat ears.png"
             },
             {
                 "name": "Green Collar Green Cat Ears",
-                "asset": "images/green collar green cat ears.png"
+                "asset": "green collar green cat ears.png"
             },
             {
                 "name": "Green Collar Light Gray Cat Ears",
-                "asset": "images/green collar light gray cat ears.png"
+                "asset": "green collar light gray cat ears.png"
             },
             {
                 "name": "Green Collar Light Orange Cat Ears",
-                "asset": "images/green collar light orange cat ears.png"
+                "asset": "green collar light orange cat ears.png"
             },
             {
                 "name": "Green Collar Light Yellow Cat Ears",
-                "asset": "images/green collar light yellow cat ears.png"
+                "asset": "green collar light yellow cat ears.png"
             },
             {
                 "name": "Green Collar Purple Cat Ears",
-                "asset": "images/green collar purple cat ears.png"
+                "asset": "green collar purple cat ears.png"
             },
             {
                 "name": "Green Collar Red Cat Ears",
-                "asset": "images/green collar red cat ears.png"
+                "asset": "green collar red cat ears.png"
             },
             {
                 "name": "Green Collar White Cat Ears",
-                "asset": "images/green collar white cat ears.png"
+                "asset": "green collar white cat ears.png"
             },
             {
                 "name": "Magenta Collar Black Cat Ears",
-                "asset": "images/magneta collar black cat ears.png"
+                "asset": "magneta collar black cat ears.png"
             },
             {
                 "name": "Magenta Collar Blue Cat Ears",
-                "asset": "images/magneta collar blue cat ears.png"
+                "asset": "magneta collar blue cat ears.png"
             },
             {
                 "name": "Magenta Collar Calico Cat Ears",
-                "asset": "images/magneta collar calico cat ears.png"
+                "asset": "magneta collar calico cat ears.png"
             },
             {
                 "name": "Magenta Collar Dark Orange Cat Ears",
-                "asset": "images/magneta collar dark orange cat ears.png"
+                "asset": "magneta collar dark orange cat ears.png"
             },
             {
                 "name": "Magenta Collar Green Cat Ears",
-                "asset": "images/magneta collar green cat ears.png"
+                "asset": "magneta collar green cat ears.png"
             },
             {
                 "name": "Magenta Collar Light Gray Cat Ears",
-                "asset": "images/magneta collar light gray cat ears.png"
+                "asset": "magneta collar light gray cat ears.png"
             },
             {
                 "name": "Magenta Collar Light Yellow Cat Ears",
-                "asset": "images/magneta collar light yellow cat ears.png"
+                "asset": "magneta collar light yellow cat ears.png"
             },
             {
                 "name": "Magenta Collar Purple Cat Ears",
-                "asset": "images/magneta collar purple cat ears.png"
+                "asset": "magneta collar purple cat ears.png"
             },
             {
                 "name": "Magenta Collar Red Cat Ears",
-                "asset": "images/magneta red cat ears.png"
+                "asset": "magneta red cat ears.png"
             },
             {
                 "name": "Magenta Collar White Cat Ears",
-                "asset": "images/magneta collar white cat ears.png"
+                "asset": "magneta collar white cat ears.png"
             },
             {
                 "name": "Orange Collar Black Cat Ears",
-                "asset": "images/orange collar black cat ears.png"
+                "asset": "orange collar black cat ears.png"
             },
             {
                 "name": "Orange Collar Blue Cat Ears",
-                "asset": "images/orange collar blue cat ears.png"
+                "asset": "orange collar blue cat ears.png"
             },
             {
                 "name": "Orange Collar Calico Cat Ears",
-                "asset": "images/orange collar calico cat ears.png"
+                "asset": "orange collar calico cat ears.png"
             },
             {
                 "name": "Orange Collar Dark Orange Cat Ears",
-                "asset": "images/orange collar dark orange cat ears.png"
+                "asset": "orange collar dark orange cat ears.png"
             },
             {
                 "name": "Orange Collar Green Cat Ears",
-                "asset": "images/orange collar green cat ears.png"
+                "asset": "orange collar green cat ears.png"
             },
             {
                 "name": "Orange Collar Light Gray Cat Ears",
-                "asset": "images/orange collar light gray cat ears.png"
+                "asset": "orange collar light gray cat ears.png"
             },
             {
                 "name": "Orange Collar Light Yellow Cat Ears",
-                "asset": "images/orange collar light yellow cat ears.png"
+                "asset": "orange collar light yellow cat ears.png"
             },
             {
                 "name": "Orange Collar Orange Cat Ears",
-                "asset": "images/orange collar orange cat ears.png"
+                "asset": "orange collar orange cat ears.png"
             },
             {
                 "name": "Orange Collar Purple Cat Ears",
-                "asset": "images/orange collar purple cat ears.png"
+                "asset": "orange collar purple cat ears.png"
             },
             {
                 "name": "Orange Collar Red Cat Ears",
-                "asset": "images/orange collar red cat ears.png"
+                "asset": "orange collar red cat ears.png"
             },
             {
                 "name": "Orange Collar White Cat Ears",
-                "asset": "images/orange collar white cat ears.png"
+                "asset": "orange collar white cat ears.png"
             },
             {
                 "name": "Red Collar Black Cat Ears",
-                "asset": "images/red collar black cat ears.png"
+                "asset": "red collar black cat ears.png"
             },
             {
                 "name": "Red Collar Blue Cat Ears",
-                "asset": "images/red collar blue cat ears.png"
+                "asset": "red collar blue cat ears.png"
             },
             {
                 "name": "Red Collar Calico Cat Ears",
-                "asset": "images/red collar calico cat ears.png"
+                "asset": "red collar calico cat ears.png"
             },
             {
                 "name": "Red Collar Dark Orange Cat Ears",
-                "asset": "images/red collar dark orange cat ears.png"
+                "asset": "red collar dark orange cat ears.png"
             },
             {
                 "name": "Red Collar Green Cat Ears",
-                "asset": "images/red collar green cat ears.png"
+                "asset": "red collar green cat ears.png"
             },
             {
                 "name": "Red Collar Light Orange Cat Ears",
-                "asset": "images/red collar light orange cat ears.png"
+                "asset": "red collar light orange cat ears.png"
             },
             {
                 "name": "Red Collar Light Yellow Cat Ears",
-                "asset": "images/red collar light yellow cat ears.png"
+                "asset": "red collar light yellow cat ears.png"
             },
             {
                 "name": "Red Collar Purple Cat Ears",
-                "asset": "images/red collar purple cat ears.png"
+                "asset": "red collar purple cat ears.png"
             },
             {
                 "name": "Red Collar Red Cat Ears",
-                "asset": "images/red collar red cat ears.png"
+                "asset": "red collar red cat ears.png"
             },
             {
                 "name": "Red Collar White Cat Ears",
-                "asset": "images/red collar white cat ears.png"
+                "asset": "red collar white cat ears.png"
             },
             {
                 "name": "White Collar Black Cat Ears",
-                "asset": "images/white collar black cat ears.png"
+                "asset": "white collar black cat ears.png"
             },
             {
                 "name": "White Collar Blue Cat Ears",
-                "asset": "images/white collar blue cat ears.png"
+                "asset": "white collar blue cat ears.png"
             },
             {
                 "name": "White Collar Calico Cat Ears",
-                "asset": "images/white collar calico cat ears.png"
+                "asset": "white collar calico cat ears.png"
             },
             {
                 "name": "White Collar Dark Orange Cat Ears",
-                "asset": "images/white collar dark orange cat ears.png"
+                "asset": "white collar dark orange cat ears.png"
             },
             {
                 "name": "White Collar Green Cat Ears",
-                "asset": "images/white collar green cat ears.png"
+                "asset": "white collar green cat ears.png"
             },
             {
                 "name": "White Collar Light Gray Cat Ears",
-                "asset": "images/white collar light gray cat ears.png"
+                "asset": "white collar light gray cat ears.png"
             },
             {
                 "name": "White Collar Light Orange Cat Ears",
-                "asset": "images/white collar light orange cat ears.png"
+                "asset": "white collar light orange cat ears.png"
             },
             {
                 "name": "White Collar Light Yellow Cat Ears",
-                "asset": "images/white collar light yellow cat ears.png"
+                "asset": "white collar light yellow cat ears.png"
             },
             {
                 "name": "White Collar Purple Cat Ears",
-                "asset": "images/white collar purple cat ears.png"
+                "asset": "white collar purple cat ears.png"
             },
             {
                 "name": "White Collar Red Cat Ears",
-                "asset": "images/white collar red cat ears.png"
+                "asset": "white collar red cat ears.png"
             },
             {
                 "name": "White Collar White Cat Ears",
-                "asset": "images/white collar white cat ears.png"
+                "asset": "white collar white cat ears.png"
             },
             {
                 "name": "Blue Cat Ears",
-                "asset": "images/blue cat ears.png"
+                "asset": "blue cat ears.png"
             },
             {
                 "name": "Calico Cat Ears",
-                "asset": "images/calico cat ears.png"
+                "asset": "calico cat ears.png"
             },
             {
                 "name": "Cyan Cat Ears",
-                "asset": "images/cyan cat ears.png"
+                "asset": "cyan cat ears.png"
             },
             {
                 "name": "Dark Orange Cat Ears",
-                "asset": "images/dark orange cat ears.png"
+                "asset": "dark orange cat ears.png"
             },
             {
                 "name": "Green Cat Ears",
-                "asset": "images/green cat ears.png"
+                "asset": "green cat ears.png"
             },
             {
                 "name": "Light Gray Cat Ears",
-                "asset": "images/light gray cat ears.png"
+                "asset": "light gray cat ears.png"
             },
             {
                 "name": "Light Yellow Cat Ears",
-                "asset": "images/light yellow cat ears.png"
+                "asset": "light yellow cat ears.png"
             },
             {
                 "name": "Purple Cat Ears",
-                "asset": "images/purple cat ears.png"
+                "asset": "purple cat ears.png"
             },
             {
                 "name": "Red Cat Ears",
-                "asset": "images/red cat ears.png"
+                "asset": "red cat ears.png"
             },
             {
                 "name": "White Cat Ears",
-                "asset": "images/white cat ears.png"
+                "asset": "white cat ears.png"
             }
         ]
     },
     {
         "name": "GENSHIN",
-        "banner": "images/genshin-banner.png",
+        "banner": "genshin-banner.png",
         "artist_info": null,
         "artists": [
             findUser('452679089929846784')
@@ -2822,33 +2822,33 @@ const categories =
         "decorations": [
             {
                 "name": "Kirara Skill",
-                "asset": "images/kirara-skill.png"
+                "asset": "kirara-skill.png"
             },
             {
                 "name": "Xiangling Skill",
-                "asset": "images/xiangling_skill.png"
+                "asset": "xiangling_skill.png"
             },
             {
                 "name": "Charlotte Skill",
-                "asset": "images/charlotte_skill.png"
+                "asset": "charlotte_skill.png"
             },
             {
                 "name": "Chevreuse Skill",
-                "asset": "images/chevreuse_skill.png"
+                "asset": "chevreuse_skill.png"
             },
             {
                 "name": "Layla Skill",
-                "asset": "images/layla_skill.png"
+                "asset": "layla_skill.png"
             },
             {
                 "name": "Nahida Skill",
-                "asset": "images/nahida_skill.png"
+                "asset": "nahida_skill.png"
             }
         ]
     },
     {
         "name": "POKEMON",
-        "banner": "images/pokemon-banner.png",
+        "banner": "pokemon-banner.png",
         "artist_info": null,
         "artists": [
             findUser('13')
@@ -2856,33 +2856,33 @@ const categories =
         "decorations": [
             {
                 "name": "Cynthia",
-                "asset": "images/cynthia.png"
+                "asset": "cynthia.png"
             },
             {
                 "name": "Natural Harmonia Gropius",
-                "asset": "images/N.png"
+                "asset": "N.png"
             },
             {
                 "name": "Giratina",
-                "asset": "images/giratina.png"
+                "asset": "giratina.png"
             },
             {
                 "name": "Ceruledge",
-                "asset": "images/ceruledge.png"
+                "asset": "ceruledge.png"
             },
             {
                 "name": "Reshiram",
-                "asset": "images/reshiram.png"
+                "asset": "reshiram.png"
             },
             {
                 "name": "Mew",
-                "asset": "images/mew.png"
+                "asset": "mew.png"
             }
         ]
     },
     {
         "name": "BFDI",
-        "banner": "images/bfdi-banner.png",
+        "banner": "bfdi-banner.png",
         "artist_info": null,
         "artists": [
             findUser('14')
@@ -2890,41 +2890,41 @@ const categories =
         "decorations": [
             {
                 "name": "Bomby and Nickel",
-                "asset": "images/bomby-and-nickel.png"
+                "asset": "bomby-and-nickel.png"
             },
             {
                 "name": "Dirt Cake",
-                "asset": "images/dirt-cake.png"
+                "asset": "dirt-cake.png"
             },
             {
                 "name": "Freesmart",
-                "asset": "images/freesmart-alternates.png"
+                "asset": "freesmart-alternates.png"
             },
             {
                 "name": "Gumdrop Galore",
-                "asset": "images/gumdrop-galore.png"
+                "asset": "gumdrop-galore.png"
             },
             {
                 "name": "Inside Bubble",
-                "asset": "images/inside-bubble.png"
+                "asset": "inside-bubble.png"
             },
             {
                 "name": "Inside the donut hole",
-                "asset": "images/inside-the-donut-hole.png"
+                "asset": "inside-the-donut-hole.png"
             },
             {
                 "name": "Pop that bubble",
-                "asset": "images/pop-that-bubble.png"
+                "asset": "pop-that-bubble.png"
             },
             {
                 "name": "Rocky Barf",
-                "asset": "images/rocky-barf.png"
+                "asset": "rocky-barf.png"
             }
         ]
     },
     {
         "name": "FNF",
-        "banner": "images/fnf-banner.png",
+        "banner": "fnf-banner.png",
         "artist_info": null,
         "artists": [
             findUser('7')
@@ -2932,77 +2932,77 @@ const categories =
         "decorations": [
             {
                 "name": "Darnell Sticker",
-                "asset": "images/DARNELL_Sticker_Decor.png"
+                "asset": "DARNELL_Sticker_Decor.png"
             },
             {
                 "name": "Face Sticker",
-                "asset": "images/FACE_Sticker_Decor.png"
+                "asset": "FACE_Sticker_Decor.png"
             },
             {
                 "name": "Tankman Sticker",
-                "asset": "images/TANKMAN_Sticker_Decor.png"
+                "asset": "TANKMAN_Sticker_Decor.png"
             },
             {
                 "name": "GF Sticker",
-                "asset": "images/GF_Sticker_Decor.png"
+                "asset": "GF_Sticker_Decor.png"
             },
             {
                 "name": "Daddy Dearest Sticker",
-                "asset": "images/DADDY_DEAREST_Sticker_Decor.png"
+                "asset": "DADDY_DEAREST_Sticker_Decor.png"
             },
             {
                 "name": "Mommy Dearest Sticker",
-                "asset": "images/MOMMY_DEAREST_Sticker_Decor.png"
+                "asset": "MOMMY_DEAREST_Sticker_Decor.png"
             },
             {
                 "name": "Sempai Sticker",
-                "asset": "images/SEMPAI_Sticker_Decor.png"
+                "asset": "SEMPAI_Sticker_Decor.png"
             },
             {
                 "name": "Ski And Pump Sticker",
-                "asset": "images/SKIDANDPUMP_Sticker_Decor.png"
+                "asset": "SKIDANDPUMP_Sticker_Decor.png"
             },
             {
                 "name": "Speakers Sticker",
-                "asset": "images/SPEAKERS_Sticker_Decor.png"
+                "asset": "SPEAKERS_Sticker_Decor.png"
             },
             {
                 "name": "Spirit Sticker",
-                "asset": "images/SPIRIT_Sticker_Decor.png"
+                "asset": "SPIRIT_Sticker_Decor.png"
             },
             {
                 "name": "Lemon Demon Sticker",
-                "asset": "images/LEMON_DEMON_Sticker_Decor.png"
+                "asset": "LEMON_DEMON_Sticker_Decor.png"
             },
             {
                 "name": "BF Sticker",
-                "asset": "images/Bf_Sticker_Decor.png"
+                "asset": "Bf_Sticker_Decor.png"
             },
             {
                 "name": "Pico Sticker",
-                "asset": "images/PICO_Sticker_Decor.png"
+                "asset": "PICO_Sticker_Decor.png"
             },
             {
                 "name": "Nene Sticker",
-                "asset": "images/NENE_Sticker_Decor.png"
+                "asset": "NENE_Sticker_Decor.png"
             },
             {
                 "name": "BF Fan",
-                "asset": "images/Bf_Fan_Decor.png"
+                "asset": "Bf_Fan_Decor.png"
             },
             {
                 "name": "FNF Player",
-                "asset": "images/FNF_Player_Decor.png"
+                "asset": "FNF_Player_Decor.png"
             },
             {
                 "name": "GF Sit",
-                "asset": "images/GF_Sit_Decor.png"
+                "asset": "GF_Sit_Decor.png"
             }
         ]
     },
     {
         "name": "Pizza",
-        "banner": "images/pizza-banner.png",
+        "banner": "pizza-banner.png",
         "artist_info": null,
         "artists": [
             findUser('15')
@@ -3010,33 +3010,33 @@ const categories =
         "decorations": [
             {
                 "name": "Chef",
-                "asset": "images/chef.png"
+                "asset": "chef.png"
             },
             {
                 "name": "Chef Hat",
-                "asset": "images/chefhat.png"
+                "asset": "chefhat.png"
             },
             {
                 "name": "Goo",
-                "asset": "images/goo.png"
+                "asset": "goo.png"
             },
             {
                 "name": "Mouth",
-                "asset": "images/mouth.png"
+                "asset": "mouth.png"
             },
             {
                 "name": "Rat Knife",
-                "asset": "images/ratknife.png"
+                "asset": "ratknife.png"
             },
             {
                 "name": "Brick",
-                "asset": "images/brick.png"
+                "asset": "brick.png"
             }
         ]
     },
     {
         "name": "Kitsune",
-        "banner": "images/kitsune-banner.png",
+        "banner": "kitsune-banner.png",
         "artist_info": null,
         "artists": [
             findUser('5')
@@ -3044,33 +3044,33 @@ const categories =
         "decorations": [
             {
                 "name": "Black Mask",
-                "asset": "images/Blackmask.png"
+                "asset": "Blackmask.png"
             },
             {
                 "name": "Blue Mask",
-                "asset": "images/Bluemask.png"
+                "asset": "Bluemask.png"
             },
             {
                 "name": "Green Mask",
-                "asset": "images/Greenmask.png"
+                "asset": "Greenmask.png"
             },
             {
                 "name": "Pink Mask",
-                "asset": "images/Pinkmask.png"
+                "asset": "Pinkmask.png"
             },
             {
                 "name": "Purple Mask",
-                "asset": "images/Purplemask.png"
+                "asset": "Purplemask.png"
             },
             {
                 "name": "Red Mask",
-                "asset": "images/Redmask.png"
+                "asset": "Redmask.png"
             }
         ]
     },
     {
         "name": "NEON",
-        "banner": "images/neon-banner.png",
+        "banner": "neon-banner.png",
         "artist_info": null,
         "artists": [
             findUser('16')
@@ -3078,57 +3078,57 @@ const categories =
         "decorations": [
             {
                 "name": "Flamelike",
-                "asset": "images/flamelike.png"
+                "asset": "flamelike.png"
             },
             {
                 "name": "Prideful",
-                "asset": "images/prideful.png"
+                "asset": "prideful.png"
             },
             {
                 "name": "Split Globe",
-                "asset": "images/split-globe.png"
+                "asset": "split-globe.png"
             },
             {
                 "name": "Glitch",
-                "asset": "images/glitch.png"
+                "asset": "glitch.png"
             },
             {
                 "name": "RGB Circle",
-                "asset": "images/rgbcircle.png"
+                "asset": "rgbcircle.png"
             },
             {
                 "name": "Purple Glow",
-                "asset": "images/purple-glow.png"
+                "asset": "purple-glow.png"
             },
             {
                 "name": "Geometric",
-                "asset": "images/geometric.png"
+                "asset": "geometric.png"
             },
             {
                 "name": "Particle Circle",
-                "asset": "images/particle-circle.png"
+                "asset": "particle-circle.png"
             },
             {
                 "name": "Retro Car",
-                "asset": "images/retrocar.png"
+                "asset": "retrocar.png"
             },
             {
                 "name": "Runic",
-                "asset": "images/runic.png"
+                "asset": "runic.png"
             },
             {
                 "name": "Wireframe",
-                "asset": "images/wireframe.png"
+                "asset": "wireframe.png"
             },
             {
                 "name": "Galaxy",
-                "asset": "images/Galaxy.png"
+                "asset": "Galaxy.png"
             }
         ]
     },
     {
         "name": "Stardew",
-        "banner": "images/1stardew-banner.png",
+        "banner": "1stardew-banner.png",
         "artist_info": null,
         "artists": [
             findUser('811114235966521364')
@@ -3136,77 +3136,77 @@ const categories =
         "decorations": [
             {
                 "name": "Abigail",
-                "asset": "images/abigail.png"
+                "asset": "abigail.png"
             },
             {
                 "name": "Alex",
-                "asset": "images/alex.png"
+                "asset": "alex.png"
             },
             {
                 "name": "Elliott",
-                "asset": "images/elliott.png"
+                "asset": "elliott.png"
             },
             {
                 "name": "Emily",
-                "asset": "images/emily.png"
+                "asset": "emily.png"
             },
             {
                 "name": "Haley",
-                "asset": "images/haley.png"
+                "asset": "haley.png"
             },
             {
                 "name": "Harvey",
-                "asset": "images/harvey.png"
+                "asset": "harvey.png"
             },
             {
                 "name": "Hat Mouse",
-                "asset": "images/hatmouse.png"
+                "asset": "hatmouse.png"
             },
             {
                 "name": "Junimo",
-                "asset": "images/junimo.png"
+                "asset": "junimo.png"
             },
             {
                 "name": "Leah",
-                "asset": "images/leah.png"
+                "asset": "leah.png"
             },
             {
                 "name": "Maru",
-                "asset": "images/maru.png"
+                "asset": "maru.png"
             },
             {
                 "name": "Mr Qi",
-                "asset": "images/mrqi.png"
+                "asset": "mrqi.png"
             },
             {
                 "name": "Pendant",
-                "asset": "images/pendant.png"
+                "asset": "pendant.png"
             },
             {
                 "name": "Penny",
-                "asset": "images/penny.png"
+                "asset": "penny.png"
             },
             {
                 "name": "Sam",
-                "asset": "images/sam.png"
+                "asset": "sam.png"
             },
             {
                 "name": "Sebastian",
-                "asset": "images/sebastian.png"
+                "asset": "sebastian.png"
             },
             {
                 "name": "Shane",
-                "asset": "images/shane.png"
+                "asset": "shane.png"
             },
             {
                 "name": "Portrait",
-                "asset": "images/portrait.png"
+                "asset": "portrait.png"
             }
         ]
     },
     {
         "name": "Squish",
-        "banner": "images/1squishmallow-banner.png",
+        "banner": "1squishmallow-banner.png",
         "artist_info": null,
         "artists": [
             findUser('811114235966521364')
@@ -3214,45 +3214,45 @@ const categories =
         "decorations": [
             {
                 "name": "Carotene",
-                "asset": "images/carotene.png"
+                "asset": "carotene.png"
             },
             {
                 "name": "Davina",
-                "asset": "images/davina.png"
+                "asset": "davina.png"
             },
             {
                 "name": "Mario",
-                "asset": "images/mario.png"
+                "asset": "mario.png"
             },
             {
                 "name": "Rebecca",
-                "asset": "images/rebecca.png"
+                "asset": "rebecca.png"
             },
             {
                 "name": "Tristan",
-                "asset": "images/tristan.png"
+                "asset": "tristan.png"
             },
             {
                 "name": "Omnomnom",
-                "asset": "images/omnomnom.png"
+                "asset": "omnomnom.png"
             },
             {
                 "name": "Sam Sundae",
-                "asset": "images/sam sundae.png"
+                "asset": "sam sundae.png"
             },
             {
                 "name": "Pom Pom Burger",
-                "asset": "images/pom pom burger.png"
+                "asset": "pom pom burger.png"
             },
             {
                 "name": "Akilah",
-                "asset": "images/akilah.png"
+                "asset": "akilah.png"
             }
         ]
     },
     {
         "name": "BUTTERFLY",
-        "banner": "images/nuki-crystal-banner.png",
+        "banner": "nuki-crystal-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1143994313034960967')
@@ -3261,369 +3261,369 @@ const categories =
         "decorations": [
             {
                 "name": "Dandelion Autumn",
-                "asset": "images/dandelionautumn.png"
+                "asset": "dandelionautumn.png"
             },
             {
                 "name": "Dandelion Blue",
-                "asset": "images/dandelionblue.png"
+                "asset": "dandelionblue.png"
             },
             {
                 "name": "Dandelion Cherry",
-                "asset": "images/dandelioncherry.png"
+                "asset": "dandelioncherry.png"
             },
             {
                 "name": "Dandelion Cyan",
-                "asset": "images/dandelioncyan.png"
+                "asset": "dandelioncyan.png"
             },
             {
                 "name": "Dandelion Green",
-                "asset": "images/dandeliongreen.png"
+                "asset": "dandeliongreen.png"
             },
             {
                 "name": "Dandelion Mystical",
-                "asset": "images/dandelionmystical.png"
+                "asset": "dandelionmystical.png"
             },
             {
                 "name": "Dandelion Pink",
-                "asset": "images/dandelionpink.png"
+                "asset": "dandelionpink.png"
             },
             {
                 "name": "Dandelion Purple",
-                "asset": "images/dandelionpurple.png"
+                "asset": "dandelionpurple.png"
             },
             {
                 "name": "Dandelion Yellow",
-                "asset": "images/dandelionyellow.png"
+                "asset": "dandelionyellow.png"
             },
             {
                 "name": "Dust Azure",
-                "asset": "images/dustazure.png"
+                "asset": "dustazure.png"
             },
             {
                 "name": "Dust Cyan",
-                "asset": "images/dustcyan.png"
+                "asset": "dustcyan.png"
             },
             {
                 "name": "Dust Forest",
-                "asset": "images/dustforest.png"
+                "asset": "dustforest.png"
             },
             {
                 "name": "Dust Green",
-                "asset": "images/dustgreen.png"
+                "asset": "dustgreen.png"
             },
             {
                 "name": "Dust Magical",
-                "asset": "images/dustmagical.png"
+                "asset": "dustmagical.png"
             },
             {
                 "name": "Dust Pink",
-                "asset": "images/dustpink.png"
+                "asset": "dustpink.png"
             },
             {
                 "name": "Dust Purple",
-                "asset": "images/dustpurple.png"
+                "asset": "dustpurple.png"
             },
             {
                 "name": "Dust Red",
-                "asset": "images/dustred.png"
+                "asset": "dustred.png"
             },
             {
                 "name": "Dust Yellow",
-                "asset": "images/dustyellow.png"
+                "asset": "dustyellow.png"
             },
             {
                 "name": "Gemstone Autumn",
-                "asset": "images/gemstoneautumn.png"
+                "asset": "gemstoneautumn.png"
             },
             {
                 "name": "Gemstone Blue",
-                "asset": "images/gemstoneblue.png"
+                "asset": "gemstoneblue.png"
             },
             {
                 "name": "Gemstone Green",
-                "asset": "images/gemstonegreen.png"
+                "asset": "gemstonegreen.png"
             },
             {
                 "name": "Gemstone Pastel",
-                "asset": "images/gemstonepastel.png"
+                "asset": "gemstonepastel.png"
             },
             {
                 "name": "Gemstone Pink",
-                "asset": "images/gemstonepink.png"
+                "asset": "gemstonepink.png"
             },
             {
                 "name": "Gemstone Red",
-                "asset": "images/gemstonered.png"
+                "asset": "gemstonered.png"
             },
             {
                 "name": "Gemstone Spring",
-                "asset": "images/gemstonespring.png"
+                "asset": "gemstonespring.png"
             },
             {
                 "name": "Gemstone Summer",
-                "asset": "images/gemstonesummer.png"
+                "asset": "gemstonesummer.png"
             },
             {
                 "name": "Gemstone Yellow",
-                "asset": "images/gemstoneyellow.png"
+                "asset": "gemstoneyellow.png"
             },
             {
                 "name": "Holly Autumn",
-                "asset": "images/hollyautumn.png"
+                "asset": "hollyautumn.png"
             },
             {
                 "name": "Holly Blue",
-                "asset": "images/hollyblue.png"
+                "asset": "hollyblue.png"
             },
             {
                 "name": "Holly Brown",
-                "asset": "images/hollybrown.png"
+                "asset": "hollybrown.png"
             },
             {
                 "name": "Holly Cherry",
-                "asset": "images/hollycherry.png"
+                "asset": "hollycherry.png"
             },
             {
                 "name": "Holly Forest",
-                "asset": "images/hollyforest.png"
+                "asset": "hollyforest.png"
             },
             {
                 "name": "Holly Green",
-                "asset": "images/hollygreen.png"
+                "asset": "hollygreen.png"
             },
             {
                 "name": "Holly Mint",
-                "asset": "images/hollymint.png"
+                "asset": "hollymint.png"
             },
             {
                 "name": "Holly Purple",
-                "asset": "images/hollypurple.png"
+                "asset": "hollypurple.png"
             },
             {
                 "name": "Holly Red",
-                "asset": "images/hollyred.png"
+                "asset": "hollyred.png"
             },
             {
                 "name": "Lantern Autumn",
-                "asset": "images/lanternautumn.png"
+                "asset": "lanternautumn.png"
             },
             {
                 "name": "Lantern Blue",
-                "asset": "images/lanternblue.png"
+                "asset": "lanternblue.png"
             },
             {
                 "name": "Lantern Cherry",
-                "asset": "images/lanterncherry.png"
+                "asset": "lanterncherry.png"
             },
             {
                 "name": "Lantern Crystal",
-                "asset": "images/lanterncrystal.png"
+                "asset": "lanterncrystal.png"
             },
             {
                 "name": "Lantern Green",
-                "asset": "images/lanterngreen.png"
+                "asset": "lanterngreen.png"
             },
             {
                 "name": "Lantern Pink",
-                "asset": "images/lanternpink.png"
+                "asset": "lanternpink.png"
             },
             {
                 "name": "Lantern Purple",
-                "asset": "images/lanternpurple.png"
+                "asset": "lanternpurple.png"
             },
             {
                 "name": "Lantern Red",
-                "asset": "images/lanternred.png"
+                "asset": "lanternred.png"
             },
             {
                 "name": "Lantern Yellow",
-                "asset": "images/lanternyellow.png"
+                "asset": "lanternyellow.png"
             },
             {
                 "name": "No Lantern Autumn",
-                "asset": "images/nolanternautumn.png"
+                "asset": "nolanternautumn.png"
             },
             {
                 "name": "No Lantern Blue",
-                "asset": "images/nolanternblue.png"
+                "asset": "nolanternblue.png"
             },
             {
                 "name": "No Lantern Cherry",
-                "asset": "images/nolanterncherry.png"
+                "asset": "nolanterncherry.png"
             },
             {
                 "name": "No Lantern Crystal",
-                "asset": "images/nolanterncrystal.png"
+                "asset": "nolanterncrystal.png"
             },
             {
                 "name": "No Lantern Green",
-                "asset": "images/nolanterngreen.png"
+                "asset": "nolanterngreen.png"
             },
             {
                 "name": "No Lantern Pink",
-                "asset": "images/nolanternpink.png"
+                "asset": "nolanternpink.png"
             },
             {
                 "name": "No Lantern Purple",
-                "asset": "images/nolanternpurple.png"
+                "asset": "nolanternpurple.png"
             },
             {
                 "name": "No Lantern Red",
-                "asset": "images/nolanternred.png"
+                "asset": "nolanternred.png"
             },
             {
                 "name": "No Lantern Yellow",
-                "asset": "images/nolanternyellow.png"
+                "asset": "nolanternyellow.png"
             },
             {
                 "name": "Quartz Blue",
-                "asset": "images/quartzblue.png"
+                "asset": "quartzblue.png"
             },
             {
                 "name": "Quartz Cyan",
-                "asset": "images/quartzcyan.png"
+                "asset": "quartzcyan.png"
             },
             {
                 "name": "Quartz Green",
-                "asset": "images/quartzgreen.png"
+                "asset": "quartzgreen.png"
             },
             {
                 "name": "Quartz Orange",
-                "asset": "images/quartzorange.png"
+                "asset": "quartzorange.png"
             },
             {
                 "name": "Quartz Purple",
-                "asset": "images/quartzpurple.png"
+                "asset": "quartzpurple.png"
             },
             {
                 "name": "Quartz Red",
-                "asset": "images/quartzred.png"
+                "asset": "quartzred.png"
             },
             {
                 "name": "Quartz Rose",
-                "asset": "images/quartzrose.png"
+                "asset": "quartzrose.png"
             },
             {
                 "name": "Quartz Yellow",
-                "asset": "images/quartzyellow.png"
+                "asset": "quartzyellow.png"
             },
             {
                 "name": "Quartz Rainbow",
-                "asset": "images/quartzrainbow.png"
+                "asset": "quartzrainbow.png"
             },
             {
                 "name": "Ribbon Blue",
-                "asset": "images/ribbonblue.png"
+                "asset": "ribbonblue.png"
             },
             {
                 "name": "Ribbon Cyan",
-                "asset": "images/ribboncyan.png"
+                "asset": "ribboncyan.png"
             },
             {
                 "name": "Ribbon Forest",
-                "asset": "images/ribbonforest.png"
+                "asset": "ribbonforest.png"
             },
             {
                 "name": "Ribbon Mint",
-                "asset": "images/ribbonmint.png"
+                "asset": "ribbonmint.png"
             },
             {
                 "name": "Ribbon Pink",
-                "asset": "images/ribbonpink.png"
+                "asset": "ribbonpink.png"
             },
             {
                 "name": "Ribbon Purple",
-                "asset": "images/ribbonpurple.png"
+                "asset": "ribbonpurple.png"
             },
             {
                 "name": "Ribbon Red",
-                "asset": "images/ribbonred.png"
+                "asset": "ribbonred.png"
             },
             {
                 "name": "Ribbon Rose",
-                "asset": "images/ribbonrose.png"
+                "asset": "ribbonrose.png"
             },
             {
                 "name": "Ribbon Yellow",
-                "asset": "images/ribbonyellow.png"
+                "asset": "ribbonyellow.png"
             },
             {
                 "name": "Sakura Autumn",
-                "asset": "images/sakuraautumn.png"
+                "asset": "sakuraautumn.png"
             },
             {
                 "name": "Sakura Dawn",
-                "asset": "images/sakuradawn.png"
+                "asset": "sakuradawn.png"
             },
             {
                 "name": "Sakura Cyan",
-                "asset": "images/sakuracyan.png"
+                "asset": "sakuracyan.png"
             },
             {
                 "name": "Sakura Emerald",
-                "asset": "images/sakuraemerald.png"
+                "asset": "sakuraemerald.png"
             },
             {
                 "name": "Sakura Mint",
-                "asset": "images/sakuramint.png"
+                "asset": "sakuramint.png"
             },
             {
                 "name": "Sakura Moonlight",
-                "asset": "images/sakuramoonlight.png"
+                "asset": "sakuramoonlight.png"
             },
             {
                 "name": "Sakura Twilight",
-                "asset": "images/sakuratwilight.png"
+                "asset": "sakuratwilight.png"
             },
             {
                 "name": "Sakura Pink",
-                "asset": "images/sakurapink.png"
+                "asset": "sakurapink.png"
             },
             {
                 "name": "Sakura Yellow",
-                "asset": "images/sakurayellow.png"
+                "asset": "sakurayellow.png"
             },
             {
                 "name": "Leaves Autumn",
-                "asset": "images/leavesautumn.png"
+                "asset": "leavesautumn.png"
             },
             {
                 "name": "Leaves Blue",
-                "asset": "images/leavesblue.png"
+                "asset": "leavesblue.png"
             },
             {
                 "name": "Leaves Green",
-                "asset": "images/leavesgreen.png"
+                "asset": "leavesgreen.png"
             },
             {
                 "name": "Leaves Magenta",
-                "asset": "images/leavesmagenta.png"
+                "asset": "leavesmagenta.png"
             },
             {
                 "name": "Leaves Mint",
-                "asset": "images/leavesmint.png"
+                "asset": "leavesmint.png"
             },
             {
                 "name": "Leaves Pink",
-                "asset": "images/leavespink.png"
+                "asset": "leavespink.png"
             },
             {
                 "name": "Leaves Red",
-                "asset": "images/leavesred.png"
+                "asset": "leavesred.png"
             },
             {
                 "name": "Leaves Winter",
-                "asset": "images/leaveswinter.png"
+                "asset": "leaveswinter.png"
             },
             {
                 "name": "Leaves Yellow",
-                "asset": "images/leavesyellow.png"
+                "asset": "leavesyellow.png"
             }
         ]
     },
     {
         "name": "CORAL REEF",
-        "banner": "images/coralbannernew.png",
+        "banner": "coralbannernew.png",
         "artist_info": "Reminder to add all the artists to this category or you will explode",
         "artists": [
             findUser('1')
@@ -3631,117 +3631,117 @@ const categories =
         "decorations": [
             {
                 "name": "Pink Jellyfish",
-                "asset": "images/pinkjelly.png"
+                "asset": "pinkjelly.png"
             },
             {
                 "name": "Happy Jellyfish",
-                "asset": "images/happyjelly.png"
+                "asset": "happyjelly.png"
             },
             {
                 "name": "Axolotl Blue",
-                "asset": "images/axoblue.png"
+                "asset": "axoblue.png"
             },
             {
                 "name": "Axolotl Pink",
-                "asset": "images/axopink.png"
+                "asset": "axopink.png"
             },
             {
                 "name": "Axolotl Purple",
-                "asset": "images/axopurple.png"
+                "asset": "axopurple.png"
             },
             {
                 "name": "Axolotl White",
-                "asset": "images/axowhite.png"
+                "asset": "axowhite.png"
             },
             {
                 "name": "Axolotl Yellow",
-                "asset": "images/axoyellow.png"
+                "asset": "axoyellow.png"
             },
             {
                 "name": "Float Blue",
-                "asset": "images/floatblue.png"
+                "asset": "floatblue.png"
             },
             {
                 "name": "Float Green",
-                "asset": "images/floatgreen.png"
+                "asset": "floatgreen.png"
             },
             {
                 "name": "Float Pink",
-                "asset": "images/floatpink.png"
+                "asset": "floatpink.png"
             },
             {
                 "name": "Float Purple",
-                "asset": "images/floatpurple.png"
+                "asset": "floatpurple.png"
             },
             {
                 "name": "Float Yellow",
-                "asset": "images/floatyellow.png"
+                "asset": "floatyellow.png"
             },
             {
                 "name": "Blue Knife",
-                "asset": "images/blueknife.png"
+                "asset": "blueknife.png"
             },
             {
                 "name": "Green Knife",
-                "asset": "images/greenknife.png"
+                "asset": "greenknife.png"
             },
             {
                 "name": "Mint Knife",
-                "asset": "images/mintknife.png"
+                "asset": "mintknife.png"
             },
             {
                 "name": "Pink Knife",
-                "asset": "images/pinkknife.png"
+                "asset": "pinkknife.png"
             },
             {
                 "name": "Purple Knife",
-                "asset": "images/purpleknife.png"
+                "asset": "purpleknife.png"
             },
             {
                 "name": "Red Knife",
-                "asset": "images/redknife.png"
+                "asset": "redknife.png"
             },
             {
                 "name": "Yellow Knife",
-                "asset": "images/yellowknife.png"
+                "asset": "yellowknife.png"
             },
             {
                 "name": "White Jelly",
-                "asset": "images/a_ white jelly.png"
+                "asset": "a_ white jelly.png"
             },
             {
                 "name": "Cyan Jelly",
-                "asset": "images/cyan jelly.png"
+                "asset": "cyan jelly.png"
             },
             {
                 "name": "Light Purple Jelly",
-                "asset": "images/d_light purple jelly.png"
+                "asset": "d_light purple jelly.png"
             },
             {
                 "name": "Pink Jelly",
-                "asset": "images/d_pink jelly.png"
+                "asset": "d_pink jelly.png"
             },
             {
                 "name": "Light Green Jelly",
-                "asset": "images/f_light green jelly.png"
+                "asset": "f_light green jelly.png"
             },
             {
                 "name": "Dark Green Jelly",
-                "asset": "images/g_dark green jelly.png"
+                "asset": "g_dark green jelly.png"
             },
             {
                 "name": "Light Yellow Jelly",
-                "asset": "images/g_light yellow jelly.png"
+                "asset": "g_light yellow jelly.png"
             },
             {
                 "name": "Gold Jelly",
-                "asset": "images/g1_gold jelly.png"
+                "asset": "g1_gold jelly.png"
             }
         ]
     },
     {
         "name": "Zoo",
-        "banner": "images/zoobanner.png",
+        "banner": "zoobanner.png",
         "artist_info": null,
         "artists": [
             findUser('5')
@@ -3749,33 +3749,33 @@ const categories =
         "decorations": [
             {
                 "name": "Bunny Ears",
-                "asset": "images/bunnyears.png"
+                "asset": "bunnyears.png"
             },
             {
                 "name": "Cat Ears",
-                "asset": "images/catears.png"
+                "asset": "catears.png"
             },
             {
                 "name": "Deer Ears",
-                "asset": "images/deerears.png"
+                "asset": "deerears.png"
             },
             {
                 "name": "Dog Ears No Tail",
-                "asset": "images/dogearsnotail.png"
+                "asset": "dogearsnotail.png"
             },
             {
                 "name": "Dog Ears Tail",
-                "asset": "images/dogearstail.png"
+                "asset": "dogearstail.png"
             },
             {
                 "name": "Wing Ears",
-                "asset": "images/wingears.png"
+                "asset": "wingears.png"
             }
         ]
     },
     {
         "name": "Garage",
-        "banner": "images/garage-banner.png",
+        "banner": "garage-banner.png",
         "artist_info": null,
         "artists": [
             findUser('17')
@@ -3783,41 +3783,41 @@ const categories =
         "decorations": [
             {
                 "name": "Holly Jolly",
-                "asset": "images/hollyjolly.png"
+                "asset": "hollyjolly.png"
             },
             {
                 "name": "Rated M",
-                "asset": "images/ratedm.png"
+                "asset": "ratedm.png"
             },
             {
                 "name": "Beat",
-                "asset": "images/Beat.png"
+                "asset": "Beat.png"
             },
             {
                 "name": "Corn",
-                "asset": "images/Corn.png"
+                "asset": "Corn.png"
             },
             {
                 "name": "Gum",
-                "asset": "images/Gum.png"
+                "asset": "Gum.png"
             },
             {
                 "name": "Evil Dead",
-                "asset": "images/evildead.png"
+                "asset": "evildead.png"
             },
             {
                 "name": "Neon Chainsaw",
-                "asset": "images/neonchainsaw.png"
+                "asset": "neonchainsaw.png"
             },
             {
                 "name": "Lava Lamp",
-                "asset": "images/lavadecor.png"
+                "asset": "lavadecor.png"
             }
         ]
     },
     {
         "name": "Showtime",
-        "banner": "images/showtime-banner.png",
+        "banner": "showtime-banner.png",
         "artist_info": null,
         "artists": [
             findUser('10')
@@ -3825,61 +3825,61 @@ const categories =
         "decorations": [
             {
                 "name": "It's Teto!",
-                "asset": "images/another.png"
+                "asset": "another.png"
             },
             {
                 "name": "Cat Cap",
-                "asset": "images/catcap.png"
+                "asset": "catcap.png"
             },
             {
                 "name": "Emu",
-                "asset": "images/Emu.png"
+                "asset": "Emu.png"
             },
             {
                 "name": "Glowy",
-                "asset": "images/less_light.png"
+                "asset": "less_light.png"
             },
             {
                 "name": "Nene",
-                "asset": "images/Nene.png"
+                "asset": "Nene.png"
             },
             {
                 "name": "Peachy",
-                "asset": "images/remake.png"
+                "asset": "remake.png"
             },
             {
                 "name": "Rui",
-                "asset": "images/Rui.png"
+                "asset": "Rui.png"
             },
             {
                 "name": "Teto Pear",
-                "asset": "images/teto_frame_ig.png"
+                "asset": "teto_frame_ig.png"
             },
             {
                 "name": "Teto Bow",
-                "asset": "images/tetoo.png"
+                "asset": "tetoo.png"
             },
             {
                 "name": "Teto Swirl",
-                "asset": "images/tetoswirl.png"
+                "asset": "tetoswirl.png"
             },
             {
                 "name": "More Teto",
-                "asset": "images/tetoteto.png"
+                "asset": "tetoteto.png"
             },
             {
                 "name": "Tsukasa",
-                "asset": "images/Tsukasa.png"
+                "asset": "Tsukasa.png"
             },
             {
                 "name": "Wonderhoy",
-                "asset": "images/wonderhoy.png"
+                "asset": "wonderhoy.png"
             }
         ]
     },
     {
         "name": "Pancake Day",
-        "banner": "images/nuki-pancake-banner.png",
+        "banner": "nuki-pancake-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1143994313034960967')
@@ -3887,25 +3887,25 @@ const categories =
         "decorations": [
             {
                 "name": "Fork",
-                "asset": "images/fork.png"
+                "asset": "fork.png"
             },
             {
                 "name": "Munching",
-                "asset": "images/munching.png"
+                "asset": "munching.png"
             },
             {
                 "name": "Syrup",
-                "asset": "images/syrup.png"
+                "asset": "syrup.png"
             },
             {
                 "name": "Syrup 2",
-                "asset": "images/syrup2.png"
+                "asset": "syrup2.png"
             }
         ]
     },
     {
         "name": "Oxygen",
-        "banner": "images/newoxygen-banner.png",
+        "banner": "newoxygen-banner.png",
         "artist_info": null,
         "artists": [
             findUser('11')
@@ -3913,25 +3913,25 @@ const categories =
         "decorations": [
             {
                 "name": "Plumbing",
-                "asset": "images/plumbing.png"
+                "asset": "plumbing.png"
             },
             {
                 "name": "Power",
-                "asset": "images/power.png"
+                "asset": "power.png"
             },
             {
                 "name": "Radbolts",
-                "asset": "images/radbolts.png"
+                "asset": "radbolts.png"
             },
             {
                 "name": "Slickster",
-                "asset": "images/slickster.png"
+                "asset": "slickster.png"
             }
         ]
     },
     {
         "name": "Sanrio",
-        "banner": "images/nuki-sanrio-banner.png",
+        "banner": "nuki-sanrio-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1143994313034960967')
@@ -3939,33 +3939,33 @@ const categories =
         "decorations": [
             {
                 "name": "Choco",
-                "asset": "images/choco.png"
+                "asset": "choco.png"
             },
             {
                 "name": "Cinnamoroll",
-                "asset": "images/cinnamoroll.png"
+                "asset": "cinnamoroll.png"
             },
             {
                 "name": "Hello Kitty",
-                "asset": "images/kitty.png"
+                "asset": "kitty.png"
             },
             {
                 "name": "Kuromi",
-                "asset": "images/kuromi.png"
+                "asset": "kuromi.png"
             },
             {
                 "name": "Melody",
-                "asset": "images/melody.png"
+                "asset": "melody.png"
             },
             {
                 "name": "Purin",
-                "asset": "images/purin.png"
+                "asset": "purin.png"
             }
         ]
     },
     {
         "name": "Scribble",
-        "banner": "images/scribble-banner.png",
+        "banner": "scribble-banner.png",
         "artist_info": null,
         "artists": [
             findUser('20')
@@ -3973,33 +3973,33 @@ const categories =
         "decorations": [
             {
                 "name": "Annie's Hair",
-                "asset": "images/Annies_Hair.png"
+                "asset": "Annies_Hair.png"
             },
             {
                 "name": "Anton's Hair",
-                "asset": "images/Antons_Hair.png"
+                "asset": "Antons_Hair.png"
             },
             {
                 "name": "Cookie",
-                "asset": "images/Cookie_decoration.png"
+                "asset": "Cookie_decoration.png"
             },
             {
                 "name": "Green Dude",
-                "asset": "images/Greendude_decoration.png"
+                "asset": "Greendude_decoration.png"
             },
             {
                 "name": "Marcie",
-                "asset": "images/Marcie_decoration.png"
+                "asset": "Marcie_decoration.png"
             },
             {
                 "name": "Taunt",
-                "asset": "images/Taunt_decor.png"
+                "asset": "Taunt_decor.png"
             }
         ]
     },
     {
         "name": "Horns",
-        "banner": "images/horns-banner.png",
+        "banner": "horns-banner.png",
         "artist_info": null,
         "artists": [
             findUser('5')
@@ -4007,33 +4007,33 @@ const categories =
         "decorations": [
             {
                 "name": "Goat Horns",
-                "asset": "images/goat horns.png"
+                "asset": "goat horns.png"
             },
             {
                 "name": "Devil Horns",
-                "asset": "images/devil horns.png"
+                "asset": "devil horns.png"
             },
             {
                 "name": "Squishy Horns",
-                "asset": "images/squishy horns.png"
+                "asset": "squishy horns.png"
             },
             {
                 "name": "Over Horns",
-                "asset": "images/over horns.png"
+                "asset": "over horns.png"
             },
             {
                 "name": "Stylish Horns",
-                "asset": "images/stylish horns.png"
+                "asset": "stylish horns.png"
             },
             {
                 "name": "Alien Ears",
-                "asset": "images/alien ears.png"
+                "asset": "alien ears.png"
             }
         ]
     },
     {
         "name": "TOILET BOUND",
-        "banner": "images/toilet-banner.png",
+        "banner": "toilet-banner.png",
         "artist_info": null,
         "artists": [
             findUser('5')
@@ -4041,29 +4041,29 @@ const categories =
         "decorations": [
             {
                 "name": "Yashiro Clips",
-                "asset": "images/yashiro clips.png"
+                "asset": "yashiro clips.png"
             },
             {
                 "name": "Hanako Ghosts",
-                "asset": "images/hanako ghosts.png"
+                "asset": "hanako ghosts.png"
             },
             {
                 "name": "Tsukasa Ghosts",
-                "asset": "images/tsukasa ghosts.png"
+                "asset": "tsukasa ghosts.png"
             },
             {
                 "name": "Yako Ears",
-                "asset": "images/yako ears.png"
+                "asset": "yako ears.png"
             },
             {
                 "name": "Yako Ears Alt",
-                "asset": "images/yako ears alt.png"
+                "asset": "yako ears alt.png"
             }
         ]
     },
     {
         "name": "ABSTRACT",
-        "banner": "images/abstract-banner.png",
+        "banner": "abstract-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1147940825330876538')
@@ -4071,17 +4071,17 @@ const categories =
         "decorations": [
             {
                 "name": "Abstract Purple",
-                "asset": "images/abstractpurple.png"
+                "asset": "abstractpurple.png"
             },
             {
                 "name": "Bubble",
-                "asset": "images/bubble.png"
+                "asset": "bubble.png"
             }
         ]
     },
     {
         "name": "VALENTINES",
-        "banner": "images/love-banner.png",
+        "banner": "love-banner.png",
         "artist_info": null,
         "artists": [
             findUser('19')
@@ -4089,49 +4089,49 @@ const categories =
         "decorations": [
             {
                 "name": "Kisses",
-                "asset": "images/kisses.png"
+                "asset": "kisses.png"
             },
             {
                 "name": "Envelope",
-                "asset": "images/envelope.png"
+                "asset": "envelope.png"
             },
             {
                 "name": "Love Thoughts",
-                "asset": "images/lovethoughts.png"
+                "asset": "lovethoughts.png"
             },
             {
                 "name": "Blue Flower",
-                "asset": "images/blueflower.png"
+                "asset": "blueflower.png"
             },
             {
                 "name": "Pink Flower",
-                "asset": "images/pinkflower.png"
+                "asset": "pinkflower.png"
             },
             {
                 "name": "Blue Candy",
-                "asset": "images/blue candy.png"
+                "asset": "blue candy.png"
             },
             {
                 "name": "Pink Candy",
-                "asset": "images/pink candy.png"
+                "asset": "pink candy.png"
             },
             {
                 "name": "Blue Hat",
-                "asset": "images/bluehat.png"
+                "asset": "bluehat.png"
             },
             {
                 "name": "Pink Hat",
-                "asset": "images/pinkhat.png"
+                "asset": "pinkhat.png"
             },
             {
                 "name": "Valentines Day",
-                "asset": "images/valentinesday.png"
+                "asset": "valentinesday.png"
             }
         ]
     },
     {
         "name": "Sonic Love",
-        "banner": "images/nuki-sonic-banner.png",
+        "banner": "nuki-sonic-banner.png",
         "artist_info": null,
         "artists": [
             findUser('1143994313034960967')
@@ -4139,33 +4139,33 @@ const categories =
         "decorations": [
             {
                 "name": "Holding Baby",
-                "asset": "images/holdingbaby.png"
+                "asset": "holdingbaby.png"
             },
             {
                 "name": "Greetings",
-                "asset": "images/greetings.png"
+                "asset": "greetings.png"
             },
             {
                 "name": "Sonic Pal",
-                "asset": "images/sonicpal.png"
+                "asset": "sonicpal.png"
             },
             {
                 "name": "Marry Me",
-                "asset": "images/marryme.png"
+                "asset": "marryme.png"
             },
             {
                 "name": "Big Day",
-                "asset": "images/bigday.png"
+                "asset": "bigday.png"
             },
             {
                 "name": "Streamer",
-                "asset": "images/streamer.png"
+                "asset": "streamer.png"
             }
         ]
     },
     {
         "name": "BALATRO",
-        "banner": "images/balatro-banner.png",
+        "banner": "balatro-banner.png",
         "artist_info": null,
         "artists": [
             findUser('13')
@@ -4173,57 +4173,57 @@ const categories =
         "decorations": [
             {
                 "name": "Abstract",
-                "asset": "images/abstract.png"
+                "asset": "abstract.png"
             },
             {
                 "name": "Baron",
-                "asset": "images/baron.png"
+                "asset": "baron.png"
             },
             {
                 "name": "Canio",
-                "asset": "images/canio.png"
+                "asset": "canio.png"
             },
             {
                 "name": "Chicot",
-                "asset": "images/chicot.png"
+                "asset": "chicot.png"
             },
             {
                 "name": "Jimbo",
-                "asset": "images/jimbo.png"
+                "asset": "jimbo.png"
             },
             {
                 "name": "Mime",
-                "asset": "images/mime.png"
+                "asset": "mime.png"
             },
             {
                 "name": "Perkeo",
-                "asset": "images/perkeo.png"
+                "asset": "perkeo.png"
             },
             {
                 "name": "Red Chip",
-                "asset": "images/red chip.png"
+                "asset": "red chip.png"
             },
             {
                 "name": "Triboulet",
-                "asset": "images/triboulet.png"
+                "asset": "triboulet.png"
             },
             {
                 "name": "Wheel of Fortune",
-                "asset": "images/wheel of fortune.png"
+                "asset": "wheel of fortune.png"
             },
             {
                 "name": "White Chip",
-                "asset": "images/white chip.png"
+                "asset": "white chip.png"
             },
             {
                 "name": "Yorick",
-                "asset": "images/yorick.png"
+                "asset": "yorick.png"
             }
         ]
     },
     {
         "name": "DOODLES",
-        "banner": "images/doodles-banner.png",
+        "banner": "doodles-banner.png",
         "artist_info": null,
         "artists": [
             findUser('21')
@@ -4231,37 +4231,37 @@ const categories =
         "decorations": [
             {
                 "name": "Brown Alien",
-                "asset": "images/brownalien.png"
+                "asset": "brownalien.png"
             },
             {
                 "name": "Purple Alien",
-                "asset": "images/purplealien.png"
+                "asset": "purplealien.png"
             },
             {
                 "name": "Sanford",
-                "asset": "images/sanford.png"
+                "asset": "sanford.png"
             },
             {
                 "name": "Deimos",
-                "asset": "images/deimos.png"
+                "asset": "deimos.png"
             },
             {
                 "name": "Dynamite",
-                "asset": "images/dynamite.png"
+                "asset": "dynamite.png"
             },
             {
                 "name": "Ganyu",
-                "asset": "images/ganyu.png"
+                "asset": "ganyu.png"
             },
             {
                 "name": "Shark with a Trident",
-                "asset": "images/sharktrident.png"
+                "asset": "sharktrident.png"
             }
         ]
     },
     {
         "name": "DELICIOUS DUNGEON",
-        "banner": "images/delicious-banner.png",
+        "banner": "delicious-banner.png",
         "artist_info": null,
         "artists": [
             findUser('22')
@@ -4269,41 +4269,41 @@ const categories =
         "decorations": [
             {
                 "name": "Senshi",
-                "asset": "images/senshi.png"
+                "asset": "senshi.png"
             },
             {
                 "name": "Senshi with mustache",
-                "asset": "images/senshi1.png"
+                "asset": "senshi1.png"
             },
             {
                 "name": "Laios Touden",
-                "asset": "images/laios-touden.png"
+                "asset": "laios-touden.png"
             },
             {
                 "name": "Marcille Donato",
-                "asset": "images/marcille-donato.png"
+                "asset": "marcille-donato.png"
             },
             {
                 "name": "Chilchuck Tims",
-                "asset": "images/chilchuck-tims.png"
+                "asset": "chilchuck-tims.png"
             },
             {
                 "name": "Falin Touden",
-                "asset": "images/falin-touden.png"
+                "asset": "falin-touden.png"
             },
             {
                 "name": "Izutsumi",
-                "asset": "images/izutsumi.png"
+                "asset": "izutsumi.png"
             },
             {
                 "name": "Neck Warmer",
-                "asset": "images/neckwarmer.png"
+                "asset": "neckwarmer.png"
             }
         ]
     },
     {
         "name": "PRIDE",
-        "banner": "images/pride-banner.png",
+        "banner": "pride-banner.png",
         "artist_info": null,
         "artists": [
             findUser('22')
@@ -4311,125 +4311,125 @@ const categories =
         "decorations": [
             {
                 "name": "Acespec",
-                "asset": "images/acespec.png"
+                "asset": "acespec.png"
             },
             {
                 "name": "Agender",
-                "asset": "images/agender.png"
+                "asset": "agender.png"
             },
             {
                 "name": "Aroace",
-                "asset": "images/aroace.png"
+                "asset": "aroace.png"
             },
             {
                 "name": "Aroacespec",
-                "asset": "images/aroacespec.png"
+                "asset": "aroacespec.png"
             },
             {
                 "name": "Aromantic",
-                "asset": "images/aromantic.png"
+                "asset": "aromantic.png"
             },
             {
                 "name": "Arospec",
-                "asset": "images/arospec.png"
+                "asset": "arospec.png"
             },
             {
                 "name": "Asexual",
-                "asset": "images/asexual.png"
+                "asset": "asexual.png"
             },
             {
                 "name": "Demiagender",
-                "asset": "images/demiagender.png"
+                "asset": "demiagender.png"
             },
             {
                 "name": "Demiboy",
-                "asset": "images/demiboy.png"
+                "asset": "demiboy.png"
             },
             {
                 "name": "Demigender",
-                "asset": "images/demigender.png"
+                "asset": "demigender.png"
             },
             {
                 "name": "Demigirl",
-                "asset": "images/demigirl.png"
+                "asset": "demigirl.png"
             },
             {
                 "name": "Demimix",
-                "asset": "images/demimix.png"
+                "asset": "demimix.png"
             },
             {
                 "name": "Gay",
-                "asset": "images/gay.png"
+                "asset": "gay.png"
             },
             {
                 "name": "Genderqueer",
-                "asset": "images/genderqueer.png"
+                "asset": "genderqueer.png"
             },
             {
                 "name": "Lesbian",
-                "asset": "images/lesbian.png"
+                "asset": "lesbian.png"
             },
             {
                 "name": "Librafem",
-                "asset": "images/librafem.png"
+                "asset": "librafem.png"
             },
             {
                 "name": "Libramasc",
-                "asset": "images/libramasc.png"
+                "asset": "libramasc.png"
             },
             {
                 "name": "Non Binary",
-                "asset": "images/nonbinary.png"
+                "asset": "nonbinary.png"
             },
             {
                 "name": "Transbian",
-                "asset": "images/transbian.png"
+                "asset": "transbian.png"
             },
             {
                 "name": "Trans Gay",
-                "asset": "images/trans-gay.png"
+                "asset": "trans-gay.png"
             },
             {
                 "name": "Transgender",
-                "asset": "images/transgender.png"
+                "asset": "transgender.png"
             },
             {
                 "name": "Transfem",
-                "asset": "images/transfem.png"
+                "asset": "transfem.png"
             },
             {
                 "name": "Transmasc",
-                "asset": "images/transmasc.png"
+                "asset": "transmasc.png"
             },
             {
                 "name": "Transneutral",
-                "asset": "images/transneutral.png"
+                "asset": "transneutral.png"
             },
             {
                 "name": "Abrosexual",
-                "asset": "images/abrosexual.png"
+                "asset": "abrosexual.png"
             },
             {
                 "name": "Bisexual",
-                "asset": "images/bisexual.png"
+                "asset": "bisexual.png"
             },
             {
                 "name": "Omnisexual",
-                "asset": "images/omnisexual.png"
+                "asset": "omnisexual.png"
             },
             {
                 "name": "Pansexual",
-                "asset": "images/pansexual.png"
+                "asset": "pansexual.png"
             },
             {
                 "name": "Polysexual",
-                "asset": "images/polysexual.png"
+                "asset": "polysexual.png"
             }
         ]
     },
     {
         "name": "SPACE",
-        "banner": "images/space-banner.png",
+        "banner": "space-banner.png",
         "artist_info": null,
         "artists": [
             findUser('22')
@@ -4437,17 +4437,17 @@ const categories =
         "decorations": [
             {
                 "name": "Moon",
-                "asset": "images/moon.png"
+                "asset": "moon.png"
             },
             {
                 "name": "Moon & Stars",
-                "asset": "images/moonstars.png"
+                "asset": "moonstars.png"
             }
         ]
     },
     {
         "name": "TOTORO",
-        "banner": "images/totoro-banner.png",
+        "banner": "totoro-banner.png",
         "artist_info": null,
         "artists": [
             findUser('19')
@@ -4455,33 +4455,33 @@ const categories =
         "decorations": [
             {
                 "name": "Chibi Totoro",
-                "asset": "images/chibi-totoro1.png"
+                "asset": "chibi-totoro1.png"
             },
             {
                 "name": "Chibi Totoro Animated",
-                "asset": "images/chibi-totoroanimated.png"
+                "asset": "chibi-totoroanimated.png"
             },
             {
                 "name": "Chu Totoro",
-                "asset": "images/chu-totoro.png"
+                "asset": "chu-totoro.png"
             },
             {
                 "name": "Chu Totoro Animated",
-                "asset": "images/chu-totoroanimated.png"
+                "asset": "chu-totoroanimated.png"
             },
             {
                 "name": "Chibi Totoro Green",
-                "asset": "images/chibi-totorofixed.png"
+                "asset": "chibi-totorofixed.png"
             },
             {
                 "name": "Totoro",
-                "asset": "images/totoro.png"
+                "asset": "totoro.png"
             }
         ]
     },
     {
         "name": "LAKE",
-        "banner": "images/lake-banner.png",
+        "banner": "lake-banner.png",
         "artist_info": null,
         "artists": [
             findUser('19')
@@ -4489,25 +4489,25 @@ const categories =
         "decorations": [
             {
                 "name": "Ladybug",
-                "asset": "images/ladybug.png"
+                "asset": "ladybug.png"
             },
             {
                 "name": "Ducky",
-                "asset": "images/ducky.png"
+                "asset": "ducky.png"
             },
             {
                 "name": "Leaves",
-                "asset": "images/leaves.png"
+                "asset": "leaves.png"
             },
             {
                 "name": "Picnic",
-                "asset": "images/picnic.png"
+                "asset": "picnic.png"
             }
         ]
     },
     {
         "name": "DESSERTS",
-        "banner": "images/desserts-banner.png",
+        "banner": "desserts-banner.png",
         "artist_info": null,
         "artists": [
             findUser('19')
@@ -4515,29 +4515,29 @@ const categories =
         "decorations": [
             {
                 "name": "Boba",
-                "asset": "images/boba.png"
+                "asset": "boba.png"
             },
             {
                 "name": "Cupcake",
-                "asset": "images/cupcake.png"
+                "asset": "cupcake.png"
             },
             {
                 "name": "Ice Cream",
-                "asset": "images/icecream.png"
+                "asset": "icecream.png"
             },
             {
                 "name": "Macarons",
-                "asset": "images/macarons.png"
+                "asset": "macarons.png"
             },
             {
                 "name": "Strawberry Cake",
-                "asset": "images/strawberry-cake.png"
+                "asset": "strawberry-cake.png"
             }
         ]
     },
     {
         "name": "KATSU",
-        "banner": "images/collectors-banner.png",
+        "banner": "collectors-banner.png",
         "artist_info": null,
         "artists": [
             findUser('18')
@@ -4545,202 +4545,202 @@ const categories =
         "decorations": [
             {
                 "name": "Mew Card",
-                "asset": "images/mewcard.png"
+                "asset": "mewcard.png"
             },
             {
                 "name": "Charizard Card",
-                "asset": "images/charizardcard.png"
+                "asset": "charizardcard.png"
             },
             {
                 "name": "Pokéball",
-                "asset": "images/pokeball.png"
+                "asset": "pokeball.png"
             },
             {
                 "name": "GameBoy",
-                "asset": "images/gameboy.png"
+                "asset": "gameboy.png"
             },
             {
                 "name": "SNES",
-                "asset": "images/snes.png"
+                "asset": "snes.png"
             },
             {
                 "name": "Nintendo 3DS",
-                "asset": "images/3ds.png"
+                "asset": "3ds.png"
             },
             {
                 "name": "Nintendo Wii",
-                "asset": "images/wii.png"
+                "asset": "wii.png"
             },
             {
                 "name": "PlayStation",
-                "asset": "images/playstation.png"
+                "asset": "playstation.png"
             },
             {
                 "name": "DreamCast",
-                "asset": "images/dreamcast.png"
+                "asset": "dreamcast.png"
             },
             {
                 "name": "Nintendo Switch",
-                "asset": "images/switch.png"
+                "asset": "switch.png"
             },
             {
                 "name": "Xbox One",
-                "asset": "images/xbox1.png"
+                "asset": "xbox1.png"
             },
             {
                 "name": "Xbox Series S",
-                "asset": "images/xboxs.png"
+                "asset": "xboxs.png"
             },
             {
                 "name": "My Hero Academia",
-                "asset": "images/mha.png"
+                "asset": "mha.png"
             },
             {
                 "name": "Sword Art Online",
-                "asset": "images/sao.png"
+                "asset": "sao.png"
             },
             {
                 "name": "Bleach",
-                "asset": "images/bleach.png"
+                "asset": "bleach.png"
             },
             {
                 "name": "Majoras Mask",
-                "asset": "images/zelda.png"
+                "asset": "zelda.png"
             },
             {
                 "name": "Cat",
-                "asset": "images/cat.png"
+                "asset": "cat.png"
             },
             {
                 "name": "Naruto",
-                "asset": "images/naruto.png"
+                "asset": "naruto.png"
             },
             {
                 "name": "My Deer Friend Nokotan",
-                "asset": "images/nokotan.png"
+                "asset": "nokotan.png"
             },
             {
                 "name": "Antler",
-                "asset": "images/antler.png"
+                "asset": "antler.png"
             },
             {
                 "name": "Hu Tao",
-                "asset": "images/hutao.png"
+                "asset": "hutao.png"
             },
             {
                 "name": "Cat Hug",
-                "asset": "images/cathug.png"
+                "asset": "cathug.png"
             },
             {
                 "name": "Sword Girl",
-                "asset": "images/swordgirl.png"
+                "asset": "swordgirl.png"
             },
             {
                 "name": "Jujutsu Kaisen 1",
-                "asset": "images/juju1.png"
+                "asset": "juju1.png"
             },
             {
                 "name": "Jujutsu Kaisen 2",
-                "asset": "images/juju2.png"
+                "asset": "juju2.png"
             },
             {
                 "name": "Girl 1",
-                "asset": "images/girl1.png"
+                "asset": "girl1.png"
             },
             {
                 "name": "Girl 2",
-                "asset": "images/girl2.png"
+                "asset": "girl2.png"
             },
             {
                 "name": "Girl 3",
-                "asset": "images/girl3.png"
+                "asset": "girl3.png"
             }
         ]
     },
     {
         "name": "UNCATEGORIZED",
-        "banner": "images/uncategorized-banner.png",
+        "banner": "uncategorized-banner.png",
         "artist_info": "Reminder to add all the artists to this category or you will explode",
         "decorations": [
             {
                 "name": "Bamboo",
-                "asset": "images/bamboo.png"
+                "asset": "bamboo.png"
             },
             {
                 "name": "Kawaii Cat",
-                "asset": "images/kawaiicat.png"
+                "asset": "kawaiicat.png"
             },
             {
                 "name": "Spheal",
-                "asset": "images/spheal.png"
+                "asset": "spheal.png"
             },
             {
                 "name": "Daggers",
-                "asset": "images/daggers.png"
+                "asset": "daggers.png"
             },
             {
                 "name": "Shuriken",
-                "asset": "images/shuriken.png"
+                "asset": "shuriken.png"
             },
             {
                 "name": "Purple Devil",
-                "asset": "images/purpledevil.png"
+                "asset": "purpledevil.png"
             },
             {
                 "name": "Pink Devil",
-                "asset": "images/pinkdevil.png"
+                "asset": "pinkdevil.png"
             },
             {
                 "name": "Green Devil",
-                "asset": "images/greendevil.png"
+                "asset": "greendevil.png"
             },
             {
                 "name": "Neon Devil",
-                "asset": "images/neondevil.png"
+                "asset": "neondevil.png"
             },
             {
                 "name": "Rimuru",
-                "asset": "images/rimuru.png"
+                "asset": "rimuru.png"
             },
             {
                 "name": "Piplup using Bubblebeam",
-                "asset": "images/piplup decor.png"
+                "asset": "piplup decor.png"
             },
             {
                 "name": "Green Radar",
-                "asset": "images/green-radar.png"
+                "asset": "green-radar.png"
             },
             {
                 "name": "Jellies",
-                "asset": "images/jellies.png"
+                "asset": "jellies.png"
             },
             {
                 "name": "Nyan Cat",
-                "asset": "images/nyancat.png"
+                "asset": "nyancat.png"
             },
             {
                 "name": "Energy Ring",
-                "asset": "images/energyring.png"
+                "asset": "energyring.png"
             },
             {
                 "name": "Biblically Accurate Angel",
-                "asset": "images/angel no sparkle.png"
+                "asset": "angel no sparkle.png"
             },
             {
                 "name": "Biblically Accurate Angel with Sparkles",
-                "asset": "images/angel sparkle.png"
+                "asset": "angel sparkle.png"
             },
             {
                 "name": "Pink Ribbon",
-                "asset": "images/pinkribbon.png"
+                "asset": "pinkribbon.png"
             },
             {
                 "name": "Interstellar Smoke",
-                "asset": "images/0 sec delay.png"
+                "asset": "0 sec delay.png"
             },
             {
                 "name": "Gods Portal",
-                "asset": "images/jellys.png"
+                "asset": "jellys.png"
             }
         ]
     }
@@ -4794,7 +4794,7 @@ for (const category of categories) {
                     <p>Contact them on Discord <a href="https://discord.com/users/${artist.id}">here</a>.</p>
                     <p>&nbsp;</p>
                 </div> 
-                <img class="default-avatar" src="images/default-avatar.png" alt="Discord Logo"/>
+                <img class="default-avatar" src="default-avatar.png" alt="Discord Logo"/>
             </div>
             <div class="download-info">Click to view</div>
         `;

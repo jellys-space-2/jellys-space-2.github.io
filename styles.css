@@ -84,6 +84,9 @@ header h1 {
     border-bottom: 2px solid var(--nav-p-color);
     color: var(--nav-p-color-selected);
 }
+.mobile .top-nav p {
+    font-size: 30px;
+}
 
 .search-bar {
     position: relative;
@@ -97,6 +100,10 @@ header h1 {
     z-index: 1;
     transform: translateY(-100px);
     transition: transform 0.3s ease-in-out;
+}
+.mobile .search-bar {
+    height: 70px;
+    font-size: 30px;
 }
 
 #content {
@@ -253,6 +260,16 @@ body:has(#content.decors) .search-bar {
 }
 
 
+.failed-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content:has(.failed-search) .pagination {
+    display: none;
+}
+
+
 
 
 .artists-list {
@@ -341,6 +358,57 @@ body:has(#content.decors) .search-bar {
     opacity: 1;
 }
 
+
+
+
+
+.pagination {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.mobile .pagination {
+    scale: 2;
+    margin: 30px;
+}
+  
+.pagination button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+  
+.pagination .circle-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.pagination .circle-btn.current-page {
+    background: #615DED;
+    color: white;
+}
+  
+.pagination .nav-btn {
+    height: 36px;
+    border-radius: 8px;
+    background: none;
+    color: white;
+}
+  
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
 
 
 
