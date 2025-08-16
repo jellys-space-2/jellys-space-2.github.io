@@ -90,6 +90,17 @@ const marketing = [
 // commissions: what forms of payment the user accepts for commissions
 const artists = [
     {
+        id: "1",
+        name: "Unknown User",
+        assets: null,
+        sumarry: `gyat`,
+        colors: {
+            primary: "#ccb75aff"
+        },
+        commissions: [],
+        listed: false
+    },
+    {
         id: "1147940825330876538",
         name: "Jelly",
         assets: {
@@ -5087,10 +5098,7 @@ function findUser(id) {
             assets: user.assets,
             commissions: commissions(user.commissions)
         };
-    } else return {
-        id: "1",
-        name: "unknown"
-    };
+    } else return artists[0];
 };
 
 // Cleanly renders the artists commissions from config
@@ -5495,11 +5503,17 @@ async function renderDecorsData(data, output) {
             `;
 
             categoryData.decorations.forEach((dco) => {
+                let creators = artists[0];
+                if (categoryData.artists?.length > 1 && dco.artist) {
+                    creators = dco.artist;
+                } else if (categoryData.artists) {
+                    creators = categoryData.artists[0];
+                }
                 const deco = {
                     name: dco.name,
                     asset: dco.asset,
                     banner: categoryData.banner,
-                    artist: categoryData.artists[0]
+                    artist: creators
                 };
                 const decoCard = document.createElement("div");
                 decoCard.classList.add('deco-card');
