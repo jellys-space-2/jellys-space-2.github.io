@@ -35,7 +35,8 @@ function removeParams(params) {
 };
 
 
-if (navigator.userAgentData && navigator.userAgentData.mobile) {
+const isMobile = navigator.userAgentData && navigator.userAgentData.mobile;
+if (isMobile) {
     document.body.classList.add('mobile');
 }
 
@@ -61,7 +62,7 @@ const urls = {
 
 const notFoundHTMLContent = `
     <img src="${urls.CDN}/assets/jellyhome.png" alt="Jelly" style="height: 200px;" oncontextmenu="return false;" loading="lazy">
-    <div class="text-block">
+    <div class="text-block center">
         <h2>404</h2>
         <p>You've taken a wrong turn, and ended up in a place far, far away...</p>
         <p>:/</p>
@@ -5083,6 +5084,7 @@ function findUser(id) {
             id: user.id,
             name: user.name,
             sumarry: user.sumarry,
+            assets: user.assets,
             commissions: commissions(user.commissions)
         };
     } else return {
@@ -5124,7 +5126,6 @@ function commissions(data) {
 
 
 // Pages
-
 // will default to the first page if no page is set in the url
 
 // url: The name of the page in the url
@@ -5138,7 +5139,7 @@ const pages = [
         hidden: false,
         content: `
             <img src="${urls.CDN}/assets/jellyhome.png" alt="Jelly" style="height: 200px;" oncontextmenu="return false;" loading="lazy">
-            <div class="text-block">
+            <div class="text-block center">
                 <h2>Welcome to Jelly's Space!</h2>
                 <p>Here, you can find a huge catalog of custom-made Avatar Decorations to use with the Decor plugin for Vencord!</p>
                 <p>^o^</p>
@@ -5165,7 +5166,7 @@ const pages = [
         hidden: false,
         content: `
             <img src="${urls.CDN}/assets/jellyguide.png" alt="Jelly" style="height: 200px;" oncontextmenu="return false;" loading="lazy">
-            <div class="text-block">
+            <div class="text-block center">
                 <p>Here's how to get your own custom Decor!</p>
                 <p>Follow this guide and you'll be lookin' sweet in no time :D</p>
             </div>
@@ -5177,7 +5178,7 @@ const pages = [
         hidden: false,
         content: `
             <img src="${urls.CDN}/assets/jellyartists.png" alt="Jelly" style="height: 200px;" oncontextmenu="return false;" loading="lazy">
-            <div class="text-block">
+            <div class="text-block center">
                 <p>Here are some of the artists who make Jelly's Space what it is~</p>
                 <p>They are amazing people who deserve love~</p>
                 <p>You can click the name of the artist to go directly to their Discord Profile!</p>
@@ -5194,9 +5195,43 @@ const pages = [
         hidden: false,
         content: `
             <img src="${urls.CDN}/assets/jellyfaq.png" alt="Jelly" style="height: 200px;" oncontextmenu="return false;" loading="lazy">
-            <div class="text-block">
+            <div class="text-block center">
                 <p>Here, you'll find the frequently asked questions</p>
                 <p>^-^</p>
+            </div>
+            <div class="text-block">
+                <p><u><b>How do I upload my decors to your site?</b></u></p>
+                <p>To submit your decors, you will need to contact me on Discord. You can join the <a href="https://discord.gg/dXp2SdxDcP">Decor Server</a> and then ping me in the #decoration-discussion channel.</p>
+                <p>Please follow these guidelines as well as <a href="https://i.imgur.com/WHo9g5S.png">Decor's Guidelines</a>:</p>
+                <p><b>1.</b> Must be <b>YOUR OWN</b> work. Stolen/unoriginal decorations will be denied.</p>
+                <p><b>2.</b> Must have a particular theme/category, rather than several unrelated decors.</p>
+                <p><b>3.</b> Must submit a minimum of 6 decors per submission. I'd rather not create a new category and banner just for 1 or 2 decorations. (Negotiations can be made)</p>
+                <p><b>4.</b> AI Generated decorations are NOT accepted at this point in time.</p>
+                <p><b>5.</b> Must use the <a href="https://i.imgur.com/PdfzGUl.png">template</a> to ensure correct sizing. Please try to avoid the red and blue areas.</p>
+                <hr class="inv">
+                <p><u><b>Failed to fetch?</b></u></p>
+                <p>If you get the 'Failed to fetch' error upon authorizing Decor, this is likely due to restrictions on your internet network.</p>
+                <p>Try using a VPN and seeing if that allows you to authorize!</p>
+                <hr class="inv">
+                <p><u><b>Request Takedown</b></u></p>
+                <p>If for some reason you would like your decoration removed, or you're an artist claiming something as stolen, please contact me immediately. You can find me in the <a href="https://discord.gg/dXp2SdxDcP">Decor Server</a> on Discord.</p>
+                <p>All Decorations submitted to me do go through background checks, but people can obviously lie and fake things. It is not the intention of this website to host unauthorized material.</p>
+                <hr class="inv">
+                <p><u><b>Donators:</b></u></p>
+                <p><b>callievd:</b> Thank you SO MUCH for your kind and generous donation, and for the amazing decors you made for the site and for other people. You are a star!</p>
+                <p><b>jack:</b> Words cannot express how appreciative I am for your donation. You are the one who made all of this happen; the person who made the magic come to be~ Without you, there is no Decor</p>
+                <p><b>doger:</b> You are worth a thousand hugs and more, your kind donation means the world to me ♥</p>
+                <p><b>blairdactyl:</b> You are amazing and your donation is very much appreciated. I am hugging you through the screen 🤗</p>
+                <p><b>marshift:</b> Thank you SO MUCH for your kind and generous donation 🥺</p>
+                <p><b>KRY$TAL:</b> AWW I APPRECIATE YOU!! Thank you for your donation xoxo</p>
+                <hr class="inv">
+                <p><u><b>Legal:</b></u></p>
+                <p>The Discord Logo and all Discord related assets belong to Hammer &amp; Chisel/Discord Inc.</p>
+                <p>Vencord is a third-party client modification that <b><u>violates Discord's Terms of Service</u></b>. You understand and accept that risk by using this website.</p>
+                <p>This website is non-commercial and contains no ads or paid content of any kind. All decorations are provided by the artists free of charge for personal use only.</p>
+                <hr class="inv">
+                <p><u><b>Commission Rules:</b></u></p>
+                <p>Any artist who is listed as 'accepting commissions' have their own set of rules that apply to them. By contacting said artist for a commission, you accept that they may charge a fee for your request, or outright deny your request at their own discretion.</p>
             </div>
         `
     },
@@ -5206,9 +5241,29 @@ const pages = [
         hidden: false,
         content: `
             <img src="${urls.CDN}/assets/jellythx.png" alt="Jelly" style="height: 200px;" oncontextmenu="return false;" loading="lazy">
-            <div class="text-block">
+            <div class="text-block center">
                 <p>If you would like to donate to me, the links to do so will be below!</p>
                 <p>Mwah~</p>
+            </div>
+            <div class="text-block">
+                <p><u><b>Info</b></u></p>
+                <p>Hi, I am Jelly~</p>
+                <hr class="inv">
+                <p>I am the creator of the Jelly's Space Decor website. I am also a Moderator &amp; Reviewer for the Decor Vencord Plugin. Chances are, if you've submitted something to Decor it probably got approved (or denied haha) by me!</p>
+                <hr class="inv">
+                <p>I made this page because I am currently living in a homeless shelter and my finances are not very great at all. I also struggle with physical and mental disabilities which is making life all the worst, with a lack of sustainable income or workplace environments.</p>
+                <hr class="inv">
+                <p>Not only that, but my country's government refuses to acknowledge me or support me. No benefits or housing support or income support. My physical disability prevents me from being able to stand or walk for very long, so most jobs aren't applicable. And working from home jobs are scarce.</p>
+                <hr class="inv">
+                <p>As of June 2025, my situation has slightly improved, but it remains challenging. I would greatly appreciate any support you can offer. I’ve dedicated countless hours, days, weeks, and months to providing a free service. Gaining web development skills through this experience has been a significant milestone for me.</p>
+                <hr class="inv">
+                <p>As I provide a free service via my Jelly's Space Decor website as well as providing a place for artists to build a public portfolio, I would be extremely appreciative of any and all donations❤️ But rest assured that donating is entirely OPTIONAL.</p>
+                <hr class="inv">
+                <p>Please note that I am <b><u>NOT</u></b> paywalling the site, adding paid features or implementing ads. Donating is entirely optional. The site will remain free and open source as it always has been!</p>
+                <hr class="inv">
+                <p><u><b>Donation Links</b></u></p>
+                <p><b>Buy Me A Coffee:</b> <a href="https://buymeacoffee.com/jellythecutie">Click Here</a></p>
+                <p><b>Donate via GitHub:</b> <a href="https://github.com/sponsors/jellys-space">Click Here</a></p>
             </div>
         `
     },
@@ -5308,18 +5363,10 @@ function setPage(url) {
                         `;
                     }
                     banner.addEventListener("click", () => {
-                        let config = {
+                        openModal({
                             type: modal_types.USER,
-                            data: findUser(artist.id)
-                        };
-                        if (artist.colors?.primary) {
-                            config = {
-                                type: modal_types.USER,
-                                accentColor: artist.colors?.primary,
-                                data: findUser(artist.id)
-                            };
-                        }
-                        openModal(config);
+                            data: artist
+                        });
                     });
                     artistsList.appendChild(banner);
                 }
@@ -5392,7 +5439,7 @@ function filterCategories(data, search) {
         }
         return null;
     }).filter(Boolean);
-}
+};
 
 
 async function renderDecorsData(data, output) {
@@ -5447,7 +5494,13 @@ async function renderDecorsData(data, output) {
                 <div class="decorations"></div>
             `;
 
-            categoryData.decorations.forEach((deco) => {
+            categoryData.decorations.forEach((dco) => {
+                const deco = {
+                    name: dco.name,
+                    asset: dco.asset,
+                    banner: categoryData.banner,
+                    artist: categoryData.artists[0]
+                };
                 const decoCard = document.createElement("div");
                 decoCard.classList.add('deco-card');
 
@@ -5459,7 +5512,10 @@ async function renderDecorsData(data, output) {
                 `;
 
                 decoCard.addEventListener("click", () => {
-                    openModal();
+                    openModal({
+                        type: modal_types.DECOR,
+                        data: deco
+                    });
                 });
 
                 category.querySelector('.decorations').appendChild(decoCard);
@@ -5508,13 +5564,22 @@ async function renderDecorsData(data, output) {
 // height is in pixels (px), can be set to null for auto size
 // width is in pixels (px), can be set to null for auto size
 // itemsCenter: if the content is centered in the modal, set to false and the content will be on the left
-// accentColor: the background color of the modal, can be set to null for fully transparent
+// textCenter: if the text is centered in the modal, set to false and the text will be on the left
+// accentColor: the background color of the modal
+// bgOpacity: the opacity of the modal background
+
+// Do NOT change these settings here, these are the default settings, some modals could break if these settings are modified
 function openModal({
     type = null,
     height = null,
     width = null,
+    maxHeight = null,
+    maxWidth = null,
     itemsCenter = true,
-    accentColor = "#4fe9e1",
+    textCenter = true,
+    accentColor = "#393A41",
+    borderColor = "#ffffff57",
+    bgOpacity = 1,
     data = null
 } = {}) {
     openModalsCache += 1;
@@ -5543,26 +5608,121 @@ function openModal({
         <div class="modal"></div>
     `;
     const modalContent = modal.querySelector('.modal');
-    Object.assign(modalContent.style, {
-        height: height ? height+'px' : 'auto',
-        width: width ? width+'px' : 'auto',
-        justifyContent: itemsCenter ? 'center' : 'unset',
-        textAlign: itemsCenter ? 'center' : 'unset',
-        backgroundColor: accentColor ? hexWithOpacity(accentColor, 0.2) : 'unset'
-    });
 
     if (type === modal_types.USER) {
         const user = data;
 
+        maxWidth = 500;
+        accentColor = user.colors?.primary;
+        bgOpacity = 0.2;
+
         modalContent.innerHTML = `
+            <div id="banner-container">
+                <img src="${urls.CDN}/artists/${user.assets.avatar.asset}-avatar.png" alt="${user.name}" style="height: 120px;" oncontextmenu="return false;" loading="lazy">
+            </div>
+            <h2><a href="https://discord.com/users/${user.id}" target="_blank" rel="noopener noreferrer">${user.name}</a></h2>
             <p>${processSummary(user.sumarry)}</p>
         `;
+        Object.assign(modalContent.style, {
+            gap: '20px'
+        });
+    } else if (type === modal_types.DECOR) {
+        const deco = data;
+
+        if (isMobile) {
+            height = 550;
+            width = 400;
+            textCenter = false;
+            borderColor = null;
+
+            modalContent.innerHTML = `
+                <img class="pdp-bg" src="${urls.CDN}/banners/${deco.banner}">
+                <div class="decoration-title-container">
+                    <h2>${deco.name}</h2>
+                    <p>By <a onclick="openModal()">${deco.artist.name}</a></p>
+                </div>
+                <div class="decoration-container">
+                    <img class="avatar" src="${urls.CDN}/assets/default-avatar.png" oncontextmenu="return false;" loading="lazy">
+                    <img class="deco" src="${urls.CDN}/decors/${deco.asset}" oncontextmenu="return false;" loading="lazy">
+                </div>
+                <div class="modal-bottom">
+                    <button class="download-button" style="width: 100%;">Download</button>
+                    <p>Make sure you have read the <a id="guide-page-link">Guide Page</a>. So you know how to apply this Decoration!</p>
+                </div>
+            `;
+            modalContent.querySelector('#guide-page-link').addEventListener("click", () => {
+                closeModal();
+                setPage('guide');
+            });
+            Object.assign(modalContent.style, {
+                gap: '20px',
+                scale: '2'
+            });
+        } else {
+            height = 500;
+            width = 700;
+            textCenter = false;
+            borderColor = null;
+
+            modalContent.innerHTML = `
+                <div class="modal-left">
+                    <img class="pdp-bg" src="${urls.CDN}/banners/${deco.banner}">
+                    <div class="decoration-container">
+                        <img class="avatar" src="${urls.CDN}/assets/default-avatar.png" oncontextmenu="return false;" loading="lazy">
+                        <img class="deco" src="${urls.CDN}/decors/${deco.asset}" oncontextmenu="return false;" loading="lazy">
+                    </div>
+                    <div class="modal-bottom">
+                        <button class="download-button" style="width: 100%;">Download</button>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <div class="decoration-title-container">
+                        <h2>${deco.name}</h2>
+                        <p>By <a onclick="openModal()">${deco.artist.name}</a></p>
+                    </div>
+                    <div class="commission-block">
+                        <p>This artist is accepting commissions.</p>
+                        <p>${deco.artist.commissions}</p>
+                        <p>Contact them on Discord <a href="https://discord.com/users/${deco.artist.id}" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                    </div>
+                    <p>I'm in the thick of it, everybody knows They know me where it snows, I skied in and they froze I don't know no nothin' 'bout no ice, I'm just cold Forty somethin' milli' subs or so, I've been told</p>
+                    <div class="modal-bottom-text">
+                        <p>Make sure you have read the <a id="guide-page-link">Guide Page</a>. So you know how to apply this Decoration!</p>
+                    </div>
+                </div>
+            `;
+            modalContent.querySelector('#guide-page-link').addEventListener("click", () => {
+                closeModal();
+                setPage('guide');
+            });
+
+            const commissionBlock = modalContent.querySelector('.commission-block');
+            if (!deco.artist.commissions) commissionBlock.remove();
+
+            Object.assign(modalContent.style, {
+                flexDirection: 'unset'
+            });
+        }
+
+        modalContent.querySelector('.download-button').addEventListener("click", () => {
+            downloadPngWithRandomChunk(urls.CDN+'/decors/'+deco.asset)
+        });
     } else {
         modalContent.innerHTML = `
             <p>this is a test modal, a modal type was not set</p>
         `;
     }
 
+    Object.assign(modalContent.style, {
+        height: height ? height+'px' : 'auto',
+        width: width ? width+'px' : 'auto',
+        maxHeight: maxHeight ? maxHeight+'px' : 'unset',
+        maxWidth: maxWidth ? maxWidth+'px' : 'unset',
+        alignItems: itemsCenter ? 'center' : 'unset',
+        textAlign: textCenter ? 'center' : 'unset',
+        border: borderColor ? '2px solid'+borderColor : 'unset',
+        backgroundColor: accentColor ? hexWithOpacity(accentColor, bgOpacity) : 'unset'
+    });
 
     document.body.appendChild(modal);
     document.body.appendChild(modal_back);
@@ -5660,4 +5820,85 @@ function processSummary(text) {
     });
 
     return processedLines.join('<br>');
+};
+
+
+
+async function downloadPngWithRandomChunk(imageUrl) {
+    const fileName = decodeURIComponent(imageUrl.split("/").pop());
+
+    const buff = await fetch(imageUrl).then(res => res.arrayBuffer());
+    const view = new DataView(buff);
+    const sig = buff.slice(0, 8);
+
+    // Parse PNG chunks
+    function splitChunks() {
+        let chunks = [], offset = 8;
+        while (offset < buff.byteLength) {
+            const length = view.getUint32(offset);
+            const type = new TextDecoder().decode(new Uint8Array(buff, offset + 4, 4));
+            const data = new Uint8Array(buff, offset + 8, length);
+            const crc = view.getUint32(offset + 8 + length);
+            chunks.push({ type, data, crc });
+            offset += 12 + length;
+        }
+        return chunks;
+    }
+
+    // CRC table + function
+    const crcTable = Array.from({ length: 256 }, (_, n) => {
+        let c = n;
+        for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+        return c;
+    });
+
+    const crc32 = (arr) => {
+        let crc = ~0;
+        for (let i = 0; i < arr.length; i++) {
+            crc = (crc >>> 8) ^ crcTable[(crc ^ arr[i]) & 0xff];
+        }
+        return ~crc >>> 0;
+    };
+
+    // Create tEXt chunk
+    function createChunk(type, data) {
+        const input = new Uint8Array(type.length + data.length);
+        input.set(new TextEncoder().encode(type), 0);
+        input.set(data, type.length);
+        const crc = crc32(input);
+        return { type, data, crc };
+    }
+
+    const randomChunk = createChunk(
+        "tEXt",
+        new TextEncoder().encode("HashScramble\0" + Math.random().toString(30).slice(2))
+    );
+
+    // Insert before IEND
+    const chunks = splitChunks();
+    const newChunks = [];
+    for (const chunk of chunks) {
+        if (chunk.type === "IEND") newChunks.push(randomChunk);
+        newChunks.push(chunk);
+    }
+
+    // Rebuild PNG
+    const parts = [sig];
+    for (const chunk of newChunks) {
+        const lengthBuf = new Uint8Array(4);
+        new DataView(lengthBuf.buffer).setUint32(0, chunk.data.length);
+        parts.push(lengthBuf, new TextEncoder().encode(chunk.type), chunk.data);
+        const crcBuf = new Uint8Array(4);
+        new DataView(crcBuf.buffer).setUint32(0, chunk.crc);
+        parts.push(crcBuf);
+    }
+
+    // Download
+    const blob = new Blob(parts, { type: "image/png" });
+    const url = URL.createObjectURL(blob);
+    const a = Object.assign(document.createElement("a"), { href: url, download: fileName });
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
 };
