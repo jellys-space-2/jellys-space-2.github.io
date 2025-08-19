@@ -89,17 +89,32 @@ const marketing = [
 // colors: atm the "primary" color is only used for the back of the artists modal
 // commissions: what forms of payment the user accepts for commissions
 const artists = [
+
+    // Misc / Testing artists 
     {
         id: "1",
         name: "Unknown User",
         assets: null,
-        sumarry: `gyat`,
+        sumarry: `This is an Unknown User.`,
         colors: {
             primary: "#ccb75aff"
         },
         commissions: [],
         listed: false
     },
+    {
+        id: "2",
+        name: "The Decor Community",
+        assets: null,
+        sumarry: `This is a user to use when multiple artists have worked on a category.`,
+        colors: {
+            primary: "#ccb75aff"
+        },
+        commissions: [],
+        listed: false
+    },
+
+    // Artists that show up on the artists page
     {
         id: "1147940825330876538",
         name: "Jelly",
@@ -565,6 +580,7 @@ const artists = [
         commissions: []
     },
 
+    // Artists that don't show up on the artists page
     {
         id: "434037775092809730",
         name: "Rainydaysout",
@@ -596,6 +612,11 @@ const artists = [
         listed: false
     },
     {
+        id: "272359106839314446",
+        name: "KURAMA",
+        listed: false
+    },
+    {
         id: "217590527015518209",
         name: "(Niko)",
         listed: false
@@ -618,6 +639,11 @@ const artists = [
     {
         id: "773625796807360563",
         name: "Katsu",
+        listed: false
+    },
+    {
+        id: "1097272848583770212",
+        name: "Kyu",
         listed: false
     }
 ];
@@ -3964,117 +3990,147 @@ const categories = [
     {
         "name": "CORAL REEF",
         "banner": "coralbannernew.png",
-        "artist_info": "Reminder to add all the artists to this category or you will explode",
+        "artist_info": null,
         "artists": [
-            findUser('1')
+            findUser('2'),
+            findUser('1147940825330876538'),
+            findUser('272359106839314446'),
+            findUser('713791218160500796')
         ],
         "decorations": [
             {
                 "name": "Pink Jellyfish",
+                "artist": findUser('1147940825330876538'),
                 "asset": "pinkjelly.png"
             },
             {
                 "name": "Happy Jellyfish",
+                "artist": findUser('272359106839314446'),
                 "asset": "happyjelly.png"
             },
             {
                 "name": "Axolotl Blue",
+                "artist": findUser('713791218160500796'),
                 "asset": "axoblue.png"
             },
             {
                 "name": "Axolotl Pink",
+                "artist": findUser('713791218160500796'),
                 "asset": "axopink.png"
             },
             {
                 "name": "Axolotl Purple",
+                "artist": findUser('713791218160500796'),
                 "asset": "axopurple.png"
             },
             {
                 "name": "Axolotl White",
+                "artist": findUser('713791218160500796'),
                 "asset": "axowhite.png"
             },
             {
                 "name": "Axolotl Yellow",
+                "artist": findUser('713791218160500796'),
                 "asset": "axoyellow.png"
             },
             {
                 "name": "Float Blue",
+                "artist": findUser('713791218160500796'),
                 "asset": "floatblue.png"
             },
             {
                 "name": "Float Green",
+                "artist": findUser('713791218160500796'),
                 "asset": "floatgreen.png"
             },
             {
                 "name": "Float Pink",
+                "artist": findUser('713791218160500796'),
                 "asset": "floatpink.png"
             },
             {
                 "name": "Float Purple",
+                "artist": findUser('713791218160500796'),
                 "asset": "floatpurple.png"
             },
             {
                 "name": "Float Yellow",
+                "artist": findUser('713791218160500796'),
                 "asset": "floatyellow.png"
             },
             {
                 "name": "Blue Knife",
+                "artist": findUser('713791218160500796'),
                 "asset": "blueknife.png"
             },
             {
                 "name": "Green Knife",
+                "artist": findUser('713791218160500796'),
                 "asset": "greenknife.png"
             },
             {
                 "name": "Mint Knife",
+                "artist": findUser('713791218160500796'),
                 "asset": "mintknife.png"
             },
             {
                 "name": "Pink Knife",
+                "artist": findUser('713791218160500796'),
                 "asset": "pinkknife.png"
             },
             {
                 "name": "Purple Knife",
+                "artist": findUser('713791218160500796'),
                 "asset": "purpleknife.png"
             },
             {
                 "name": "Red Knife",
+                "artist": findUser('713791218160500796'),
                 "asset": "redknife.png"
             },
             {
                 "name": "Yellow Knife",
+                "artist": findUser('713791218160500796'),
                 "asset": "yellowknife.png"
             },
             {
                 "name": "White Jelly",
+                "artist": findUser('1139815872874172456'),
                 "asset": "a_ white jelly.png"
             },
             {
                 "name": "Cyan Jelly",
+                "artist": findUser('1139815872874172456'),
                 "asset": "cyan jelly.png"
             },
             {
                 "name": "Light Purple Jelly",
+                "artist": findUser('1139815872874172456'),
                 "asset": "d_light purple jelly.png"
             },
             {
                 "name": "Pink Jelly",
+                "artist": findUser('1139815872874172456'),
                 "asset": "d_pink jelly.png"
             },
             {
                 "name": "Light Green Jelly",
+                "artist": findUser('1139815872874172456'),
                 "asset": "f_light green jelly.png"
             },
             {
                 "name": "Dark Green Jelly",
+                "artist": findUser('1139815872874172456'),
                 "asset": "g_dark green jelly.png"
             },
             {
                 "name": "Light Yellow Jelly",
+                "artist": findUser('1139815872874172456'),
                 "asset": "g_light yellow jelly.png"
             },
             {
                 "name": "Gold Jelly",
+                "artist": findUser('1139815872874172456'),
                 "asset": "g1_gold jelly.png"
             }
         ]
@@ -5000,86 +5056,112 @@ const categories = [
     {
         "name": "UNCATEGORIZED",
         "banner": "uncategorized-banner.png",
-        "artist_info": "Reminder to add all the artists to this category or you will explode",
+        "artist_info": null,
+        "artists": [
+            findUser("1147940825330876538"),
+            findUser("272359106839314446"),
+            findUser("1097272848583770212"),
+            findUser("760501309937287260")
+        ],
         "decorations": [
             {
                 "name": "Bamboo",
+                "artist": findUser("1147940825330876538"),
                 "asset": "bamboo.png"
             },
             {
                 "name": "Kawaii Cat",
+                "artist": findUser("272359106839314446"),
                 "asset": "kawaiicat.png"
             },
             {
                 "name": "Spheal",
+                "artist": findUser("272359106839314446"),
                 "asset": "spheal.png"
             },
             {
                 "name": "Daggers",
+                "artist": findUser("272359106839314446"),
                 "asset": "daggers.png"
             },
             {
                 "name": "Shuriken",
+                "artist": findUser("272359106839314446"),
                 "asset": "shuriken.png"
             },
             {
                 "name": "Purple Devil",
+                "artist": findUser("1097272848583770212"),
                 "asset": "purpledevil.png"
             },
             {
                 "name": "Pink Devil",
+                "artist": findUser("1097272848583770212"),
                 "asset": "pinkdevil.png"
             },
             {
                 "name": "Green Devil",
+                "artist": findUser("1097272848583770212"),
                 "asset": "greendevil.png"
             },
             {
                 "name": "Neon Devil",
+                "artist": findUser("1097272848583770212"),
                 "asset": "neondevil.png"
             },
             {
                 "name": "Rimuru",
+                "artist": findUser("760501309937287260"),
                 "asset": "rimuru.png"
             },
             {
                 "name": "Piplup using Bubblebeam",
+                "artist": findUser("1147940825330876538"),
                 "asset": "piplup decor.png"
             },
             {
                 "name": "Green Radar",
+                "artist": findUser("1143994313034960967"),
                 "asset": "green-radar.png"
             },
             {
                 "name": "Jellies",
+                "artist": findUser("1143994313034960967"),
                 "asset": "jellies.png"
             },
             {
                 "name": "Nyan Cat",
+                "artist": findUser("1143994313034960967"),
                 "asset": "nyancat.png"
             },
             {
                 "name": "Energy Ring",
+                "artist": findUser("1031549301001814059"),
                 "asset": "energyring.png"
             },
             {
                 "name": "Biblically Accurate Angel",
+                "artist": findUser("1143994313034960967"),
                 "asset": "angel no sparkle.png"
             },
             {
                 "name": "Biblically Accurate Angel with Sparkles",
+                "artist": findUser("1143994313034960967"),
                 "asset": "angel sparkle.png"
             },
             {
                 "name": "Pink Ribbon",
+                "artist": findUser("1096831760089763860"),
                 "asset": "pinkribbon.png"
             },
             {
                 "name": "Interstellar Smoke",
+                "artist": findUser("334062444718587905"),
                 "asset": "0 sec delay.png"
             },
             {
                 "name": "Gods Portal",
+                "artist": findUser("334062444718587905"),
                 "asset": "jellys.png"
             }
         ]
@@ -5089,21 +5171,22 @@ const categories = [
 
 // Gets the user info from their id (if they're in the "artists" list)
 function findUser(id) {
-    const user = artists[artists.findIndex(u => u.id === id)];
-    if (user) {
-        return {
-            id: user.id,
-            name: user.name,
-            sumarry: user.sumarry,
-            assets: user.assets,
-            commissions: commissions(user.commissions)
-        };
-    } else return artists[0];
+    const index = artists.findIndex(u => u.id === id);
+    if (index === -1) {
+        return artists[0];
+    }
+
+    const updatedUser = {
+        ...artists[index],
+        commissions: commissions(artists[index].commissions)
+    };
+
+    return updatedUser;
 };
 
 // Cleanly renders the artists commissions from config
 function commissions(data) {
-    if (!data) return;
+    if (!data) return null;
 
     const readableTypes = data
         .map(entry => {
@@ -5274,12 +5357,6 @@ const pages = [
                 <p><b>Donate via GitHub:</b> <a href="https://github.com/sponsors/jellys-space">Click Here</a></p>
             </div>
         `
-    },
-    {
-        url: "test",
-        name: "404 (test)",
-        hidden: false,
-        content: notFoundHTMLContent
     }
 ];
 
@@ -5692,23 +5769,38 @@ function openModal({
                 <div class="modal-right">
                     <div class="decoration-title-container">
                         <h2>${deco.name}</h2>
-                        <p>By <a onclick="openModal()">${deco.artist.name}</a></p>
+                        <p id="item-credits">By ${deco.artist.name}</p>
                     </div>
                     <div class="commission-block">
                         <p>This artist is accepting commissions.</p>
                         <p>${deco.artist.commissions}</p>
                         <p>Contact them on Discord <a href="https://discord.com/users/${deco.artist.id}" target="_blank" rel="noopener noreferrer">here</a>.</p>
                     </div>
-                    <p>I'm in the thick of it, everybody knows They know me where it snows, I skied in and they froze I don't know no nothin' 'bout no ice, I'm just cold Forty somethin' milli' subs or so, I've been told</p>
+                    <p id="item-desc"></p>
                     <div class="modal-bottom-text">
                         <p>Make sure you have read the <a id="guide-page-link">Guide Page</a>. So you know how to apply this Decoration!</p>
                     </div>
                 </div>
             `;
+            if (deco.artist.listed !== false) {
+                modalContent.querySelector('#item-credits').innerHTML = `
+                    By <a id="artist-name">${deco.artist.name}</a>
+                `;
+                modalContent.querySelector('#artist-name').addEventListener("click", () => {
+                    openModal({
+                        type: modal_types.USER,
+                        data: deco.artist
+                    });
+                });
+            }
             modalContent.querySelector('#guide-page-link').addEventListener("click", () => {
                 closeModal();
                 setPage('guide');
             });
+
+            if (deco.description) {
+                modalContent.querySelector('#item-desc').textContent = deco.description;
+            }
 
             const commissionBlock = modalContent.querySelector('.commission-block');
             if (!deco.artist.commissions) commissionBlock.remove();
