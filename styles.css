@@ -555,6 +555,75 @@ a:hover {
     text-decoration: underline;
 }
 
+
+
+.star {
+    position: fixed;
+    pointer-events: none;
+    margin: auto;
+    overflow: visible;
+    z-index: 9999;
+}
+
+.star:before,
+.star:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '\2726';
+    font-size: 9px;
+}
+
+.star:before {
+    color: transparent;
+    text-shadow: 0 0 3px rgb(235, 18, 115);
+}
+
+.star:after {
+    background: rgb(244, 119, 194);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.confetti-piece {
+    position: absolute;
+    display: block;
+    opacity: 0.4;
+    pointer-events: none;
+    animation-name: confettiDriftCW; /* Default animation */
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+/* Confetti clockwise animation */
+@keyframes confettiDriftCW {
+    0% {transform: translateY(-10vh) rotate(0deg);}
+    50% {transform: translateY(50vh) translateX(5vw) rotate(90deg);}
+    100% {transform: translateY(120vh) translateX(-5vw) rotate(180deg);}
+}
+
+/* Confetti counter-clockwise animation */
+@keyframes confettiDriftCCW {
+    0% {transform: translateY(-10vh) rotate(0deg);}
+    50% {transform: translateY(50vh) translateX(5vw) rotate(-90deg);}
+    100% {transform: translateY(120vh) translateX(-5vw) rotate(-180deg);}
+}
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;

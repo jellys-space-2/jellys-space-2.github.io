@@ -36,7 +36,7 @@ function removeParams(params) {
 
 
 const isMobile = navigator.userAgentData && navigator.userAgentData.mobile;
-if (isMobile) {
+if (isMobile || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     document.body.classList.add('mobile');
 }
 
@@ -5359,6 +5359,94 @@ const pages = [
         `
     }
 ];
+
+let isPageFocused = document.hasFocus();
+
+window.addEventListener("focus", () => {
+    isPageFocused = true;
+});
+
+window.addEventListener("blur", () => {
+    isPageFocused = false;
+});
+
+
+/********************************
+* 1) CONFETTI: HELPER FUNCTION
+********************************/
+function spawnConfettiPiece(container) {
+    if (!isPageFocused) return; 
+    const confetti = document.createElement('img');
+
+    const confettiImages = [
+        'styles/1jelly.png',
+        'styles/2jelly.png',
+        'styles/3jelly.png',
+        'styles/4jelly.png'
+    ];
+
+    const randomImage = confettiImages[Math.floor(Math.random() * confettiImages.length)];
+    confetti.src = randomImage;
+    confetti.classList.add('confetti-piece');
+
+    const animationName = Math.random() < 0.5 ? 'confettiDriftCW' : 'confettiDriftCCW';
+    confetti.style.animationName = animationName;
+
+    const size = Math.floor(Math.random() * 20) + 30;
+    confetti.style.width = `${size}px`;
+    confetti.style.height = `${size}px`;
+
+    confetti.style.left = `${Math.random() * 100}%`;
+    confetti.style.top = '-50px';
+
+    const smallDelay = Math.random() * 0.5;
+    confetti.style.animationDelay = `${smallDelay}s`;
+
+    const duration = 10 + Math.random() * 10;
+    confetti.style.animationDuration = `${duration}s`;
+
+    confetti.addEventListener('animationend', () => {
+        container.removeChild(confetti);
+    });
+
+    container.appendChild(confetti);
+}
+
+/********************************
+* 2) CONFETTI: CONTINUOUS SPAWN
+********************************/
+const container = document.querySelector('.confetti-container');
+if (container) {
+    for (let i = 0; i < 5; i++) {
+        spawnConfettiPiece(container);
+    }
+
+    setInterval(() => {
+        spawnConfettiPiece(container);
+    }, 1000);
+}
+
+/********************************
+* 3) SPARKLY MOUSE TRAIL
+********************************/
+window.addEventListener('mousemove', function(e) {
+    const arr = [1, 0.9, 0.8, 0.5, 0.2];
+
+    arr.forEach(function(i) {
+        const x = (1 - i) * 75;
+        const star = document.createElement('div');
+        star.className = 'star';
+
+        star.style.top = e.clientY + Math.round(Math.random() * x - x / 2) + 'px';
+        star.style.left = e.clientX + Math.round(Math.random() * x - x / 2) + 'px';
+
+        document.body.appendChild(star);
+
+        window.setTimeout(function() {
+            document.body.removeChild(star);
+        },  Math.round(Math.random() * i * 600));
+    });
+}, false);
 
 // Checks to see if "?page=" is in the url. if it isn't: it takes you to the home page. if it is but not a valid page: it takes you to the 404 page
 window.addEventListener("DOMContentLoaded", () => {
