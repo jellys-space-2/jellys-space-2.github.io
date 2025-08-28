@@ -129,6 +129,13 @@ body:has(#content.decors) .search-bar {
     letter-spacing: 2px;
     margin: 20px 0px 20px 0px;
 }
+.text-block.guide-step {
+    color: #e0aaff;
+    font-size: 20px;
+}
+.text-block.guide-step img {
+    width: 100%;
+}
 
 .homenav-grid {
     display: grid;

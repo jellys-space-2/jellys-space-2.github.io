@@ -5261,6 +5261,83 @@ const pages = [
                 <p>Here's how to get your own custom Decor!</p>
                 <p>Follow this guide and you'll be lookin' sweet in no time :D</p>
             </div>
+
+            <div class="text-block center">
+                <p><u><b>How to use our Decors:</b></u></p>
+                <hr class="inv">
+                <p>You will need to make sure you have Vencord installed to use our decorations.</p>
+                <p><a href="https://vencord.dev/download/" target="_blank" rel="noopener noreferrer">Download Vencord from here.</a></p>
+                <p>Now follow the guide below on how to use our decorations!</p>
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 1: After Vencord is installed, go to the Plugins menu in your Discord Settings ⚙️</p>
+                <p>and enable the Decor Plugin.</p>
+                <img src="https://beta.jellys-space.vip/guide/1.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 2: Now go back to Discord Settings ⚙️ and go to the Profiles page.</p>
+                <p>Click on "Change Decoration" under Decor.</p>
+                <img src="https://beta.jellys-space.vip/guide/2.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 3: Authorize Decor when prompted.</p>
+                <img src="https://beta.jellys-space.vip/guide/3.gif" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 4: Find any decor from our site! Just mouse over & click.</p>
+                <img src="https://beta.jellys-space.vip/guide/4.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 5: If you like it, hit the download button.</p>
+                <img src="https://beta.jellys-space.vip/guide/5.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 6: Go back to your Profile Settings ⚙️ and click "Change Decoration".</p>
+                <p>You'll wanna click the Create button!</p>
+                <img src="https://beta.jellys-space.vip/guide/6.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 7: Click the "Browse" button and choose the decor you downloaded.</p>
+                <img src="https://beta.jellys-space.vip/guide/7.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 8: Give your decor a name and click "Submit for Review".</p>
+                <img src="https://beta.jellys-space.vip/guide/8.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 9: Once submitted, it will appear under "Pending Review".</p>
+                <img src="https://beta.jellys-space.vip/guide/9.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 10: Join the <a href="https://discord.gg/dXp2SdxDcP">Decor Server</a> and do the following:</p>
+                <img src="https://beta.jellys-space.vip/guide/10.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 11: Enable Direct Messages so our Decorator bot</p>
+                <p>can tell you when your decor is approved!</p>
+                <img src="https://beta.jellys-space.vip/guide/11.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 12: This is what the DM will look like.</p>
+                <img src="https://beta.jellys-space.vip/guide/12.png" loading="lazy">
+            </div>
+
+            <div class="text-block center guide-step">
+                <p>Step 13: Your decoration will now be active and visible in your list!</p>
+                <img src="https://beta.jellys-space.vip/guide/13.png" loading="lazy">
+            </div>
         `
     },
     {
