@@ -478,7 +478,6 @@ body:has(#content.decors) .search-bar {
 button {
     display: block;
     align-items: center;
-    gap: 3px;
     padding: 10px 15px;
     color: #fff;
     border: none;
@@ -493,7 +492,7 @@ button {
 button:hover {
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
 }
-button.disabled {
+button:disabled {
     cursor: not-allowed;
     box-shadow: none;
     color: #C4C5C9;

@@ -61,7 +61,7 @@ const urls = {
 };
 
 const notFoundHTMLContent = `
-    <img src="${urls.CDN}/assets/jellyhome.png" alt="Jelly" style="height: 200px;" oncontextmenu="return false;" loading="lazy">
+    <img src="${urls.CDN}/assets/jelly404.png" alt="Jelly" style="height: 200px;" oncontextmenu="return false;" loading="lazy">
     <div class="text-block center">
         <h2>404</h2>
         <p>You've taken a wrong turn, and ended up in a place far, far away...</p>
@@ -5252,6 +5252,29 @@ const pages = [
         `
     },
     {
+        url: "rehash",
+        name: "Re-hash",
+        hidden: false,
+        content: `
+            <div class="text-block center">
+                <h1>PNG Hash Randomizer</h1>
+                <p>Select a PNG or JPEG image. JPEGs will be converted to PNG. Other formats are not supported.</p>
+            </div>
+
+            <br>
+            <label for="upload" class="custom-file-label">Choose an image</label>
+            <br>
+            <input type="file" id="upload" accept="image/*" />
+            <p id="filename" aria-live="polite"></p>
+
+            <br>
+            <button id="button" disabled>Randomize Hash</button>
+
+            <p id="hash">Hash: N/A</p>
+            <img id="img" />
+        `
+    },
+    {
         url: "guide",
         name: "Guide",
         hidden: false,
@@ -5621,6 +5644,146 @@ function setPage(url) {
                     artistsList.appendChild(banner);
                 }
             });
+        } else if (page.url === "rehash") {
+            let uploadedImageBlob = null;
+            let originalFilename = "image";
+            let wasConverted = false;
+
+            document.getElementById("upload").addEventListener("change", async (e) => {
+              const file = e.target.files[0];
+              if (!file) return;
+            
+              const filenameDisplay = document.getElementById("filename");
+              const ext = file.name.split('.').pop().toLowerCase();
+            
+              if (!["png", "jpg", "jpeg"].includes(ext)) {
+                alert("❌ File format not accepted. PNG, APNG and JPG/JPEG only.");
+                return;
+              }
+          
+              const arrayBufferToHash = async (buffer) => {
+                const hashBuffer = await crypto.subtle.digest("SHA-256", buffer);
+                const hashArray = Array.from(new Uint8Array(hashBuffer));
+                return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+              };
+          
+              const bytes = await file.arrayBuffer();
+              let icon = "✅";
+              wasConverted = false;
+          
+              if (ext === "jpg" || ext === "jpeg") {
+              alert("⚠️ This is a JPEG image and will be changed into PNG format upon rehash.");
+                // Convert JPEG to PNG
+                icon = "⚠️";
+                wasConverted = true;
+                const img = new Image();
+                img.src = URL.createObjectURL(file);
+                await new Promise((res) => img.onload = res);
+            
+                const canvas = document.createElement("canvas");
+                canvas.width = img.width;
+                canvas.height = img.height;
+                canvas.getContext("2d").drawImage(img, 0, 0);
+                const blob = await new Promise(r => canvas.toBlob(r, "image/png"));
+                uploadedImageBlob = await blob.arrayBuffer();
+              } else {
+                uploadedImageBlob = bytes;
+              }
+          
+              originalFilename = (file.name || "image").replace(/\.(png|jpg|jpeg)$/i, "");
+              const fileSizeKb = Math.round(file.size / 1024);
+              const hash = await arrayBufferToHash(bytes);
+          
+              filenameDisplay.innerText = `${icon} Loaded: ${file.name}${wasConverted ? " (converted to PNG)" : ""}
+            ${fileSizeKb}kb
+            Original Hash: ${hash}`;
+              filenameDisplay.style.display = "block";
+              document.getElementById("button").disabled = false;
+            });
+
+            document.getElementById("button").addEventListener("click", async () => {
+              const view = new DataView(uploadedImageBlob);
+              const sig = uploadedImageBlob.slice(0, 8);
+            
+              const splitChunks = () => {
+                const chunks = [];
+                let offset = 8;
+                while (offset < uploadedImageBlob.byteLength) {
+                  const length = view.getUint32(offset);
+                  const type = new TextDecoder().decode(new Uint8Array(uploadedImageBlob, offset + 4, 4));
+                  const data = new Uint8Array(uploadedImageBlob, offset + 8, length);
+                  const crc = view.getUint32(offset + 8 + length);
+                  chunks.push({ length, type, data, crc });
+                  offset += 12 + length;
+                }
+                return chunks;
+              };
+          
+              const crcTable = (() => {
+                let table = [], c;
+                for (let n = 0; n < 256; n++) {
+                  c = n;
+                  for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+                  table[n] = c;
+                }
+                return table;
+              })();
+          
+              const crc32 = (buff) => {
+                let crc = ~0;
+                for (let i = 0; i < buff.length; i++)
+                  crc = (crc >>> 8) ^ crcTable[(crc ^ buff[i]) & 0xff];
+                return ~crc >>> 0;
+              };
+          
+              const keyword = "HashScramble";
+              const random = Math.random().toString(30).slice(2);
+              const textData = new TextEncoder().encode(keyword + "\0" + random);
+          
+              const createChunk = (type, data) => {
+                const input = new Uint8Array(type.length + data.length);
+                input.set(new TextEncoder().encode(type), 0);
+                input.set(data, type.length);
+                const crc = crc32(input);
+                return { type, data, crc };
+              };
+          
+              const randomChunk = createChunk("tEXt", textData);
+              const chunks = splitChunks();
+          
+              const newChunks = [];
+              for (const chunk of chunks) {
+                if (chunk.type === "IEND") newChunks.push(randomChunk);
+                newChunks.push(chunk);
+              }
+          
+              const parts = [sig];
+              for (const chunk of newChunks) {
+                const lengthBuf = new Uint8Array(4);
+                new DataView(lengthBuf.buffer).setUint32(0, chunk.data.length);
+                parts.push(lengthBuf);
+                parts.push(new TextEncoder().encode(chunk.type));
+                parts.push(chunk.data);
+                const crcBuf = new Uint8Array(4);
+                new DataView(crcBuf.buffer).setUint32(0, chunk.crc);
+                parts.push(crcBuf);
+              }
+          
+              const finalBlob = new Blob(parts, { type: "image/png" });
+              const url = URL.createObjectURL(finalBlob);
+          
+              const hashBuffer = await crypto.subtle.digest("SHA-256", await finalBlob.arrayBuffer());
+              const hashHex = Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, "0")).join("");
+          
+              document.getElementById("img").src = url;
+              document.getElementById("img").style.display = "block";
+              document.getElementById("hash").innerText = "New Hash: " + hashHex;
+          
+              const a = document.createElement("a");
+              a.href = url;
+              a.download = originalFilename + "_newhash.png";
+              a.click();
+            });
         }
     } catch(err) {
         console.error("Error loading page: "+err)
@@ -5801,7 +5964,7 @@ async function renderDecorsData(data, output) {
         renderPage(1);
         if (filteredData.length === 0) document.querySelector('.categories-container').innerHTML = `
             <div class="failed-search">
-                <img src="https://media.discordapp.net/stickers/1376171053348421774.webp?size=4096">
+                <img style="padding: 30px;" src="${urls.CDN}/assets/jellydecor404.png">
                 <h2>Sorry, we couldn't find any decors that matched your search :(</h2>
             </div>
         `;
