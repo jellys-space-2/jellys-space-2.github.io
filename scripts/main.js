@@ -1074,6 +1074,7 @@ const categories = [
         ]
     },
     {
+        "force_break": true,
         "name": "Color Mass",
         "banner": "colormass-banner.png",
         "artist_info": null,
@@ -2792,6 +2793,7 @@ const categories = [
         ]
     },
     {
+        "force_break": true,
         "name": "cat person",
         "banner": "cat-banner.png",
         "artist_info": null,
@@ -3617,6 +3619,7 @@ const categories = [
         ]
     },
     {
+        "force_break": true,
         "name": "BUTTERFLY",
         "banner": "nuki-crystal-banner.png",
         "artist_info": null,
@@ -5236,6 +5239,14 @@ const pages = [
                 <p>^o^</p>
             </div>
             <div class="homenav-grid"></div>
+            <div class="text-block center">
+                <p>Thank you callievd, jack, marsh & amia!</p>
+            </div>
+            <div class="text-block center">
+                <img src="${urls.CDN}/assets/discordlogo.png" alt="Discord Logo" style="height: 50px;" oncontextmenu="return false;" loading="lazy">
+                <h2>If you are interested in creating decors for the site</h2>
+                <h2><a href="https://discord.gg/VR2CVDu5nh" target="_blank" rel="noopener">join our Discord Server.</a></h2>
+            </div>
         `
     },
     {
@@ -5243,6 +5254,14 @@ const pages = [
         name: "Decors",
         hidden: false,
         content: `
+            <div class="text-block center">
+                <img src="${urls.CDN}/assets/jellydecors.png" alt="Jelly" style="height: 200px;" oncontextmenu="return false;" loading="lazy">
+                <p>Custom Avatar Decorations for your Vencord!</p>
+                <p>Make sure you check out the guide so you know how to use them!</p>
+                <p>(>^.^)><(^o^<)</p>
+                <hr class="inv">
+                <p>If you enjoy using this site, consider donating! We'll continue to deliver an ad-free experience.</p>
+            </div>
             <div class="pagination"></div>
 
             <div class="categories-container">
@@ -5791,8 +5810,41 @@ function setPage(url) {
 };
 
 function paginate(items, page = 1, perPage = 5) {
-    const start = (page - 1) * perPage;
-    return items.slice(start, start + perPage);
+    const pages = [];
+    let currentPage = [];
+
+    for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+
+        if (item?.force_break) {
+            // Push current page if it has items
+            if (currentPage.length > 0) {
+                pages.push(currentPage);
+                currentPage = [];
+            }
+            // Force-break item gets its own page
+            pages.push([item]);
+        } else {
+            currentPage.push(item);
+            // If we reach perPage, start a new page
+            if (currentPage.length === perPage) {
+                pages.push(currentPage);
+                currentPage = [];
+            }
+        }
+    }
+
+    // Push any leftover items
+    if (currentPage.length > 0) {
+        pages.push(currentPage);
+    }
+
+    const totalPages = pages.length;
+
+    return {
+        pageData: pages[page - 1] || [],
+        totalPages
+    };
 };
 function createPaginationControls(container, totalPages, currentPage, onPageChange) {
     if (container) {
@@ -5840,9 +5892,9 @@ function filterCategories(data, search) {
         const filteredProducts = cat.decorations?.filter(p =>
             p.name.toLowerCase().includes(term)
         ) || [];
-        const artistMatch = cat.artists?.some(artist =>
-            artist.name.toLowerCase().includes(term)
-        ) || false;
+        const artistMatch = (cat.artists?.length === 1) 
+        ? cat.artists[0].name.toLowerCase().includes(term) 
+        : false;
 
         if (catMatch || artistMatch || filteredProducts.length > 0) {
             return {
@@ -5883,7 +5935,7 @@ async function renderDecorsData(data, output) {
     const renderPage = (page) => {
         currentPage = page;
         output.innerHTML = '';
-        const pageData = paginate(filteredData, page, itemsPerPage);
+        const { pageData, totalPages } = paginate(filteredData, page, itemsPerPage);
         output.scrollTo(0,0);
 
         if (data.length <= itemsPerPage) {
@@ -5948,8 +6000,6 @@ async function renderDecorsData(data, output) {
 
             output.appendChild(category);
         });
-
-        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
         
         // Create pagination controls for all containers
         paginationContainers.forEach(container => {
