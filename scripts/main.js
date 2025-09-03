@@ -5283,7 +5283,7 @@ const pages = [
             <br>
             <label for="upload" class="custom-file-label">Choose an image</label>
             <br>
-            <input type="file" id="upload" accept="image/*" />
+            <input type="file" id="upload" accept="image/*" class="hidden" />
             <p id="filename" aria-live="polite"></p>
 
             <br>

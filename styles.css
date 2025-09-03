@@ -473,6 +473,61 @@ body:has(#content.decors) .search-bar {
 
 
 
+.custom-file-label {
+    display: inline-block;
+    background-color: #1f1835;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 0 2px #8e72ff22;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-file-label:hover {
+    background-color: #2b2250;
+    box-shadow: 0 0 0 3px #bda5ff33;
+}
+
+#hash {
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+    color: #cfcfff;
+    word-break: break-all;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img {
+    display: none;
+    margin: 2rem auto 0;
+    max-width: 240px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.12);
+}
+
+#filename {
+    display: none;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #b3a1ff;
+    white-space: pre-line;
+    word-break: break-all;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+
 
 
 button {
