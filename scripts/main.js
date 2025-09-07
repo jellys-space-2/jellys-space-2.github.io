@@ -5968,6 +5968,7 @@ async function renderDecorsData(data, output) {
                 }
                 const deco = {
                     name: dco.name,
+                    summary: dco.summary,
                     asset: dco.asset,
                     banner: categoryData.banner,
                     artist: creators
@@ -6104,6 +6105,8 @@ function openModal({
             textCenter = false;
             borderColor = null;
 
+            modal.classList.add('modal-mobile');
+
             modalContent.innerHTML = `
                 <img class="pdp-bg" src="${urls.CDN}/banners/${deco.banner}">
                 <div class="decoration-title-container">
@@ -6133,6 +6136,11 @@ function openModal({
             textCenter = false;
             borderColor = null;
 
+            modal.classList.add('modal-desktop');
+
+            let desc = "";
+            if (deco.summary) desc = deco.summary;
+
             modalContent.innerHTML = `
                 <div class="modal-left">
                     <img class="pdp-bg" src="${urls.CDN}/banners/${deco.banner}">
@@ -6154,7 +6162,7 @@ function openModal({
                         <p>${deco.artist.commissions}</p>
                         <p>Contact them on Discord <a href="https://discord.com/users/${deco.artist.id}" target="_blank" rel="noopener noreferrer">here</a>.</p>
                     </div>
-                    <p id="item-desc"></p>
+                    <p id="item-desc">${desc}</p>
                     <div class="modal-bottom-text">
                         <p>Make sure you have read the <a id="guide-page-link">Guide Page</a>. So you know how to apply this Decoration!</p>
                     </div>
