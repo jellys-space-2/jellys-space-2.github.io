@@ -35,6 +35,67 @@ function removeParams(params) {
 };
 
 
+
+
+
+// Settings Code
+
+const settings = {
+    "disable_bg_effect": 0,
+    "disable_mouse_effect": 0
+};
+
+
+if (!localStorage.getItem('optionsStore')) {
+    localStorage.setItem('optionsStore', JSON.stringify({}))
+}
+
+let optionsStore = JSON.parse(localStorage.getItem('optionsStore'));
+
+// Initialize settings store
+function initializeSettings() {
+    if (Object.keys(optionsStore).length === 0) {
+        // Initialize with default values
+        for (let key in settings) {
+            optionsStore[key] = settings[key];
+        }
+    } else {
+        // Only add missing keys, don't overwrite existing ones
+        for (let key in settings) {
+            if (!(key in optionsStore)) {
+                optionsStore[key] = settings[key];
+            }
+        }
+    }
+    
+    localStorage.setItem('optionsStore', JSON.stringify(optionsStore));
+}
+
+initializeSettings();
+
+// Function to change a setting
+function changeSetting(key, value) {
+    if (key in optionsStore) {
+        optionsStore[key] = value;
+        
+        localStorage.setItem('optionsStore', JSON.stringify(optionsStore));
+        
+        console.log(`Setting '${key}' changed to ${value}`);
+    } else {
+        console.error(`Setting '${key}' does not exist`);
+    }
+}
+
+// Function to toggle a setting (0 or 1)
+function toggleSetting(key) {
+    if (key in optionsStore) {
+        const newValue = optionsStore[key] === 0 ? 1 : 0;
+        changeSetting(key, newValue);
+    }
+}
+
+
+
 const isMobile = navigator.userAgentData && navigator.userAgentData.mobile;
 if (isMobile || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     document.body.classList.add('mobile');
@@ -5495,6 +5556,7 @@ window.addEventListener("blur", () => {
 ********************************/
 function spawnConfettiPiece(container) {
     if (!isPageFocused) return; 
+    if (optionsStore.disable_bg_effect) return;
     const confetti = document.createElement('img');
 
     const confettiImages = [
@@ -5549,6 +5611,7 @@ if (container) {
 * 3) SPARKLY MOUSE TRAIL
 ********************************/
 window.addEventListener('mousemove', function(e) {
+    if (optionsStore.disable_mouse_effect) return;
     const arr = [1, 0.9, 0.8, 0.5, 0.2];
 
     arr.forEach(function(i) {
@@ -6394,3 +6457,156 @@ async function downloadPngWithRandomChunk(imageUrl) {
     a.remove();
     URL.revokeObjectURL(url);
 };
+
+
+
+
+
+
+
+// Global variables for clickablePopup management
+let currentclickablePopup = null;
+let clickablePopupBackdrop = null;
+
+// Create backdrop element
+function createBackdrop() {
+    if (!clickablePopupBackdrop) {
+        clickablePopupBackdrop = document.createElement('div');
+        clickablePopupBackdrop.className = 'clickablePopup-backdrop';
+        document.body.appendChild(clickablePopupBackdrop);
+        
+        clickablePopupBackdrop.addEventListener('click', closeclickablePopup);
+    }
+    return clickablePopupBackdrop;
+}
+
+// Main function to create a button with clickablePopup popup
+function createclickablePopupButton(buttonElement, clickablePopupButtons) {
+    buttonElement.addEventListener('click', function(e) {
+        e.stopPropagation();
+        
+        // Close existing clickablePopup if open
+        if (currentclickablePopup) {
+            closeclickablePopup();
+            return;
+        }
+        
+        // Create clickablePopup popup
+        const clickablePopup = document.createElement('div');
+        clickablePopup.className = 'clickablePopup-popup';
+        
+        // Add buttons to clickablePopup
+        clickablePopupButtons.forEach(buttonConfig => {
+            const button = document.createElement('button');
+            button.className = 'clickablePopup-button';
+            
+            // Add icon if provided
+            if (buttonConfig.icon) {
+                button.innerHTML = buttonConfig.icon + '<span>' + buttonConfig.name + '</span>';
+            } else {
+                button.innerHTML = '<span>' + buttonConfig.name + '</span>';
+            }
+            
+            // Add click handler
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                // Execute the function
+                if (typeof buttonConfig.function === 'string') {
+                    // If it's a string, evaluate it
+                    eval(buttonConfig.function);
+                } else if (typeof buttonConfig.function === 'function') {
+                    // If it's already a function, call it
+                    buttonConfig.function();
+                }
+                
+                closeclickablePopup();
+            });
+            
+            clickablePopup.appendChild(button);
+        });
+        
+        // Position clickablePopup
+        document.body.appendChild(clickablePopup);
+        positionclickablePopup(buttonElement, clickablePopup);
+        
+        // Show clickablePopup with animation
+        setTimeout(() => {
+            clickablePopup.classList.add('show');
+        }, 10);
+        
+        // Set up backdrop
+        const backdrop = createBackdrop();
+        backdrop.classList.add('active');
+        
+        currentclickablePopup = clickablePopup;
+    });
+}
+
+// Position clickablePopup relative to button
+function positionclickablePopup(buttonElement, clickablePopup) {
+    const buttonRect = buttonElement.getBoundingClientRect();
+    const clickablePopupRect = clickablePopup.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    
+    let left = buttonRect.right + 10; // Default: right side
+    let top = buttonRect.top;
+    
+    // Check if there's enough space on the right
+    if (left + clickablePopupRect.width > viewportWidth - 20) {
+        // Not enough space on right, position on left
+        left = buttonRect.left - clickablePopupRect.width - 10;
+        
+        // If still not enough space on left, center it
+        if (left < 20) {
+            left = buttonRect.left + (buttonRect.width / 2) - (clickablePopupRect.width / 2);
+            top = buttonRect.bottom + 10; // Position below button
+        }
+    }
+    
+    // Ensure clickablePopup doesn't go off top or bottom of screen
+    if (top + clickablePopupRect.height > viewportHeight - 20) {
+        top = viewportHeight - clickablePopupRect.height - 20;
+    }
+    if (top < 20) {
+        top = 20;
+    }
+    
+    clickablePopup.style.left = Math.max(20, left) + 'px';
+    clickablePopup.style.top = top + 'px';
+}
+
+// Close clickablePopup function
+function closeclickablePopup() {
+    if (currentclickablePopup) {
+        currentclickablePopup.classList.remove('show');
+        setTimeout(() => {
+            if (currentclickablePopup && currentclickablePopup.parentNode) {
+                currentclickablePopup.parentNode.removeChild(currentclickablePopup);
+            }
+            currentclickablePopup = null;
+        }, 150);
+    }
+    
+    if (clickablePopupBackdrop) {
+        clickablePopupBackdrop.classList.remove('active');
+    }
+}
+
+// Initialize demo buttons
+document.addEventListener('DOMContentLoaded', function() {
+    // Basic button example
+    createclickablePopupButton(document.getElementById('options-cog'), [
+        {
+            "name": "Toggle Background Effect",
+            "function": "toggleSetting('disable_bg_effect')",
+            "icon": null
+        },
+        {
+            "name": "Toggle Mouse Effect",
+            "function": "toggleSetting('disable_mouse_effect')",
+            "icon": null
+        }
+    ]);
+});
