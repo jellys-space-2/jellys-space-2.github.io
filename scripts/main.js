@@ -96,9 +96,10 @@ function toggleSetting(key) {
 
 
 
-const isMobile = navigator.userAgentData && navigator.userAgentData.mobile;
+let isMobile = navigator.userAgentData && navigator.userAgentData.mobile;
 if (isMobile || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     document.body.classList.add('mobile');
+    isMobile = true;
 }
 
 
