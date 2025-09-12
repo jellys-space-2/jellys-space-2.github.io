@@ -6,6 +6,7 @@ const pageSearchBar = document.querySelector('.search-bar');
 // Cache
 
 let openModalsCache = 0;
+let categoryFullViewCache;
 
 
 // param code
@@ -5656,6 +5657,8 @@ pages.forEach(page => {
     if (page.hidden) tab.classList.add('hidden');
 });
 
+let toggle_73485748 = false;
+
 // Selects the page button on the nav bar and sets the page content
 function setPage(url) {
     pageSearchBar.value = '';
@@ -5674,7 +5677,7 @@ function setPage(url) {
 
     try {
         navBar.querySelector('#'+page.url+'-tab').classList.add("selected");
-        setParams({page: page.url})
+        addParams({page: page.url})
         primaryContainer.classList.add(page.url);
         primaryContainer.innerHTML = page.content;
 
@@ -5704,6 +5707,15 @@ function setPage(url) {
             `;
         } else if (page.url === "decors") {
             renderDecorsData(categories, primaryContainer.querySelector('.categories-container'));
+            if (params.get("category") && !categoryFullViewCache) {
+                if (toggle_73485748 === false) {
+                    toggle_73485748 = true;
+                    categoryFullViewCache = params.get("category");
+                    openCategoryPage({
+                        data: categories.find(c => c.name === categoryFullViewCache)
+                    })
+                }
+            }
         } else if (page.url === "artists") {
             const artistsList = primaryContainer.querySelector('.artists-list');
             artists.forEach((artist) => {
@@ -5868,6 +5880,13 @@ function setPage(url) {
               a.click();
             });
         }
+
+        if (page.url != "decors") {
+            if (params.get("category")) {
+                removeParams("category");
+                categoryFullViewCache = null;
+            }
+        }
     } catch(err) {
         console.error("Error loading page: "+err)
     }
@@ -6013,57 +6032,7 @@ async function renderDecorsData(data, output) {
         }
 
         pageData.forEach((categoryData) => {
-            const category = document.createElement("div");
-            category.classList.add('category');
-
-
-
-            category.innerHTML = `
-                <img src="${urls.CDN}/banners/${categoryData.banner}" class="banner" oncontextmenu="return false;" loading="lazy">
-                <div class="decorations"></div>
-            `;
-
-            categoryData.decorations.forEach((dco) => {
-                let creators = artists[0];
-                if (categoryData.artists?.length > 1 && dco.artist) {
-                    creators = dco.artist;
-                } else if (categoryData.artists) {
-                    creators = categoryData.artists[0];
-                }
-                const deco = {
-                    name: dco.name,
-                    summary: dco.summary,
-                    asset: dco.asset,
-                    banner: categoryData.banner,
-                    artist: creators
-                };
-                const decoCard = document.createElement("div");
-                decoCard.classList.add('deco-card');
-
-                decoCard.innerHTML = `
-                    <div class="decoration-container">
-                        <img class="avatar" src="${urls.CDN}/assets/default-avatar.png" oncontextmenu="return false;" loading="lazy">
-                        <img class="deco" src="${urls.CDN}/decors/${deco.asset}" oncontextmenu="return false;" loading="lazy">
-                    </div>
-                `;
-
-                decoCard.addEventListener("click", () => {
-                    openModal({
-                        type: modal_types.DECOR,
-                        data: deco
-                    });
-                });
-
-                category.querySelector('.decorations').appendChild(decoCard);
-            });
-
-
-
-
-
-
-
-            output.appendChild(category);
+            renderCategory(categoryData, output)
         });
         
         // Create pagination controls for all containers
@@ -6086,6 +6055,65 @@ async function renderDecorsData(data, output) {
     });
 
     renderPage(1);
+};
+
+function renderCategory(categoryData, output) {
+    const category = document.createElement("div");
+    category.classList.add('category');
+
+
+    category.innerHTML = `
+        <img src="${urls.CDN}/banners/${categoryData.banner}" class="banner" oncontextmenu="return false;" loading="lazy">
+        <div class="decorations"></div>
+    `;
+
+    const banner = category.querySelector(".banner");
+    banner.addEventListener("click", () => {
+        openCategoryPage({
+            type: modal_types.CATEGORY,
+            data: categoryData
+        });
+    });
+
+    categoryData.decorations.forEach((dco) => {
+        rendereDecor(categoryData, dco, category.querySelector('.decorations'))
+    });
+
+    output.appendChild(category);
+};
+
+function rendereDecor(categoryData, dco, output) {
+    let creators = artists[0];
+    if (categoryData.artists?.length > 1 && dco.artist) {
+        creators = dco.artist;
+    } else if (categoryData.artists) {
+        creators = categoryData.artists[0];
+    }
+    const deco = {
+        name: dco.name,
+        summary: dco.summary,
+        asset: dco.asset,
+        banner: categoryData.banner,
+        artist: creators
+    };
+    const decoCard = document.createElement("div");
+    decoCard.classList.add('deco-card');
+
+    decoCard.innerHTML = `
+        <div class="decoration-container">
+            <img class="avatar" src="${urls.CDN}/assets/default-avatar.png" oncontextmenu="return false;" loading="lazy">
+            <img class="deco" src="${urls.CDN}/decors/${deco.asset}" oncontextmenu="return false;" loading="lazy">
+        </div>
+    `;
+
+    decoCard.addEventListener("click", () => {
+        openModal({
+            type: modal_types.DECOR,
+            data: deco
+        });
+    });
+
+    output.appendChild(decoCard);
 };
 
 
@@ -6325,6 +6353,35 @@ document.addEventListener("keydown", function (event) {
         closeModal()
     }
 });
+
+
+function openCategoryPage({
+    data = null
+} = {}) {
+
+    addParams({category: data.name})
+    
+    const modal = document.createElement("div");
+    modal.classList.add("category-clicked-container")
+
+    modal.innerHTML = `
+        <div class="pagination">
+            <button class="nav-btn">&lt; Back</button>
+        </div>
+        <div class="categories-container"></div>
+    `;
+    const modalContent = modal.querySelector('.categories-container');
+
+    renderCategory(data, modalContent)
+
+    document.querySelector('#content').appendChild(modal);
+    document.body.scrollTo(0,0);
+
+    modal.querySelector('.nav-btn').addEventListener("click", () => {
+        modal.remove();
+        removeParams("category");
+    });
+};
 
 
 

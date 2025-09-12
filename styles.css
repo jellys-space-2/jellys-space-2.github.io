@@ -113,6 +113,7 @@ header h1 {
 }
 
 #content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,6 +122,14 @@ header h1 {
 }
 body:has(#content.decors) .search-bar {
     transform: translateY(0px);
+}
+body:has(.category-clicked-container) .search-bar {
+    transform: translateY(-100px) !important;
+}
+#content.decors:has(.category-clicked-container) > .text-block,
+#content.decors:has(.category-clicked-container) > .categories-container,
+#content.decors:has(.category-clicked-container) > .pagination {
+    display: none;
 }
 
 .text-block {
@@ -250,6 +259,7 @@ body:has(#content.decors) .search-bar {
     border-radius: 20px;
     object-fit: cover;
     margin: 0 auto;
+    cursor: pointer;
 }
 .categories-container .category .decorations {
     width: 100%;
@@ -285,6 +295,23 @@ body:has(#content.decors) .search-bar {
     display: none;
 }
 
+
+.category-clicked-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: unset;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.category-clicked-container .banner {
+    pointer-events: none;
+}
 
 
 
