@@ -5307,7 +5307,7 @@ const pages = [
             </div>
             <div class="text-block center">
                 <img src="${urls.CDN}/assets/discordlogo.png" alt="Discord Logo" style="height: 50px; margin-bottom: 0px;" oncontextmenu="return false;" loading="lazy">
-                <h2>If you are interested in creating decors for the site</h2>
+                <h2 style="margin: 0px;">If you are interested in creating decors for the site</h2>
                 <h2><a href="https://discord.gg/VR2CVDu5nh" target="_blank" rel="noopener">join our Discord Server.</a></h2>
             </div>
         `
