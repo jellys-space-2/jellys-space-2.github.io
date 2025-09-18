@@ -6064,8 +6064,11 @@ function renderCategory(categoryData, output) {
 
     category.innerHTML = `
         <img src="${urls.CDN}/banners/${categoryData.banner}" class="banner" oncontextmenu="return false;" loading="lazy">
+        <p class="artist_info">${categoryData.artist_info}</p>
         <div class="decorations"></div>
     `;
+
+    if (categoryData.artist_info === null) category.querySelector('.artist_info').remove();
 
     const banner = category.querySelector(".banner");
     banner.addEventListener("click", () => {

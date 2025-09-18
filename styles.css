@@ -284,6 +284,11 @@ body:has(.category-clicked-container) .search-bar {
 .categories-container .category .decorations .deco-card:hover {
     background-color: #363636;
 }
+.artist_info {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1000px;
+}
 
 
 .failed-search {
